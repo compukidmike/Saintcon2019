@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ICE40HX1K-TQ144)(type Legacy)(uri C:/Users/compukidmike/Dropbox/kicad/libraries/ICE40HX1K-TQ144.lib)(options "")(descr ""))
+  (lib (name Saintcon2019TopBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/Saintcon2019TopBoard-rescue.lib)(options "")(descr ""))
+)

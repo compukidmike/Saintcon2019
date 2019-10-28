@@ -1,0 +1,7398 @@
+EESchema Schematic File Version 4
+LIBS:SaintconMinibadgeDisplay10x10-cache
+EELAYER 29 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR04
+U 1 1 5E1427B5
+P 1100 4450
+F 0 "#PWR04" H 1100 4200 50  0001 C CNN
+F 1 "GND" H 1105 4277 50  0000 C CNN
+F 2 "" H 1100 4450 50  0001 C CNN
+F 3 "" H 1100 4450 50  0001 C CNN
+	1    1100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5E142DA5
+P 1950 7100
+F 0 "#PWR03" H 1950 6950 50  0001 C CNN
+F 1 "+5V" H 1965 7273 50  0000 C CNN
+F 2 "" H 1950 7100 50  0001 C CNN
+F 3 "" H 1950 7100 50  0001 C CNN
+	1    1950 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4350 1500 4350
+$Comp
+L Connector:Screw_Terminal_01x04 J3
+U 1 1 5EAD7083
+P 1800 4450
+F 0 "J3" H 1880 4442 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 1880 4351 50  0000 L CNN
+F 2 "SparkFun-Connectors:SCREWTERMINAL-3.5MM-4" H 1800 4450 50  0001 C CNN
+F 3 "~" H 1800 4450 50  0001 C CNN
+	1    1800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U1
+U 1 1 5DA18CAE
+P 5450 -5150
+F 0 "U1" H 5450 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 -5100 60  0001 C CNN
+F 3 "" H 5450 -5100 60  0001 C CNN
+	1    5450 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5DA1A37D
+P 4850 -5450
+F 0 "#PWR08" H 4850 -5600 50  0001 C CNN
+F 1 "+5V" H 4865 -5277 50  0000 C CNN
+F 2 "" H 4850 -5450 50  0001 C CNN
+F 3 "" H 4850 -5450 50  0001 C CNN
+	1    4850 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5DA1A6F3
+P 4800 -4800
+F 0 "#PWR028" H 4800 -5050 50  0001 C CNN
+F 1 "GND" H 4805 -4973 50  0000 C CNN
+F 2 "" H 4800 -4800 50  0001 C CNN
+F 3 "" H 4800 -4800 50  0001 C CNN
+	1    4800 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 -5000 4800 -5000
+Wire Wire Line
+	4800 -5000 4800 -4900
+Wire Wire Line
+	4950 -4900 4800 -4900
+Connection ~ 4800 -4900
+Wire Wire Line
+	4800 -4900 4800 -4800
+Wire Wire Line
+	4950 -4800 4800 -4800
+Connection ~ 4800 -4800
+Wire Wire Line
+	4950 -5300 4900 -5300
+Wire Wire Line
+	4900 -5300 4900 -5200
+Connection ~ 4900 -5200
+Wire Wire Line
+	4900 -5200 4950 -5200
+Wire Wire Line
+	4850 -5450 4950 -5450
+Wire Wire Line
+	4950 -5450 4950 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U2
+U 1 1 5DA1DA5B
+P 6950 -5150
+F 0 "U2" H 6950 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 -5100 60  0001 C CNN
+F 3 "" H 6950 -5100 60  0001 C CNN
+	1    6950 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5DA1DA67
+P 6350 -5450
+F 0 "#PWR09" H 6350 -5600 50  0001 C CNN
+F 1 "+5V" H 6365 -5277 50  0000 C CNN
+F 2 "" H 6350 -5450 50  0001 C CNN
+F 3 "" H 6350 -5450 50  0001 C CNN
+	1    6350 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5DA1DA6D
+P 6300 -4800
+F 0 "#PWR029" H 6300 -5050 50  0001 C CNN
+F 1 "GND" H 6305 -4973 50  0000 C CNN
+F 2 "" H 6300 -4800 50  0001 C CNN
+F 3 "" H 6300 -4800 50  0001 C CNN
+	1    6300 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 -5000 6300 -5000
+Wire Wire Line
+	6300 -5000 6300 -4900
+Wire Wire Line
+	6450 -4900 6300 -4900
+Connection ~ 6300 -4900
+Wire Wire Line
+	6300 -4900 6300 -4800
+Wire Wire Line
+	6450 -4800 6300 -4800
+Connection ~ 6300 -4800
+Wire Wire Line
+	6450 -5300 6400 -5300
+Wire Wire Line
+	6400 -5300 6400 -5200
+Connection ~ 6400 -5200
+Wire Wire Line
+	6400 -5200 6450 -5200
+Wire Wire Line
+	6350 -5450 6450 -5450
+Wire Wire Line
+	6450 -5450 6450 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U3
+U 1 1 5DA1F81C
+P 8450 -5150
+F 0 "U3" H 8450 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 -5100 60  0001 C CNN
+F 3 "" H 8450 -5100 60  0001 C CNN
+	1    8450 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5DA1F828
+P 7850 -5450
+F 0 "#PWR010" H 7850 -5600 50  0001 C CNN
+F 1 "+5V" H 7865 -5277 50  0000 C CNN
+F 2 "" H 7850 -5450 50  0001 C CNN
+F 3 "" H 7850 -5450 50  0001 C CNN
+	1    7850 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5DA1F82E
+P 7800 -4800
+F 0 "#PWR030" H 7800 -5050 50  0001 C CNN
+F 1 "GND" H 7805 -4973 50  0000 C CNN
+F 2 "" H 7800 -4800 50  0001 C CNN
+F 3 "" H 7800 -4800 50  0001 C CNN
+	1    7800 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 -5000 7800 -5000
+Wire Wire Line
+	7800 -5000 7800 -4900
+Wire Wire Line
+	7950 -4900 7800 -4900
+Connection ~ 7800 -4900
+Wire Wire Line
+	7800 -4900 7800 -4800
+Wire Wire Line
+	7950 -4800 7800 -4800
+Connection ~ 7800 -4800
+Wire Wire Line
+	7950 -5300 7900 -5300
+Wire Wire Line
+	7900 -5300 7900 -5200
+Connection ~ 7900 -5200
+Wire Wire Line
+	7900 -5200 7950 -5200
+Wire Wire Line
+	7850 -5450 7950 -5450
+Wire Wire Line
+	7950 -5450 7950 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U4
+U 1 1 5DA211D8
+P 9950 -5150
+F 0 "U4" H 9950 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 -5100 60  0001 C CNN
+F 3 "" H 9950 -5100 60  0001 C CNN
+	1    9950 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5DA211E4
+P 9350 -5450
+F 0 "#PWR011" H 9350 -5600 50  0001 C CNN
+F 1 "+5V" H 9365 -5277 50  0000 C CNN
+F 2 "" H 9350 -5450 50  0001 C CNN
+F 3 "" H 9350 -5450 50  0001 C CNN
+	1    9350 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 5DA211EA
+P 9300 -4800
+F 0 "#PWR031" H 9300 -5050 50  0001 C CNN
+F 1 "GND" H 9305 -4973 50  0000 C CNN
+F 2 "" H 9300 -4800 50  0001 C CNN
+F 3 "" H 9300 -4800 50  0001 C CNN
+	1    9300 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 -5000 9300 -5000
+Wire Wire Line
+	9300 -5000 9300 -4900
+Wire Wire Line
+	9450 -4900 9300 -4900
+Connection ~ 9300 -4900
+Wire Wire Line
+	9300 -4900 9300 -4800
+Wire Wire Line
+	9450 -4800 9300 -4800
+Connection ~ 9300 -4800
+Wire Wire Line
+	9450 -5300 9400 -5300
+Wire Wire Line
+	9400 -5300 9400 -5200
+Connection ~ 9400 -5200
+Wire Wire Line
+	9400 -5200 9450 -5200
+Wire Wire Line
+	9350 -5450 9450 -5450
+Wire Wire Line
+	9450 -5450 9450 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U5
+U 1 1 5DA236B2
+P 11450 -5150
+F 0 "U5" H 11450 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 -5100 60  0001 C CNN
+F 3 "" H 11450 -5100 60  0001 C CNN
+	1    11450 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5DA236BE
+P 10850 -5450
+F 0 "#PWR012" H 10850 -5600 50  0001 C CNN
+F 1 "+5V" H 10865 -5277 50  0000 C CNN
+F 2 "" H 10850 -5450 50  0001 C CNN
+F 3 "" H 10850 -5450 50  0001 C CNN
+	1    10850 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 5DA236C4
+P 10800 -4800
+F 0 "#PWR032" H 10800 -5050 50  0001 C CNN
+F 1 "GND" H 10805 -4973 50  0000 C CNN
+F 2 "" H 10800 -4800 50  0001 C CNN
+F 3 "" H 10800 -4800 50  0001 C CNN
+	1    10800 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 -5000 10800 -5000
+Wire Wire Line
+	10800 -5000 10800 -4900
+Wire Wire Line
+	10950 -4900 10800 -4900
+Connection ~ 10800 -4900
+Wire Wire Line
+	10800 -4900 10800 -4800
+Wire Wire Line
+	10950 -4800 10800 -4800
+Connection ~ 10800 -4800
+Wire Wire Line
+	10950 -5300 10900 -5300
+Wire Wire Line
+	10900 -5300 10900 -5200
+Connection ~ 10900 -5200
+Wire Wire Line
+	10900 -5200 10950 -5200
+Wire Wire Line
+	10850 -5450 10950 -5450
+Wire Wire Line
+	10950 -5450 10950 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U6
+U 1 1 5DA2521D
+P 12950 -5150
+F 0 "U6" H 12950 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 -5100 60  0001 C CNN
+F 3 "" H 12950 -5100 60  0001 C CNN
+	1    12950 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5DA25229
+P 12350 -5450
+F 0 "#PWR013" H 12350 -5600 50  0001 C CNN
+F 1 "+5V" H 12365 -5277 50  0000 C CNN
+F 2 "" H 12350 -5450 50  0001 C CNN
+F 3 "" H 12350 -5450 50  0001 C CNN
+	1    12350 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR033
+U 1 1 5DA2522F
+P 12300 -4800
+F 0 "#PWR033" H 12300 -5050 50  0001 C CNN
+F 1 "GND" H 12305 -4973 50  0000 C CNN
+F 2 "" H 12300 -4800 50  0001 C CNN
+F 3 "" H 12300 -4800 50  0001 C CNN
+	1    12300 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 -5000 12300 -5000
+Wire Wire Line
+	12300 -5000 12300 -4900
+Wire Wire Line
+	12450 -4900 12300 -4900
+Connection ~ 12300 -4900
+Wire Wire Line
+	12300 -4900 12300 -4800
+Wire Wire Line
+	12450 -4800 12300 -4800
+Connection ~ 12300 -4800
+Wire Wire Line
+	12450 -5300 12400 -5300
+Wire Wire Line
+	12400 -5300 12400 -5200
+Connection ~ 12400 -5200
+Wire Wire Line
+	12400 -5200 12450 -5200
+Wire Wire Line
+	12350 -5450 12450 -5450
+Wire Wire Line
+	12450 -5450 12450 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U7
+U 1 1 5DA27B7A
+P 14450 -5150
+F 0 "U7" H 14450 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 -5100 60  0001 C CNN
+F 3 "" H 14450 -5100 60  0001 C CNN
+	1    14450 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 5DA27B86
+P 13850 -5450
+F 0 "#PWR014" H 13850 -5600 50  0001 C CNN
+F 1 "+5V" H 13865 -5277 50  0000 C CNN
+F 2 "" H 13850 -5450 50  0001 C CNN
+F 3 "" H 13850 -5450 50  0001 C CNN
+	1    13850 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5DA27B8C
+P 13800 -4800
+F 0 "#PWR034" H 13800 -5050 50  0001 C CNN
+F 1 "GND" H 13805 -4973 50  0000 C CNN
+F 2 "" H 13800 -4800 50  0001 C CNN
+F 3 "" H 13800 -4800 50  0001 C CNN
+	1    13800 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 -5000 13800 -5000
+Wire Wire Line
+	13800 -5000 13800 -4900
+Wire Wire Line
+	13950 -4900 13800 -4900
+Connection ~ 13800 -4900
+Wire Wire Line
+	13800 -4900 13800 -4800
+Wire Wire Line
+	13950 -4800 13800 -4800
+Connection ~ 13800 -4800
+Wire Wire Line
+	13950 -5300 13900 -5300
+Wire Wire Line
+	13900 -5300 13900 -5200
+Connection ~ 13900 -5200
+Wire Wire Line
+	13900 -5200 13950 -5200
+Wire Wire Line
+	13850 -5450 13950 -5450
+Wire Wire Line
+	13950 -5450 13950 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U8
+U 1 1 5DA2AAFE
+P 15950 -5150
+F 0 "U8" H 15950 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 -5100 60  0001 C CNN
+F 3 "" H 15950 -5100 60  0001 C CNN
+	1    15950 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5DA2AB0A
+P 15350 -5450
+F 0 "#PWR015" H 15350 -5600 50  0001 C CNN
+F 1 "+5V" H 15365 -5277 50  0000 C CNN
+F 2 "" H 15350 -5450 50  0001 C CNN
+F 3 "" H 15350 -5450 50  0001 C CNN
+	1    15350 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 5DA2AB10
+P 15300 -4800
+F 0 "#PWR035" H 15300 -5050 50  0001 C CNN
+F 1 "GND" H 15305 -4973 50  0000 C CNN
+F 2 "" H 15300 -4800 50  0001 C CNN
+F 3 "" H 15300 -4800 50  0001 C CNN
+	1    15300 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 -5000 15300 -5000
+Wire Wire Line
+	15300 -5000 15300 -4900
+Wire Wire Line
+	15450 -4900 15300 -4900
+Connection ~ 15300 -4900
+Wire Wire Line
+	15300 -4900 15300 -4800
+Wire Wire Line
+	15450 -4800 15300 -4800
+Connection ~ 15300 -4800
+Wire Wire Line
+	15450 -5300 15400 -5300
+Wire Wire Line
+	15400 -5300 15400 -5200
+Connection ~ 15400 -5200
+Wire Wire Line
+	15400 -5200 15450 -5200
+Wire Wire Line
+	15350 -5450 15450 -5450
+Wire Wire Line
+	15450 -5450 15450 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U9
+U 1 1 5DA2FBDA
+P 17450 -5150
+F 0 "U9" H 17450 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 -5100 60  0001 C CNN
+F 3 "" H 17450 -5100 60  0001 C CNN
+	1    17450 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR016
+U 1 1 5DA2FBE6
+P 16850 -5450
+F 0 "#PWR016" H 16850 -5600 50  0001 C CNN
+F 1 "+5V" H 16865 -5277 50  0000 C CNN
+F 2 "" H 16850 -5450 50  0001 C CNN
+F 3 "" H 16850 -5450 50  0001 C CNN
+	1    16850 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5DA2FBEC
+P 16800 -4800
+F 0 "#PWR036" H 16800 -5050 50  0001 C CNN
+F 1 "GND" H 16805 -4973 50  0000 C CNN
+F 2 "" H 16800 -4800 50  0001 C CNN
+F 3 "" H 16800 -4800 50  0001 C CNN
+	1    16800 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 -5000 16800 -5000
+Wire Wire Line
+	16800 -5000 16800 -4900
+Wire Wire Line
+	16950 -4900 16800 -4900
+Connection ~ 16800 -4900
+Wire Wire Line
+	16800 -4900 16800 -4800
+Wire Wire Line
+	16950 -4800 16800 -4800
+Connection ~ 16800 -4800
+Wire Wire Line
+	16950 -5300 16900 -5300
+Wire Wire Line
+	16900 -5300 16900 -5200
+Connection ~ 16900 -5200
+Wire Wire Line
+	16900 -5200 16950 -5200
+Wire Wire Line
+	16850 -5450 16950 -5450
+Wire Wire Line
+	16950 -5450 16950 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U10
+U 1 1 5DA3316D
+P 18950 -5150
+F 0 "U10" H 18950 -4563 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 -4669 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 -5100 60  0001 C CNN
+F 3 "" H 18950 -5100 60  0001 C CNN
+	1    18950 -5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 5DA33179
+P 18350 -5450
+F 0 "#PWR017" H 18350 -5600 50  0001 C CNN
+F 1 "+5V" H 18365 -5277 50  0000 C CNN
+F 2 "" H 18350 -5450 50  0001 C CNN
+F 3 "" H 18350 -5450 50  0001 C CNN
+	1    18350 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5DA3317F
+P 18300 -4800
+F 0 "#PWR037" H 18300 -5050 50  0001 C CNN
+F 1 "GND" H 18305 -4973 50  0000 C CNN
+F 2 "" H 18300 -4800 50  0001 C CNN
+F 3 "" H 18300 -4800 50  0001 C CNN
+	1    18300 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 -5000 18300 -5000
+Wire Wire Line
+	18300 -5000 18300 -4900
+Wire Wire Line
+	18450 -4900 18300 -4900
+Connection ~ 18300 -4900
+Wire Wire Line
+	18300 -4900 18300 -4800
+Wire Wire Line
+	18450 -4800 18300 -4800
+Connection ~ 18300 -4800
+Wire Wire Line
+	18450 -5300 18400 -5300
+Wire Wire Line
+	18400 -5300 18400 -5200
+Connection ~ 18400 -5200
+Wire Wire Line
+	18400 -5200 18450 -5200
+Wire Wire Line
+	18350 -5450 18450 -5450
+Wire Wire Line
+	18450 -5450 18450 -5400
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U11
+U 1 1 5DA573AD
+P 5450 -3700
+F 0 "U11" H 5450 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 -3650 60  0001 C CNN
+F 3 "" H 5450 -3650 60  0001 C CNN
+	1    5450 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR038
+U 1 1 5DA573B9
+P 4850 -4000
+F 0 "#PWR038" H 4850 -4150 50  0001 C CNN
+F 1 "+5V" H 4865 -3827 50  0000 C CNN
+F 2 "" H 4850 -4000 50  0001 C CNN
+F 3 "" H 4850 -4000 50  0001 C CNN
+	1    4850 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR058
+U 1 1 5DA573BF
+P 4800 -3350
+F 0 "#PWR058" H 4800 -3600 50  0001 C CNN
+F 1 "GND" H 4805 -3523 50  0000 C CNN
+F 2 "" H 4800 -3350 50  0001 C CNN
+F 3 "" H 4800 -3350 50  0001 C CNN
+	1    4800 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 -3550 4800 -3550
+Wire Wire Line
+	4800 -3550 4800 -3450
+Wire Wire Line
+	4950 -3450 4800 -3450
+Connection ~ 4800 -3450
+Wire Wire Line
+	4800 -3450 4800 -3350
+Wire Wire Line
+	4950 -3350 4800 -3350
+Connection ~ 4800 -3350
+Wire Wire Line
+	4950 -3850 4900 -3850
+Wire Wire Line
+	4900 -3850 4900 -3750
+Connection ~ 4900 -3750
+Wire Wire Line
+	4900 -3750 4950 -3750
+Wire Wire Line
+	4850 -4000 4950 -4000
+Wire Wire Line
+	4950 -4000 4950 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U12
+U 1 1 5DA573D3
+P 6950 -3700
+F 0 "U12" H 6950 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 -3650 60  0001 C CNN
+F 3 "" H 6950 -3650 60  0001 C CNN
+	1    6950 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR039
+U 1 1 5DA573DF
+P 6350 -4000
+F 0 "#PWR039" H 6350 -4150 50  0001 C CNN
+F 1 "+5V" H 6365 -3827 50  0000 C CNN
+F 2 "" H 6350 -4000 50  0001 C CNN
+F 3 "" H 6350 -4000 50  0001 C CNN
+	1    6350 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR059
+U 1 1 5DA573E5
+P 6300 -3350
+F 0 "#PWR059" H 6300 -3600 50  0001 C CNN
+F 1 "GND" H 6305 -3523 50  0000 C CNN
+F 2 "" H 6300 -3350 50  0001 C CNN
+F 3 "" H 6300 -3350 50  0001 C CNN
+	1    6300 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 -3550 6300 -3550
+Wire Wire Line
+	6300 -3550 6300 -3450
+Wire Wire Line
+	6450 -3450 6300 -3450
+Connection ~ 6300 -3450
+Wire Wire Line
+	6300 -3450 6300 -3350
+Wire Wire Line
+	6450 -3350 6300 -3350
+Connection ~ 6300 -3350
+Wire Wire Line
+	6450 -3850 6400 -3850
+Wire Wire Line
+	6400 -3850 6400 -3750
+Connection ~ 6400 -3750
+Wire Wire Line
+	6400 -3750 6450 -3750
+Wire Wire Line
+	6350 -4000 6450 -4000
+Wire Wire Line
+	6450 -4000 6450 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U13
+U 1 1 5DA573F9
+P 8450 -3700
+F 0 "U13" H 8450 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 -3650 60  0001 C CNN
+F 3 "" H 8450 -3650 60  0001 C CNN
+	1    8450 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR040
+U 1 1 5DA57405
+P 7850 -4000
+F 0 "#PWR040" H 7850 -4150 50  0001 C CNN
+F 1 "+5V" H 7865 -3827 50  0000 C CNN
+F 2 "" H 7850 -4000 50  0001 C CNN
+F 3 "" H 7850 -4000 50  0001 C CNN
+	1    7850 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR060
+U 1 1 5DA5740B
+P 7800 -3350
+F 0 "#PWR060" H 7800 -3600 50  0001 C CNN
+F 1 "GND" H 7805 -3523 50  0000 C CNN
+F 2 "" H 7800 -3350 50  0001 C CNN
+F 3 "" H 7800 -3350 50  0001 C CNN
+	1    7800 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 -3550 7800 -3550
+Wire Wire Line
+	7800 -3550 7800 -3450
+Wire Wire Line
+	7950 -3450 7800 -3450
+Connection ~ 7800 -3450
+Wire Wire Line
+	7800 -3450 7800 -3350
+Wire Wire Line
+	7950 -3350 7800 -3350
+Connection ~ 7800 -3350
+Wire Wire Line
+	7950 -3850 7900 -3850
+Wire Wire Line
+	7900 -3850 7900 -3750
+Connection ~ 7900 -3750
+Wire Wire Line
+	7900 -3750 7950 -3750
+Wire Wire Line
+	7850 -4000 7950 -4000
+Wire Wire Line
+	7950 -4000 7950 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U14
+U 1 1 5DA5741F
+P 9950 -3700
+F 0 "U14" H 9950 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 -3650 60  0001 C CNN
+F 3 "" H 9950 -3650 60  0001 C CNN
+	1    9950 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR041
+U 1 1 5DA5742B
+P 9350 -4000
+F 0 "#PWR041" H 9350 -4150 50  0001 C CNN
+F 1 "+5V" H 9365 -3827 50  0000 C CNN
+F 2 "" H 9350 -4000 50  0001 C CNN
+F 3 "" H 9350 -4000 50  0001 C CNN
+	1    9350 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR061
+U 1 1 5DA57431
+P 9300 -3350
+F 0 "#PWR061" H 9300 -3600 50  0001 C CNN
+F 1 "GND" H 9305 -3523 50  0000 C CNN
+F 2 "" H 9300 -3350 50  0001 C CNN
+F 3 "" H 9300 -3350 50  0001 C CNN
+	1    9300 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 -3550 9300 -3550
+Wire Wire Line
+	9300 -3550 9300 -3450
+Wire Wire Line
+	9450 -3450 9300 -3450
+Connection ~ 9300 -3450
+Wire Wire Line
+	9300 -3450 9300 -3350
+Wire Wire Line
+	9450 -3350 9300 -3350
+Connection ~ 9300 -3350
+Wire Wire Line
+	9450 -3850 9400 -3850
+Wire Wire Line
+	9400 -3850 9400 -3750
+Connection ~ 9400 -3750
+Wire Wire Line
+	9400 -3750 9450 -3750
+Wire Wire Line
+	9350 -4000 9450 -4000
+Wire Wire Line
+	9450 -4000 9450 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U15
+U 1 1 5DA57445
+P 11450 -3700
+F 0 "U15" H 11450 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 -3650 60  0001 C CNN
+F 3 "" H 11450 -3650 60  0001 C CNN
+	1    11450 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR042
+U 1 1 5DA57451
+P 10850 -4000
+F 0 "#PWR042" H 10850 -4150 50  0001 C CNN
+F 1 "+5V" H 10865 -3827 50  0000 C CNN
+F 2 "" H 10850 -4000 50  0001 C CNN
+F 3 "" H 10850 -4000 50  0001 C CNN
+	1    10850 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR062
+U 1 1 5DA57457
+P 10800 -3350
+F 0 "#PWR062" H 10800 -3600 50  0001 C CNN
+F 1 "GND" H 10805 -3523 50  0000 C CNN
+F 2 "" H 10800 -3350 50  0001 C CNN
+F 3 "" H 10800 -3350 50  0001 C CNN
+	1    10800 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 -3550 10800 -3550
+Wire Wire Line
+	10800 -3550 10800 -3450
+Wire Wire Line
+	10950 -3450 10800 -3450
+Connection ~ 10800 -3450
+Wire Wire Line
+	10800 -3450 10800 -3350
+Wire Wire Line
+	10950 -3350 10800 -3350
+Connection ~ 10800 -3350
+Wire Wire Line
+	10950 -3850 10900 -3850
+Wire Wire Line
+	10900 -3850 10900 -3750
+Connection ~ 10900 -3750
+Wire Wire Line
+	10900 -3750 10950 -3750
+Wire Wire Line
+	10850 -4000 10950 -4000
+Wire Wire Line
+	10950 -4000 10950 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U16
+U 1 1 5DA5746B
+P 12950 -3700
+F 0 "U16" H 12950 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 -3650 60  0001 C CNN
+F 3 "" H 12950 -3650 60  0001 C CNN
+	1    12950 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR043
+U 1 1 5DA57477
+P 12350 -4000
+F 0 "#PWR043" H 12350 -4150 50  0001 C CNN
+F 1 "+5V" H 12365 -3827 50  0000 C CNN
+F 2 "" H 12350 -4000 50  0001 C CNN
+F 3 "" H 12350 -4000 50  0001 C CNN
+	1    12350 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR063
+U 1 1 5DA5747D
+P 12300 -3350
+F 0 "#PWR063" H 12300 -3600 50  0001 C CNN
+F 1 "GND" H 12305 -3523 50  0000 C CNN
+F 2 "" H 12300 -3350 50  0001 C CNN
+F 3 "" H 12300 -3350 50  0001 C CNN
+	1    12300 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 -3550 12300 -3550
+Wire Wire Line
+	12300 -3550 12300 -3450
+Wire Wire Line
+	12450 -3450 12300 -3450
+Connection ~ 12300 -3450
+Wire Wire Line
+	12300 -3450 12300 -3350
+Wire Wire Line
+	12450 -3350 12300 -3350
+Connection ~ 12300 -3350
+Wire Wire Line
+	12450 -3850 12400 -3850
+Wire Wire Line
+	12400 -3850 12400 -3750
+Connection ~ 12400 -3750
+Wire Wire Line
+	12400 -3750 12450 -3750
+Wire Wire Line
+	12350 -4000 12450 -4000
+Wire Wire Line
+	12450 -4000 12450 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U17
+U 1 1 5DA57491
+P 14450 -3700
+F 0 "U17" H 14450 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 -3650 60  0001 C CNN
+F 3 "" H 14450 -3650 60  0001 C CNN
+	1    14450 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR044
+U 1 1 5DA5749D
+P 13850 -4000
+F 0 "#PWR044" H 13850 -4150 50  0001 C CNN
+F 1 "+5V" H 13865 -3827 50  0000 C CNN
+F 2 "" H 13850 -4000 50  0001 C CNN
+F 3 "" H 13850 -4000 50  0001 C CNN
+	1    13850 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR064
+U 1 1 5DA574A3
+P 13800 -3350
+F 0 "#PWR064" H 13800 -3600 50  0001 C CNN
+F 1 "GND" H 13805 -3523 50  0000 C CNN
+F 2 "" H 13800 -3350 50  0001 C CNN
+F 3 "" H 13800 -3350 50  0001 C CNN
+	1    13800 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 -3550 13800 -3550
+Wire Wire Line
+	13800 -3550 13800 -3450
+Wire Wire Line
+	13950 -3450 13800 -3450
+Connection ~ 13800 -3450
+Wire Wire Line
+	13800 -3450 13800 -3350
+Wire Wire Line
+	13950 -3350 13800 -3350
+Connection ~ 13800 -3350
+Wire Wire Line
+	13950 -3850 13900 -3850
+Wire Wire Line
+	13900 -3850 13900 -3750
+Connection ~ 13900 -3750
+Wire Wire Line
+	13900 -3750 13950 -3750
+Wire Wire Line
+	13850 -4000 13950 -4000
+Wire Wire Line
+	13950 -4000 13950 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U18
+U 1 1 5DA574B7
+P 15950 -3700
+F 0 "U18" H 15950 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 -3650 60  0001 C CNN
+F 3 "" H 15950 -3650 60  0001 C CNN
+	1    15950 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR045
+U 1 1 5DA574C3
+P 15350 -4000
+F 0 "#PWR045" H 15350 -4150 50  0001 C CNN
+F 1 "+5V" H 15365 -3827 50  0000 C CNN
+F 2 "" H 15350 -4000 50  0001 C CNN
+F 3 "" H 15350 -4000 50  0001 C CNN
+	1    15350 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR065
+U 1 1 5DA574C9
+P 15300 -3350
+F 0 "#PWR065" H 15300 -3600 50  0001 C CNN
+F 1 "GND" H 15305 -3523 50  0000 C CNN
+F 2 "" H 15300 -3350 50  0001 C CNN
+F 3 "" H 15300 -3350 50  0001 C CNN
+	1    15300 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 -3550 15300 -3550
+Wire Wire Line
+	15300 -3550 15300 -3450
+Wire Wire Line
+	15450 -3450 15300 -3450
+Connection ~ 15300 -3450
+Wire Wire Line
+	15300 -3450 15300 -3350
+Wire Wire Line
+	15450 -3350 15300 -3350
+Connection ~ 15300 -3350
+Wire Wire Line
+	15450 -3850 15400 -3850
+Wire Wire Line
+	15400 -3850 15400 -3750
+Connection ~ 15400 -3750
+Wire Wire Line
+	15400 -3750 15450 -3750
+Wire Wire Line
+	15350 -4000 15450 -4000
+Wire Wire Line
+	15450 -4000 15450 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U19
+U 1 1 5DA574DD
+P 17450 -3700
+F 0 "U19" H 17450 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 -3650 60  0001 C CNN
+F 3 "" H 17450 -3650 60  0001 C CNN
+	1    17450 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR046
+U 1 1 5DA574E9
+P 16850 -4000
+F 0 "#PWR046" H 16850 -4150 50  0001 C CNN
+F 1 "+5V" H 16865 -3827 50  0000 C CNN
+F 2 "" H 16850 -4000 50  0001 C CNN
+F 3 "" H 16850 -4000 50  0001 C CNN
+	1    16850 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR066
+U 1 1 5DA574EF
+P 16800 -3350
+F 0 "#PWR066" H 16800 -3600 50  0001 C CNN
+F 1 "GND" H 16805 -3523 50  0000 C CNN
+F 2 "" H 16800 -3350 50  0001 C CNN
+F 3 "" H 16800 -3350 50  0001 C CNN
+	1    16800 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 -3550 16800 -3550
+Wire Wire Line
+	16800 -3550 16800 -3450
+Wire Wire Line
+	16950 -3450 16800 -3450
+Connection ~ 16800 -3450
+Wire Wire Line
+	16800 -3450 16800 -3350
+Wire Wire Line
+	16950 -3350 16800 -3350
+Connection ~ 16800 -3350
+Wire Wire Line
+	16950 -3850 16900 -3850
+Wire Wire Line
+	16900 -3850 16900 -3750
+Connection ~ 16900 -3750
+Wire Wire Line
+	16900 -3750 16950 -3750
+Wire Wire Line
+	16850 -4000 16950 -4000
+Wire Wire Line
+	16950 -4000 16950 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U20
+U 1 1 5DA57503
+P 18950 -3700
+F 0 "U20" H 18950 -3113 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 -3219 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 -3650 60  0001 C CNN
+F 3 "" H 18950 -3650 60  0001 C CNN
+	1    18950 -3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR047
+U 1 1 5DA5750F
+P 18350 -4000
+F 0 "#PWR047" H 18350 -4150 50  0001 C CNN
+F 1 "+5V" H 18365 -3827 50  0000 C CNN
+F 2 "" H 18350 -4000 50  0001 C CNN
+F 3 "" H 18350 -4000 50  0001 C CNN
+	1    18350 -4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR067
+U 1 1 5DA57515
+P 18300 -3350
+F 0 "#PWR067" H 18300 -3600 50  0001 C CNN
+F 1 "GND" H 18305 -3523 50  0000 C CNN
+F 2 "" H 18300 -3350 50  0001 C CNN
+F 3 "" H 18300 -3350 50  0001 C CNN
+	1    18300 -3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 -3550 18300 -3550
+Wire Wire Line
+	18300 -3550 18300 -3450
+Wire Wire Line
+	18450 -3450 18300 -3450
+Connection ~ 18300 -3450
+Wire Wire Line
+	18300 -3450 18300 -3350
+Wire Wire Line
+	18450 -3350 18300 -3350
+Connection ~ 18300 -3350
+Wire Wire Line
+	18450 -3850 18400 -3850
+Wire Wire Line
+	18400 -3850 18400 -3750
+Connection ~ 18400 -3750
+Wire Wire Line
+	18400 -3750 18450 -3750
+Wire Wire Line
+	18350 -4000 18450 -4000
+Wire Wire Line
+	18450 -4000 18450 -3950
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U21
+U 1 1 5DA72FFA
+P 5450 -2250
+F 0 "U21" H 5450 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 -2200 60  0001 C CNN
+F 3 "" H 5450 -2200 60  0001 C CNN
+	1    5450 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR068
+U 1 1 5DA73006
+P 4850 -2550
+F 0 "#PWR068" H 4850 -2700 50  0001 C CNN
+F 1 "+5V" H 4865 -2377 50  0000 C CNN
+F 2 "" H 4850 -2550 50  0001 C CNN
+F 3 "" H 4850 -2550 50  0001 C CNN
+	1    4850 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR088
+U 1 1 5DA7300C
+P 4800 -1900
+F 0 "#PWR088" H 4800 -2150 50  0001 C CNN
+F 1 "GND" H 4805 -2073 50  0000 C CNN
+F 2 "" H 4800 -1900 50  0001 C CNN
+F 3 "" H 4800 -1900 50  0001 C CNN
+	1    4800 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 -2100 4800 -2100
+Wire Wire Line
+	4800 -2100 4800 -2000
+Wire Wire Line
+	4950 -2000 4800 -2000
+Connection ~ 4800 -2000
+Wire Wire Line
+	4800 -2000 4800 -1900
+Wire Wire Line
+	4950 -1900 4800 -1900
+Connection ~ 4800 -1900
+Wire Wire Line
+	4950 -2400 4900 -2400
+Wire Wire Line
+	4900 -2400 4900 -2300
+Connection ~ 4900 -2300
+Wire Wire Line
+	4900 -2300 4950 -2300
+Wire Wire Line
+	4850 -2550 4950 -2550
+Wire Wire Line
+	4950 -2550 4950 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U22
+U 1 1 5DA73020
+P 6950 -2250
+F 0 "U22" H 6950 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 -2200 60  0001 C CNN
+F 3 "" H 6950 -2200 60  0001 C CNN
+	1    6950 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR069
+U 1 1 5DA7302C
+P 6350 -2550
+F 0 "#PWR069" H 6350 -2700 50  0001 C CNN
+F 1 "+5V" H 6365 -2377 50  0000 C CNN
+F 2 "" H 6350 -2550 50  0001 C CNN
+F 3 "" H 6350 -2550 50  0001 C CNN
+	1    6350 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR089
+U 1 1 5DA73032
+P 6300 -1900
+F 0 "#PWR089" H 6300 -2150 50  0001 C CNN
+F 1 "GND" H 6305 -2073 50  0000 C CNN
+F 2 "" H 6300 -1900 50  0001 C CNN
+F 3 "" H 6300 -1900 50  0001 C CNN
+	1    6300 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 -2100 6300 -2100
+Wire Wire Line
+	6300 -2100 6300 -2000
+Wire Wire Line
+	6450 -2000 6300 -2000
+Connection ~ 6300 -2000
+Wire Wire Line
+	6300 -2000 6300 -1900
+Wire Wire Line
+	6450 -1900 6300 -1900
+Connection ~ 6300 -1900
+Wire Wire Line
+	6450 -2400 6400 -2400
+Wire Wire Line
+	6400 -2400 6400 -2300
+Connection ~ 6400 -2300
+Wire Wire Line
+	6400 -2300 6450 -2300
+Wire Wire Line
+	6350 -2550 6450 -2550
+Wire Wire Line
+	6450 -2550 6450 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U23
+U 1 1 5DA73046
+P 8450 -2250
+F 0 "U23" H 8450 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 -2200 60  0001 C CNN
+F 3 "" H 8450 -2200 60  0001 C CNN
+	1    8450 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR070
+U 1 1 5DA73052
+P 7850 -2550
+F 0 "#PWR070" H 7850 -2700 50  0001 C CNN
+F 1 "+5V" H 7865 -2377 50  0000 C CNN
+F 2 "" H 7850 -2550 50  0001 C CNN
+F 3 "" H 7850 -2550 50  0001 C CNN
+	1    7850 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR090
+U 1 1 5DA73058
+P 7800 -1900
+F 0 "#PWR090" H 7800 -2150 50  0001 C CNN
+F 1 "GND" H 7805 -2073 50  0000 C CNN
+F 2 "" H 7800 -1900 50  0001 C CNN
+F 3 "" H 7800 -1900 50  0001 C CNN
+	1    7800 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 -2100 7800 -2100
+Wire Wire Line
+	7800 -2100 7800 -2000
+Wire Wire Line
+	7950 -2000 7800 -2000
+Connection ~ 7800 -2000
+Wire Wire Line
+	7800 -2000 7800 -1900
+Wire Wire Line
+	7950 -1900 7800 -1900
+Connection ~ 7800 -1900
+Wire Wire Line
+	7950 -2400 7900 -2400
+Wire Wire Line
+	7900 -2400 7900 -2300
+Connection ~ 7900 -2300
+Wire Wire Line
+	7900 -2300 7950 -2300
+Wire Wire Line
+	7850 -2550 7950 -2550
+Wire Wire Line
+	7950 -2550 7950 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U24
+U 1 1 5DA7306C
+P 9950 -2250
+F 0 "U24" H 9950 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 -2200 60  0001 C CNN
+F 3 "" H 9950 -2200 60  0001 C CNN
+	1    9950 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR071
+U 1 1 5DA73078
+P 9350 -2550
+F 0 "#PWR071" H 9350 -2700 50  0001 C CNN
+F 1 "+5V" H 9365 -2377 50  0000 C CNN
+F 2 "" H 9350 -2550 50  0001 C CNN
+F 3 "" H 9350 -2550 50  0001 C CNN
+	1    9350 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR091
+U 1 1 5DA7307E
+P 9300 -1900
+F 0 "#PWR091" H 9300 -2150 50  0001 C CNN
+F 1 "GND" H 9305 -2073 50  0000 C CNN
+F 2 "" H 9300 -1900 50  0001 C CNN
+F 3 "" H 9300 -1900 50  0001 C CNN
+	1    9300 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 -2100 9300 -2100
+Wire Wire Line
+	9300 -2100 9300 -2000
+Wire Wire Line
+	9450 -2000 9300 -2000
+Connection ~ 9300 -2000
+Wire Wire Line
+	9300 -2000 9300 -1900
+Wire Wire Line
+	9450 -1900 9300 -1900
+Connection ~ 9300 -1900
+Wire Wire Line
+	9450 -2400 9400 -2400
+Wire Wire Line
+	9400 -2400 9400 -2300
+Connection ~ 9400 -2300
+Wire Wire Line
+	9400 -2300 9450 -2300
+Wire Wire Line
+	9350 -2550 9450 -2550
+Wire Wire Line
+	9450 -2550 9450 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U25
+U 1 1 5DA73092
+P 11450 -2250
+F 0 "U25" H 11450 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 -2200 60  0001 C CNN
+F 3 "" H 11450 -2200 60  0001 C CNN
+	1    11450 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR072
+U 1 1 5DA7309E
+P 10850 -2550
+F 0 "#PWR072" H 10850 -2700 50  0001 C CNN
+F 1 "+5V" H 10865 -2377 50  0000 C CNN
+F 2 "" H 10850 -2550 50  0001 C CNN
+F 3 "" H 10850 -2550 50  0001 C CNN
+	1    10850 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR092
+U 1 1 5DA730A4
+P 10800 -1900
+F 0 "#PWR092" H 10800 -2150 50  0001 C CNN
+F 1 "GND" H 10805 -2073 50  0000 C CNN
+F 2 "" H 10800 -1900 50  0001 C CNN
+F 3 "" H 10800 -1900 50  0001 C CNN
+	1    10800 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 -2100 10800 -2100
+Wire Wire Line
+	10800 -2100 10800 -2000
+Wire Wire Line
+	10950 -2000 10800 -2000
+Connection ~ 10800 -2000
+Wire Wire Line
+	10800 -2000 10800 -1900
+Wire Wire Line
+	10950 -1900 10800 -1900
+Connection ~ 10800 -1900
+Wire Wire Line
+	10950 -2400 10900 -2400
+Wire Wire Line
+	10900 -2400 10900 -2300
+Connection ~ 10900 -2300
+Wire Wire Line
+	10900 -2300 10950 -2300
+Wire Wire Line
+	10850 -2550 10950 -2550
+Wire Wire Line
+	10950 -2550 10950 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U26
+U 1 1 5DA730B8
+P 12950 -2250
+F 0 "U26" H 12950 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 -2200 60  0001 C CNN
+F 3 "" H 12950 -2200 60  0001 C CNN
+	1    12950 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR073
+U 1 1 5DA730C4
+P 12350 -2550
+F 0 "#PWR073" H 12350 -2700 50  0001 C CNN
+F 1 "+5V" H 12365 -2377 50  0000 C CNN
+F 2 "" H 12350 -2550 50  0001 C CNN
+F 3 "" H 12350 -2550 50  0001 C CNN
+	1    12350 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR093
+U 1 1 5DA730CA
+P 12300 -1900
+F 0 "#PWR093" H 12300 -2150 50  0001 C CNN
+F 1 "GND" H 12305 -2073 50  0000 C CNN
+F 2 "" H 12300 -1900 50  0001 C CNN
+F 3 "" H 12300 -1900 50  0001 C CNN
+	1    12300 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 -2100 12300 -2100
+Wire Wire Line
+	12300 -2100 12300 -2000
+Wire Wire Line
+	12450 -2000 12300 -2000
+Connection ~ 12300 -2000
+Wire Wire Line
+	12300 -2000 12300 -1900
+Wire Wire Line
+	12450 -1900 12300 -1900
+Connection ~ 12300 -1900
+Wire Wire Line
+	12450 -2400 12400 -2400
+Wire Wire Line
+	12400 -2400 12400 -2300
+Connection ~ 12400 -2300
+Wire Wire Line
+	12400 -2300 12450 -2300
+Wire Wire Line
+	12350 -2550 12450 -2550
+Wire Wire Line
+	12450 -2550 12450 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U27
+U 1 1 5DA730DE
+P 14450 -2250
+F 0 "U27" H 14450 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 -2200 60  0001 C CNN
+F 3 "" H 14450 -2200 60  0001 C CNN
+	1    14450 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR074
+U 1 1 5DA730EA
+P 13850 -2550
+F 0 "#PWR074" H 13850 -2700 50  0001 C CNN
+F 1 "+5V" H 13865 -2377 50  0000 C CNN
+F 2 "" H 13850 -2550 50  0001 C CNN
+F 3 "" H 13850 -2550 50  0001 C CNN
+	1    13850 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR094
+U 1 1 5DA730F0
+P 13800 -1900
+F 0 "#PWR094" H 13800 -2150 50  0001 C CNN
+F 1 "GND" H 13805 -2073 50  0000 C CNN
+F 2 "" H 13800 -1900 50  0001 C CNN
+F 3 "" H 13800 -1900 50  0001 C CNN
+	1    13800 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 -2100 13800 -2100
+Wire Wire Line
+	13800 -2100 13800 -2000
+Wire Wire Line
+	13950 -2000 13800 -2000
+Connection ~ 13800 -2000
+Wire Wire Line
+	13800 -2000 13800 -1900
+Wire Wire Line
+	13950 -1900 13800 -1900
+Connection ~ 13800 -1900
+Wire Wire Line
+	13950 -2400 13900 -2400
+Wire Wire Line
+	13900 -2400 13900 -2300
+Connection ~ 13900 -2300
+Wire Wire Line
+	13900 -2300 13950 -2300
+Wire Wire Line
+	13850 -2550 13950 -2550
+Wire Wire Line
+	13950 -2550 13950 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U28
+U 1 1 5DA73104
+P 15950 -2250
+F 0 "U28" H 15950 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 -2200 60  0001 C CNN
+F 3 "" H 15950 -2200 60  0001 C CNN
+	1    15950 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR075
+U 1 1 5DA73110
+P 15350 -2550
+F 0 "#PWR075" H 15350 -2700 50  0001 C CNN
+F 1 "+5V" H 15365 -2377 50  0000 C CNN
+F 2 "" H 15350 -2550 50  0001 C CNN
+F 3 "" H 15350 -2550 50  0001 C CNN
+	1    15350 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR095
+U 1 1 5DA73116
+P 15300 -1900
+F 0 "#PWR095" H 15300 -2150 50  0001 C CNN
+F 1 "GND" H 15305 -2073 50  0000 C CNN
+F 2 "" H 15300 -1900 50  0001 C CNN
+F 3 "" H 15300 -1900 50  0001 C CNN
+	1    15300 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 -2100 15300 -2100
+Wire Wire Line
+	15300 -2100 15300 -2000
+Wire Wire Line
+	15450 -2000 15300 -2000
+Connection ~ 15300 -2000
+Wire Wire Line
+	15300 -2000 15300 -1900
+Wire Wire Line
+	15450 -1900 15300 -1900
+Connection ~ 15300 -1900
+Wire Wire Line
+	15450 -2400 15400 -2400
+Wire Wire Line
+	15400 -2400 15400 -2300
+Connection ~ 15400 -2300
+Wire Wire Line
+	15400 -2300 15450 -2300
+Wire Wire Line
+	15350 -2550 15450 -2550
+Wire Wire Line
+	15450 -2550 15450 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U29
+U 1 1 5DA7312A
+P 17450 -2250
+F 0 "U29" H 17450 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 -2200 60  0001 C CNN
+F 3 "" H 17450 -2200 60  0001 C CNN
+	1    17450 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR076
+U 1 1 5DA73136
+P 16850 -2550
+F 0 "#PWR076" H 16850 -2700 50  0001 C CNN
+F 1 "+5V" H 16865 -2377 50  0000 C CNN
+F 2 "" H 16850 -2550 50  0001 C CNN
+F 3 "" H 16850 -2550 50  0001 C CNN
+	1    16850 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR096
+U 1 1 5DA7313C
+P 16800 -1900
+F 0 "#PWR096" H 16800 -2150 50  0001 C CNN
+F 1 "GND" H 16805 -2073 50  0000 C CNN
+F 2 "" H 16800 -1900 50  0001 C CNN
+F 3 "" H 16800 -1900 50  0001 C CNN
+	1    16800 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 -2100 16800 -2100
+Wire Wire Line
+	16800 -2100 16800 -2000
+Wire Wire Line
+	16950 -2000 16800 -2000
+Connection ~ 16800 -2000
+Wire Wire Line
+	16800 -2000 16800 -1900
+Wire Wire Line
+	16950 -1900 16800 -1900
+Connection ~ 16800 -1900
+Wire Wire Line
+	16950 -2400 16900 -2400
+Wire Wire Line
+	16900 -2400 16900 -2300
+Connection ~ 16900 -2300
+Wire Wire Line
+	16900 -2300 16950 -2300
+Wire Wire Line
+	16850 -2550 16950 -2550
+Wire Wire Line
+	16950 -2550 16950 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U30
+U 1 1 5DA73150
+P 18950 -2250
+F 0 "U30" H 18950 -1663 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 -1769 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 -2200 60  0001 C CNN
+F 3 "" H 18950 -2200 60  0001 C CNN
+	1    18950 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR077
+U 1 1 5DA7315C
+P 18350 -2550
+F 0 "#PWR077" H 18350 -2700 50  0001 C CNN
+F 1 "+5V" H 18365 -2377 50  0000 C CNN
+F 2 "" H 18350 -2550 50  0001 C CNN
+F 3 "" H 18350 -2550 50  0001 C CNN
+	1    18350 -2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR097
+U 1 1 5DA73162
+P 18300 -1900
+F 0 "#PWR097" H 18300 -2150 50  0001 C CNN
+F 1 "GND" H 18305 -2073 50  0000 C CNN
+F 2 "" H 18300 -1900 50  0001 C CNN
+F 3 "" H 18300 -1900 50  0001 C CNN
+	1    18300 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 -2100 18300 -2100
+Wire Wire Line
+	18300 -2100 18300 -2000
+Wire Wire Line
+	18450 -2000 18300 -2000
+Connection ~ 18300 -2000
+Wire Wire Line
+	18300 -2000 18300 -1900
+Wire Wire Line
+	18450 -1900 18300 -1900
+Connection ~ 18300 -1900
+Wire Wire Line
+	18450 -2400 18400 -2400
+Wire Wire Line
+	18400 -2400 18400 -2300
+Connection ~ 18400 -2300
+Wire Wire Line
+	18400 -2300 18450 -2300
+Wire Wire Line
+	18350 -2550 18450 -2550
+Wire Wire Line
+	18450 -2550 18450 -2500
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U31
+U 1 1 5DA98F06
+P 5450 -800
+F 0 "U31" H 5450 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 -750 60  0001 C CNN
+F 3 "" H 5450 -750 60  0001 C CNN
+	1    5450 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR098
+U 1 1 5DA98F12
+P 4850 -1100
+F 0 "#PWR098" H 4850 -1250 50  0001 C CNN
+F 1 "+5V" H 4865 -927 50  0000 C CNN
+F 2 "" H 4850 -1100 50  0001 C CNN
+F 3 "" H 4850 -1100 50  0001 C CNN
+	1    4850 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5DA98F18
+P 4800 -450
+F 0 "#PWR0118" H 4800 -700 50  0001 C CNN
+F 1 "GND" H 4805 -623 50  0000 C CNN
+F 2 "" H 4800 -450 50  0001 C CNN
+F 3 "" H 4800 -450 50  0001 C CNN
+	1    4800 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 -650 4800 -650
+Wire Wire Line
+	4800 -650 4800 -550
+Wire Wire Line
+	4950 -550 4800 -550
+Connection ~ 4800 -550
+Wire Wire Line
+	4800 -550 4800 -450
+Wire Wire Line
+	4950 -450 4800 -450
+Connection ~ 4800 -450
+Wire Wire Line
+	4950 -950 4900 -950
+Wire Wire Line
+	4900 -950 4900 -850
+Connection ~ 4900 -850
+Wire Wire Line
+	4900 -850 4950 -850
+Wire Wire Line
+	4850 -1100 4950 -1100
+Wire Wire Line
+	4950 -1100 4950 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U32
+U 1 1 5DA98F2C
+P 6950 -800
+F 0 "U32" H 6950 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 -750 60  0001 C CNN
+F 3 "" H 6950 -750 60  0001 C CNN
+	1    6950 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR099
+U 1 1 5DA98F38
+P 6350 -1100
+F 0 "#PWR099" H 6350 -1250 50  0001 C CNN
+F 1 "+5V" H 6365 -927 50  0000 C CNN
+F 2 "" H 6350 -1100 50  0001 C CNN
+F 3 "" H 6350 -1100 50  0001 C CNN
+	1    6350 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5DA98F3E
+P 6300 -450
+F 0 "#PWR0119" H 6300 -700 50  0001 C CNN
+F 1 "GND" H 6305 -623 50  0000 C CNN
+F 2 "" H 6300 -450 50  0001 C CNN
+F 3 "" H 6300 -450 50  0001 C CNN
+	1    6300 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 -650 6300 -650
+Wire Wire Line
+	6300 -650 6300 -550
+Wire Wire Line
+	6450 -550 6300 -550
+Connection ~ 6300 -550
+Wire Wire Line
+	6300 -550 6300 -450
+Wire Wire Line
+	6450 -450 6300 -450
+Connection ~ 6300 -450
+Wire Wire Line
+	6450 -950 6400 -950
+Wire Wire Line
+	6400 -950 6400 -850
+Connection ~ 6400 -850
+Wire Wire Line
+	6400 -850 6450 -850
+Wire Wire Line
+	6350 -1100 6450 -1100
+Wire Wire Line
+	6450 -1100 6450 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U33
+U 1 1 5DA98F52
+P 8450 -800
+F 0 "U33" H 8450 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 -750 60  0001 C CNN
+F 3 "" H 8450 -750 60  0001 C CNN
+	1    8450 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0100
+U 1 1 5DA98F5E
+P 7850 -1100
+F 0 "#PWR0100" H 7850 -1250 50  0001 C CNN
+F 1 "+5V" H 7865 -927 50  0000 C CNN
+F 2 "" H 7850 -1100 50  0001 C CNN
+F 3 "" H 7850 -1100 50  0001 C CNN
+	1    7850 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5DA98F64
+P 7800 -450
+F 0 "#PWR0120" H 7800 -700 50  0001 C CNN
+F 1 "GND" H 7805 -623 50  0000 C CNN
+F 2 "" H 7800 -450 50  0001 C CNN
+F 3 "" H 7800 -450 50  0001 C CNN
+	1    7800 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 -650 7800 -650
+Wire Wire Line
+	7800 -650 7800 -550
+Wire Wire Line
+	7950 -550 7800 -550
+Connection ~ 7800 -550
+Wire Wire Line
+	7800 -550 7800 -450
+Wire Wire Line
+	7950 -450 7800 -450
+Connection ~ 7800 -450
+Wire Wire Line
+	7950 -950 7900 -950
+Wire Wire Line
+	7900 -950 7900 -850
+Connection ~ 7900 -850
+Wire Wire Line
+	7900 -850 7950 -850
+Wire Wire Line
+	7850 -1100 7950 -1100
+Wire Wire Line
+	7950 -1100 7950 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U34
+U 1 1 5DA98F78
+P 9950 -800
+F 0 "U34" H 9950 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 -750 60  0001 C CNN
+F 3 "" H 9950 -750 60  0001 C CNN
+	1    9950 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5DA98F84
+P 9350 -1100
+F 0 "#PWR0101" H 9350 -1250 50  0001 C CNN
+F 1 "+5V" H 9365 -927 50  0000 C CNN
+F 2 "" H 9350 -1100 50  0001 C CNN
+F 3 "" H 9350 -1100 50  0001 C CNN
+	1    9350 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5DA98F8A
+P 9300 -450
+F 0 "#PWR0121" H 9300 -700 50  0001 C CNN
+F 1 "GND" H 9305 -623 50  0000 C CNN
+F 2 "" H 9300 -450 50  0001 C CNN
+F 3 "" H 9300 -450 50  0001 C CNN
+	1    9300 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 -650 9300 -650
+Wire Wire Line
+	9300 -650 9300 -550
+Wire Wire Line
+	9450 -550 9300 -550
+Connection ~ 9300 -550
+Wire Wire Line
+	9300 -550 9300 -450
+Wire Wire Line
+	9450 -450 9300 -450
+Connection ~ 9300 -450
+Wire Wire Line
+	9450 -950 9400 -950
+Wire Wire Line
+	9400 -950 9400 -850
+Connection ~ 9400 -850
+Wire Wire Line
+	9400 -850 9450 -850
+Wire Wire Line
+	9350 -1100 9450 -1100
+Wire Wire Line
+	9450 -1100 9450 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U35
+U 1 1 5DA98F9E
+P 11450 -800
+F 0 "U35" H 11450 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 -750 60  0001 C CNN
+F 3 "" H 11450 -750 60  0001 C CNN
+	1    11450 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5DA98FAA
+P 10850 -1100
+F 0 "#PWR0102" H 10850 -1250 50  0001 C CNN
+F 1 "+5V" H 10865 -927 50  0000 C CNN
+F 2 "" H 10850 -1100 50  0001 C CNN
+F 3 "" H 10850 -1100 50  0001 C CNN
+	1    10850 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5DA98FB0
+P 10800 -450
+F 0 "#PWR0122" H 10800 -700 50  0001 C CNN
+F 1 "GND" H 10805 -623 50  0000 C CNN
+F 2 "" H 10800 -450 50  0001 C CNN
+F 3 "" H 10800 -450 50  0001 C CNN
+	1    10800 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 -650 10800 -650
+Wire Wire Line
+	10800 -650 10800 -550
+Wire Wire Line
+	10950 -550 10800 -550
+Connection ~ 10800 -550
+Wire Wire Line
+	10800 -550 10800 -450
+Wire Wire Line
+	10950 -450 10800 -450
+Connection ~ 10800 -450
+Wire Wire Line
+	10950 -950 10900 -950
+Wire Wire Line
+	10900 -950 10900 -850
+Connection ~ 10900 -850
+Wire Wire Line
+	10900 -850 10950 -850
+Wire Wire Line
+	10850 -1100 10950 -1100
+Wire Wire Line
+	10950 -1100 10950 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U36
+U 1 1 5DA98FC4
+P 12950 -800
+F 0 "U36" H 12950 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 -750 60  0001 C CNN
+F 3 "" H 12950 -750 60  0001 C CNN
+	1    12950 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5DA98FD0
+P 12350 -1100
+F 0 "#PWR0103" H 12350 -1250 50  0001 C CNN
+F 1 "+5V" H 12365 -927 50  0000 C CNN
+F 2 "" H 12350 -1100 50  0001 C CNN
+F 3 "" H 12350 -1100 50  0001 C CNN
+	1    12350 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5DA98FD6
+P 12300 -450
+F 0 "#PWR0123" H 12300 -700 50  0001 C CNN
+F 1 "GND" H 12305 -623 50  0000 C CNN
+F 2 "" H 12300 -450 50  0001 C CNN
+F 3 "" H 12300 -450 50  0001 C CNN
+	1    12300 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 -650 12300 -650
+Wire Wire Line
+	12300 -650 12300 -550
+Wire Wire Line
+	12450 -550 12300 -550
+Connection ~ 12300 -550
+Wire Wire Line
+	12300 -550 12300 -450
+Wire Wire Line
+	12450 -450 12300 -450
+Connection ~ 12300 -450
+Wire Wire Line
+	12450 -950 12400 -950
+Wire Wire Line
+	12400 -950 12400 -850
+Connection ~ 12400 -850
+Wire Wire Line
+	12400 -850 12450 -850
+Wire Wire Line
+	12350 -1100 12450 -1100
+Wire Wire Line
+	12450 -1100 12450 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U37
+U 1 1 5DA98FEA
+P 14450 -800
+F 0 "U37" H 14450 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 -750 60  0001 C CNN
+F 3 "" H 14450 -750 60  0001 C CNN
+	1    14450 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5DA98FF6
+P 13850 -1100
+F 0 "#PWR0104" H 13850 -1250 50  0001 C CNN
+F 1 "+5V" H 13865 -927 50  0000 C CNN
+F 2 "" H 13850 -1100 50  0001 C CNN
+F 3 "" H 13850 -1100 50  0001 C CNN
+	1    13850 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5DA98FFC
+P 13800 -450
+F 0 "#PWR0124" H 13800 -700 50  0001 C CNN
+F 1 "GND" H 13805 -623 50  0000 C CNN
+F 2 "" H 13800 -450 50  0001 C CNN
+F 3 "" H 13800 -450 50  0001 C CNN
+	1    13800 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 -650 13800 -650
+Wire Wire Line
+	13800 -650 13800 -550
+Wire Wire Line
+	13950 -550 13800 -550
+Connection ~ 13800 -550
+Wire Wire Line
+	13800 -550 13800 -450
+Wire Wire Line
+	13950 -450 13800 -450
+Connection ~ 13800 -450
+Wire Wire Line
+	13950 -950 13900 -950
+Wire Wire Line
+	13900 -950 13900 -850
+Connection ~ 13900 -850
+Wire Wire Line
+	13900 -850 13950 -850
+Wire Wire Line
+	13850 -1100 13950 -1100
+Wire Wire Line
+	13950 -1100 13950 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U38
+U 1 1 5DA99010
+P 15950 -800
+F 0 "U38" H 15950 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 -750 60  0001 C CNN
+F 3 "" H 15950 -750 60  0001 C CNN
+	1    15950 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5DA9901C
+P 15350 -1100
+F 0 "#PWR0105" H 15350 -1250 50  0001 C CNN
+F 1 "+5V" H 15365 -927 50  0000 C CNN
+F 2 "" H 15350 -1100 50  0001 C CNN
+F 3 "" H 15350 -1100 50  0001 C CNN
+	1    15350 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5DA99022
+P 15300 -450
+F 0 "#PWR0125" H 15300 -700 50  0001 C CNN
+F 1 "GND" H 15305 -623 50  0000 C CNN
+F 2 "" H 15300 -450 50  0001 C CNN
+F 3 "" H 15300 -450 50  0001 C CNN
+	1    15300 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 -650 15300 -650
+Wire Wire Line
+	15300 -650 15300 -550
+Wire Wire Line
+	15450 -550 15300 -550
+Connection ~ 15300 -550
+Wire Wire Line
+	15300 -550 15300 -450
+Wire Wire Line
+	15450 -450 15300 -450
+Connection ~ 15300 -450
+Wire Wire Line
+	15450 -950 15400 -950
+Wire Wire Line
+	15400 -950 15400 -850
+Connection ~ 15400 -850
+Wire Wire Line
+	15400 -850 15450 -850
+Wire Wire Line
+	15350 -1100 15450 -1100
+Wire Wire Line
+	15450 -1100 15450 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U39
+U 1 1 5DA99036
+P 17450 -800
+F 0 "U39" H 17450 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 -750 60  0001 C CNN
+F 3 "" H 17450 -750 60  0001 C CNN
+	1    17450 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5DA99042
+P 16850 -1100
+F 0 "#PWR0106" H 16850 -1250 50  0001 C CNN
+F 1 "+5V" H 16865 -927 50  0000 C CNN
+F 2 "" H 16850 -1100 50  0001 C CNN
+F 3 "" H 16850 -1100 50  0001 C CNN
+	1    16850 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5DA99048
+P 16800 -450
+F 0 "#PWR0126" H 16800 -700 50  0001 C CNN
+F 1 "GND" H 16805 -623 50  0000 C CNN
+F 2 "" H 16800 -450 50  0001 C CNN
+F 3 "" H 16800 -450 50  0001 C CNN
+	1    16800 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 -650 16800 -650
+Wire Wire Line
+	16800 -650 16800 -550
+Wire Wire Line
+	16950 -550 16800 -550
+Connection ~ 16800 -550
+Wire Wire Line
+	16800 -550 16800 -450
+Wire Wire Line
+	16950 -450 16800 -450
+Connection ~ 16800 -450
+Wire Wire Line
+	16950 -950 16900 -950
+Wire Wire Line
+	16900 -950 16900 -850
+Connection ~ 16900 -850
+Wire Wire Line
+	16900 -850 16950 -850
+Wire Wire Line
+	16850 -1100 16950 -1100
+Wire Wire Line
+	16950 -1100 16950 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U40
+U 1 1 5DA9905C
+P 18950 -800
+F 0 "U40" H 18950 -213 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 -319 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 -750 60  0001 C CNN
+F 3 "" H 18950 -750 60  0001 C CNN
+	1    18950 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5DA99068
+P 18350 -1100
+F 0 "#PWR0107" H 18350 -1250 50  0001 C CNN
+F 1 "+5V" H 18365 -927 50  0000 C CNN
+F 2 "" H 18350 -1100 50  0001 C CNN
+F 3 "" H 18350 -1100 50  0001 C CNN
+	1    18350 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5DA9906E
+P 18300 -450
+F 0 "#PWR0127" H 18300 -700 50  0001 C CNN
+F 1 "GND" H 18305 -623 50  0000 C CNN
+F 2 "" H 18300 -450 50  0001 C CNN
+F 3 "" H 18300 -450 50  0001 C CNN
+	1    18300 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 -650 18300 -650
+Wire Wire Line
+	18300 -650 18300 -550
+Wire Wire Line
+	18450 -550 18300 -550
+Connection ~ 18300 -550
+Wire Wire Line
+	18300 -550 18300 -450
+Wire Wire Line
+	18450 -450 18300 -450
+Connection ~ 18300 -450
+Wire Wire Line
+	18450 -950 18400 -950
+Wire Wire Line
+	18400 -950 18400 -850
+Connection ~ 18400 -850
+Wire Wire Line
+	18400 -850 18450 -850
+Wire Wire Line
+	18350 -1100 18450 -1100
+Wire Wire Line
+	18450 -1100 18450 -1050
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U41
+U 1 1 5DAE45BA
+P 5450 650
+F 0 "U41" H 5450 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 700 60  0001 C CNN
+F 3 "" H 5450 700 60  0001 C CNN
+	1    5450 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0128
+U 1 1 5DAE45C6
+P 4850 350
+F 0 "#PWR0128" H 4850 200 50  0001 C CNN
+F 1 "+5V" H 4865 523 50  0000 C CNN
+F 2 "" H 4850 350 50  0001 C CNN
+F 3 "" H 4850 350 50  0001 C CNN
+	1    4850 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 5DAE45CC
+P 4800 1000
+F 0 "#PWR0148" H 4800 750 50  0001 C CNN
+F 1 "GND" H 4805 827 50  0000 C CNN
+F 2 "" H 4800 1000 50  0001 C CNN
+F 3 "" H 4800 1000 50  0001 C CNN
+	1    4800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 800  4800 800 
+Wire Wire Line
+	4800 800  4800 900 
+Wire Wire Line
+	4950 900  4800 900 
+Connection ~ 4800 900 
+Wire Wire Line
+	4800 900  4800 1000
+Wire Wire Line
+	4950 1000 4800 1000
+Connection ~ 4800 1000
+Wire Wire Line
+	4950 500  4900 500 
+Wire Wire Line
+	4900 500  4900 600 
+Connection ~ 4900 600 
+Wire Wire Line
+	4900 600  4950 600 
+Wire Wire Line
+	4850 350  4950 350 
+Wire Wire Line
+	4950 350  4950 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U42
+U 1 1 5DAE45E0
+P 6950 650
+F 0 "U42" H 6950 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 700 60  0001 C CNN
+F 3 "" H 6950 700 60  0001 C CNN
+	1    6950 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0129
+U 1 1 5DAE45EC
+P 6350 350
+F 0 "#PWR0129" H 6350 200 50  0001 C CNN
+F 1 "+5V" H 6365 523 50  0000 C CNN
+F 2 "" H 6350 350 50  0001 C CNN
+F 3 "" H 6350 350 50  0001 C CNN
+	1    6350 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0149
+U 1 1 5DAE45F2
+P 6300 1000
+F 0 "#PWR0149" H 6300 750 50  0001 C CNN
+F 1 "GND" H 6305 827 50  0000 C CNN
+F 2 "" H 6300 1000 50  0001 C CNN
+F 3 "" H 6300 1000 50  0001 C CNN
+	1    6300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 800  6300 800 
+Wire Wire Line
+	6300 800  6300 900 
+Wire Wire Line
+	6450 900  6300 900 
+Connection ~ 6300 900 
+Wire Wire Line
+	6300 900  6300 1000
+Wire Wire Line
+	6450 1000 6300 1000
+Connection ~ 6300 1000
+Wire Wire Line
+	6450 500  6400 500 
+Wire Wire Line
+	6400 500  6400 600 
+Connection ~ 6400 600 
+Wire Wire Line
+	6400 600  6450 600 
+Wire Wire Line
+	6350 350  6450 350 
+Wire Wire Line
+	6450 350  6450 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U43
+U 1 1 5DAE4606
+P 8450 650
+F 0 "U43" H 8450 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 700 60  0001 C CNN
+F 3 "" H 8450 700 60  0001 C CNN
+	1    8450 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0130
+U 1 1 5DAE4612
+P 7850 350
+F 0 "#PWR0130" H 7850 200 50  0001 C CNN
+F 1 "+5V" H 7865 523 50  0000 C CNN
+F 2 "" H 7850 350 50  0001 C CNN
+F 3 "" H 7850 350 50  0001 C CNN
+	1    7850 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5DAE4618
+P 7800 1000
+F 0 "#PWR0150" H 7800 750 50  0001 C CNN
+F 1 "GND" H 7805 827 50  0000 C CNN
+F 2 "" H 7800 1000 50  0001 C CNN
+F 3 "" H 7800 1000 50  0001 C CNN
+	1    7800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 800  7800 800 
+Wire Wire Line
+	7800 800  7800 900 
+Wire Wire Line
+	7950 900  7800 900 
+Connection ~ 7800 900 
+Wire Wire Line
+	7800 900  7800 1000
+Wire Wire Line
+	7950 1000 7800 1000
+Connection ~ 7800 1000
+Wire Wire Line
+	7950 500  7900 500 
+Wire Wire Line
+	7900 500  7900 600 
+Connection ~ 7900 600 
+Wire Wire Line
+	7900 600  7950 600 
+Wire Wire Line
+	7850 350  7950 350 
+Wire Wire Line
+	7950 350  7950 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U44
+U 1 1 5DAE462C
+P 9950 650
+F 0 "U44" H 9950 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 700 60  0001 C CNN
+F 3 "" H 9950 700 60  0001 C CNN
+	1    9950 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0131
+U 1 1 5DAE4638
+P 9350 350
+F 0 "#PWR0131" H 9350 200 50  0001 C CNN
+F 1 "+5V" H 9365 523 50  0000 C CNN
+F 2 "" H 9350 350 50  0001 C CNN
+F 3 "" H 9350 350 50  0001 C CNN
+	1    9350 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0151
+U 1 1 5DAE463E
+P 9300 1000
+F 0 "#PWR0151" H 9300 750 50  0001 C CNN
+F 1 "GND" H 9305 827 50  0000 C CNN
+F 2 "" H 9300 1000 50  0001 C CNN
+F 3 "" H 9300 1000 50  0001 C CNN
+	1    9300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 800  9300 800 
+Wire Wire Line
+	9300 800  9300 900 
+Wire Wire Line
+	9450 900  9300 900 
+Connection ~ 9300 900 
+Wire Wire Line
+	9300 900  9300 1000
+Wire Wire Line
+	9450 1000 9300 1000
+Connection ~ 9300 1000
+Wire Wire Line
+	9450 500  9400 500 
+Wire Wire Line
+	9400 500  9400 600 
+Connection ~ 9400 600 
+Wire Wire Line
+	9400 600  9450 600 
+Wire Wire Line
+	9350 350  9450 350 
+Wire Wire Line
+	9450 350  9450 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U45
+U 1 1 5DAE4652
+P 11450 650
+F 0 "U45" H 11450 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 700 60  0001 C CNN
+F 3 "" H 11450 700 60  0001 C CNN
+	1    11450 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0132
+U 1 1 5DAE465E
+P 10850 350
+F 0 "#PWR0132" H 10850 200 50  0001 C CNN
+F 1 "+5V" H 10865 523 50  0000 C CNN
+F 2 "" H 10850 350 50  0001 C CNN
+F 3 "" H 10850 350 50  0001 C CNN
+	1    10850 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 5DAE4664
+P 10800 1000
+F 0 "#PWR0152" H 10800 750 50  0001 C CNN
+F 1 "GND" H 10805 827 50  0000 C CNN
+F 2 "" H 10800 1000 50  0001 C CNN
+F 3 "" H 10800 1000 50  0001 C CNN
+	1    10800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 800  10800 800 
+Wire Wire Line
+	10800 800  10800 900 
+Wire Wire Line
+	10950 900  10800 900 
+Connection ~ 10800 900 
+Wire Wire Line
+	10800 900  10800 1000
+Wire Wire Line
+	10950 1000 10800 1000
+Connection ~ 10800 1000
+Wire Wire Line
+	10950 500  10900 500 
+Wire Wire Line
+	10900 500  10900 600 
+Connection ~ 10900 600 
+Wire Wire Line
+	10900 600  10950 600 
+Wire Wire Line
+	10850 350  10950 350 
+Wire Wire Line
+	10950 350  10950 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U46
+U 1 1 5DAE4678
+P 12950 650
+F 0 "U46" H 12950 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 700 60  0001 C CNN
+F 3 "" H 12950 700 60  0001 C CNN
+	1    12950 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0133
+U 1 1 5DAE4684
+P 12350 350
+F 0 "#PWR0133" H 12350 200 50  0001 C CNN
+F 1 "+5V" H 12365 523 50  0000 C CNN
+F 2 "" H 12350 350 50  0001 C CNN
+F 3 "" H 12350 350 50  0001 C CNN
+	1    12350 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5DAE468A
+P 12300 1000
+F 0 "#PWR0153" H 12300 750 50  0001 C CNN
+F 1 "GND" H 12305 827 50  0000 C CNN
+F 2 "" H 12300 1000 50  0001 C CNN
+F 3 "" H 12300 1000 50  0001 C CNN
+	1    12300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 800  12300 800 
+Wire Wire Line
+	12300 800  12300 900 
+Wire Wire Line
+	12450 900  12300 900 
+Connection ~ 12300 900 
+Wire Wire Line
+	12300 900  12300 1000
+Wire Wire Line
+	12450 1000 12300 1000
+Connection ~ 12300 1000
+Wire Wire Line
+	12450 500  12400 500 
+Wire Wire Line
+	12400 500  12400 600 
+Connection ~ 12400 600 
+Wire Wire Line
+	12400 600  12450 600 
+Wire Wire Line
+	12350 350  12450 350 
+Wire Wire Line
+	12450 350  12450 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U47
+U 1 1 5DAE469E
+P 14450 650
+F 0 "U47" H 14450 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 700 60  0001 C CNN
+F 3 "" H 14450 700 60  0001 C CNN
+	1    14450 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0134
+U 1 1 5DAE46AA
+P 13850 350
+F 0 "#PWR0134" H 13850 200 50  0001 C CNN
+F 1 "+5V" H 13865 523 50  0000 C CNN
+F 2 "" H 13850 350 50  0001 C CNN
+F 3 "" H 13850 350 50  0001 C CNN
+	1    13850 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 5DAE46B0
+P 13800 1000
+F 0 "#PWR0154" H 13800 750 50  0001 C CNN
+F 1 "GND" H 13805 827 50  0000 C CNN
+F 2 "" H 13800 1000 50  0001 C CNN
+F 3 "" H 13800 1000 50  0001 C CNN
+	1    13800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 800  13800 800 
+Wire Wire Line
+	13800 800  13800 900 
+Wire Wire Line
+	13950 900  13800 900 
+Connection ~ 13800 900 
+Wire Wire Line
+	13800 900  13800 1000
+Wire Wire Line
+	13950 1000 13800 1000
+Connection ~ 13800 1000
+Wire Wire Line
+	13950 500  13900 500 
+Wire Wire Line
+	13900 500  13900 600 
+Connection ~ 13900 600 
+Wire Wire Line
+	13900 600  13950 600 
+Wire Wire Line
+	13850 350  13950 350 
+Wire Wire Line
+	13950 350  13950 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U48
+U 1 1 5DAE46C4
+P 15950 650
+F 0 "U48" H 15950 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 700 60  0001 C CNN
+F 3 "" H 15950 700 60  0001 C CNN
+	1    15950 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0135
+U 1 1 5DAE46D0
+P 15350 350
+F 0 "#PWR0135" H 15350 200 50  0001 C CNN
+F 1 "+5V" H 15365 523 50  0000 C CNN
+F 2 "" H 15350 350 50  0001 C CNN
+F 3 "" H 15350 350 50  0001 C CNN
+	1    15350 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 5DAE46D6
+P 15300 1000
+F 0 "#PWR0155" H 15300 750 50  0001 C CNN
+F 1 "GND" H 15305 827 50  0000 C CNN
+F 2 "" H 15300 1000 50  0001 C CNN
+F 3 "" H 15300 1000 50  0001 C CNN
+	1    15300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 800  15300 800 
+Wire Wire Line
+	15300 800  15300 900 
+Wire Wire Line
+	15450 900  15300 900 
+Connection ~ 15300 900 
+Wire Wire Line
+	15300 900  15300 1000
+Wire Wire Line
+	15450 1000 15300 1000
+Connection ~ 15300 1000
+Wire Wire Line
+	15450 500  15400 500 
+Wire Wire Line
+	15400 500  15400 600 
+Connection ~ 15400 600 
+Wire Wire Line
+	15400 600  15450 600 
+Wire Wire Line
+	15350 350  15450 350 
+Wire Wire Line
+	15450 350  15450 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U49
+U 1 1 5DAE46EA
+P 17450 650
+F 0 "U49" H 17450 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 700 60  0001 C CNN
+F 3 "" H 17450 700 60  0001 C CNN
+	1    17450 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0136
+U 1 1 5DAE46F6
+P 16850 350
+F 0 "#PWR0136" H 16850 200 50  0001 C CNN
+F 1 "+5V" H 16865 523 50  0000 C CNN
+F 2 "" H 16850 350 50  0001 C CNN
+F 3 "" H 16850 350 50  0001 C CNN
+	1    16850 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0156
+U 1 1 5DAE46FC
+P 16800 1000
+F 0 "#PWR0156" H 16800 750 50  0001 C CNN
+F 1 "GND" H 16805 827 50  0000 C CNN
+F 2 "" H 16800 1000 50  0001 C CNN
+F 3 "" H 16800 1000 50  0001 C CNN
+	1    16800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 800  16800 800 
+Wire Wire Line
+	16800 800  16800 900 
+Wire Wire Line
+	16950 900  16800 900 
+Connection ~ 16800 900 
+Wire Wire Line
+	16800 900  16800 1000
+Wire Wire Line
+	16950 1000 16800 1000
+Connection ~ 16800 1000
+Wire Wire Line
+	16950 500  16900 500 
+Wire Wire Line
+	16900 500  16900 600 
+Connection ~ 16900 600 
+Wire Wire Line
+	16900 600  16950 600 
+Wire Wire Line
+	16850 350  16950 350 
+Wire Wire Line
+	16950 350  16950 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U50
+U 1 1 5DAE4710
+P 18950 650
+F 0 "U50" H 18950 1237 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 1131 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 700 60  0001 C CNN
+F 3 "" H 18950 700 60  0001 C CNN
+	1    18950 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0137
+U 1 1 5DAE471C
+P 18350 350
+F 0 "#PWR0137" H 18350 200 50  0001 C CNN
+F 1 "+5V" H 18365 523 50  0000 C CNN
+F 2 "" H 18350 350 50  0001 C CNN
+F 3 "" H 18350 350 50  0001 C CNN
+	1    18350 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5DAE4722
+P 18300 1000
+F 0 "#PWR0157" H 18300 750 50  0001 C CNN
+F 1 "GND" H 18305 827 50  0000 C CNN
+F 2 "" H 18300 1000 50  0001 C CNN
+F 3 "" H 18300 1000 50  0001 C CNN
+	1    18300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 800  18300 800 
+Wire Wire Line
+	18300 800  18300 900 
+Wire Wire Line
+	18450 900  18300 900 
+Connection ~ 18300 900 
+Wire Wire Line
+	18300 900  18300 1000
+Wire Wire Line
+	18450 1000 18300 1000
+Connection ~ 18300 1000
+Wire Wire Line
+	18450 500  18400 500 
+Wire Wire Line
+	18400 500  18400 600 
+Connection ~ 18400 600 
+Wire Wire Line
+	18400 600  18450 600 
+Wire Wire Line
+	18350 350  18450 350 
+Wire Wire Line
+	18450 350  18450 400 
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U51
+U 1 1 5DB4A925
+P 5450 2100
+F 0 "U51" H 5450 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 2150 60  0001 C CNN
+F 3 "" H 5450 2150 60  0001 C CNN
+	1    5450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0158
+U 1 1 5DB4A931
+P 4850 1800
+F 0 "#PWR0158" H 4850 1650 50  0001 C CNN
+F 1 "+5V" H 4865 1973 50  0000 C CNN
+F 2 "" H 4850 1800 50  0001 C CNN
+F 3 "" H 4850 1800 50  0001 C CNN
+	1    4850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0178
+U 1 1 5DB4A937
+P 4800 2450
+F 0 "#PWR0178" H 4800 2200 50  0001 C CNN
+F 1 "GND" H 4805 2277 50  0000 C CNN
+F 2 "" H 4800 2450 50  0001 C CNN
+F 3 "" H 4800 2450 50  0001 C CNN
+	1    4800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2250 4800 2250
+Wire Wire Line
+	4800 2250 4800 2350
+Wire Wire Line
+	4950 2350 4800 2350
+Connection ~ 4800 2350
+Wire Wire Line
+	4800 2350 4800 2450
+Wire Wire Line
+	4950 2450 4800 2450
+Connection ~ 4800 2450
+Wire Wire Line
+	4950 1950 4900 1950
+Wire Wire Line
+	4900 1950 4900 2050
+Connection ~ 4900 2050
+Wire Wire Line
+	4900 2050 4950 2050
+Wire Wire Line
+	4850 1800 4950 1800
+Wire Wire Line
+	4950 1800 4950 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U52
+U 1 1 5DB4A94B
+P 6950 2100
+F 0 "U52" H 6950 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 2150 60  0001 C CNN
+F 3 "" H 6950 2150 60  0001 C CNN
+	1    6950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0159
+U 1 1 5DB4A957
+P 6350 1800
+F 0 "#PWR0159" H 6350 1650 50  0001 C CNN
+F 1 "+5V" H 6365 1973 50  0000 C CNN
+F 2 "" H 6350 1800 50  0001 C CNN
+F 3 "" H 6350 1800 50  0001 C CNN
+	1    6350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0179
+U 1 1 5DB4A95D
+P 6300 2450
+F 0 "#PWR0179" H 6300 2200 50  0001 C CNN
+F 1 "GND" H 6305 2277 50  0000 C CNN
+F 2 "" H 6300 2450 50  0001 C CNN
+F 3 "" H 6300 2450 50  0001 C CNN
+	1    6300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2250 6300 2250
+Wire Wire Line
+	6300 2250 6300 2350
+Wire Wire Line
+	6450 2350 6300 2350
+Connection ~ 6300 2350
+Wire Wire Line
+	6300 2350 6300 2450
+Wire Wire Line
+	6450 2450 6300 2450
+Connection ~ 6300 2450
+Wire Wire Line
+	6450 1950 6400 1950
+Wire Wire Line
+	6400 1950 6400 2050
+Connection ~ 6400 2050
+Wire Wire Line
+	6400 2050 6450 2050
+Wire Wire Line
+	6350 1800 6450 1800
+Wire Wire Line
+	6450 1800 6450 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U53
+U 1 1 5DB4A971
+P 8450 2100
+F 0 "U53" H 8450 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 2150 60  0001 C CNN
+F 3 "" H 8450 2150 60  0001 C CNN
+	1    8450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0160
+U 1 1 5DB4A97D
+P 7850 1800
+F 0 "#PWR0160" H 7850 1650 50  0001 C CNN
+F 1 "+5V" H 7865 1973 50  0000 C CNN
+F 2 "" H 7850 1800 50  0001 C CNN
+F 3 "" H 7850 1800 50  0001 C CNN
+	1    7850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0180
+U 1 1 5DB4A983
+P 7800 2450
+F 0 "#PWR0180" H 7800 2200 50  0001 C CNN
+F 1 "GND" H 7805 2277 50  0000 C CNN
+F 2 "" H 7800 2450 50  0001 C CNN
+F 3 "" H 7800 2450 50  0001 C CNN
+	1    7800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2250 7800 2250
+Wire Wire Line
+	7800 2250 7800 2350
+Wire Wire Line
+	7950 2350 7800 2350
+Connection ~ 7800 2350
+Wire Wire Line
+	7800 2350 7800 2450
+Wire Wire Line
+	7950 2450 7800 2450
+Connection ~ 7800 2450
+Wire Wire Line
+	7950 1950 7900 1950
+Wire Wire Line
+	7900 1950 7900 2050
+Connection ~ 7900 2050
+Wire Wire Line
+	7900 2050 7950 2050
+Wire Wire Line
+	7850 1800 7950 1800
+Wire Wire Line
+	7950 1800 7950 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U54
+U 1 1 5DB4A997
+P 9950 2100
+F 0 "U54" H 9950 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 2150 60  0001 C CNN
+F 3 "" H 9950 2150 60  0001 C CNN
+	1    9950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0161
+U 1 1 5DB4A9A3
+P 9350 1800
+F 0 "#PWR0161" H 9350 1650 50  0001 C CNN
+F 1 "+5V" H 9365 1973 50  0000 C CNN
+F 2 "" H 9350 1800 50  0001 C CNN
+F 3 "" H 9350 1800 50  0001 C CNN
+	1    9350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0181
+U 1 1 5DB4A9A9
+P 9300 2450
+F 0 "#PWR0181" H 9300 2200 50  0001 C CNN
+F 1 "GND" H 9305 2277 50  0000 C CNN
+F 2 "" H 9300 2450 50  0001 C CNN
+F 3 "" H 9300 2450 50  0001 C CNN
+	1    9300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 2250 9300 2250
+Wire Wire Line
+	9300 2250 9300 2350
+Wire Wire Line
+	9450 2350 9300 2350
+Connection ~ 9300 2350
+Wire Wire Line
+	9300 2350 9300 2450
+Wire Wire Line
+	9450 2450 9300 2450
+Connection ~ 9300 2450
+Wire Wire Line
+	9450 1950 9400 1950
+Wire Wire Line
+	9400 1950 9400 2050
+Connection ~ 9400 2050
+Wire Wire Line
+	9400 2050 9450 2050
+Wire Wire Line
+	9350 1800 9450 1800
+Wire Wire Line
+	9450 1800 9450 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U55
+U 1 1 5DB4A9BD
+P 11450 2100
+F 0 "U55" H 11450 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 2150 60  0001 C CNN
+F 3 "" H 11450 2150 60  0001 C CNN
+	1    11450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0162
+U 1 1 5DB4A9C9
+P 10850 1800
+F 0 "#PWR0162" H 10850 1650 50  0001 C CNN
+F 1 "+5V" H 10865 1973 50  0000 C CNN
+F 2 "" H 10850 1800 50  0001 C CNN
+F 3 "" H 10850 1800 50  0001 C CNN
+	1    10850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0182
+U 1 1 5DB4A9CF
+P 10800 2450
+F 0 "#PWR0182" H 10800 2200 50  0001 C CNN
+F 1 "GND" H 10805 2277 50  0000 C CNN
+F 2 "" H 10800 2450 50  0001 C CNN
+F 3 "" H 10800 2450 50  0001 C CNN
+	1    10800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 2250 10800 2250
+Wire Wire Line
+	10800 2250 10800 2350
+Wire Wire Line
+	10950 2350 10800 2350
+Connection ~ 10800 2350
+Wire Wire Line
+	10800 2350 10800 2450
+Wire Wire Line
+	10950 2450 10800 2450
+Connection ~ 10800 2450
+Wire Wire Line
+	10950 1950 10900 1950
+Wire Wire Line
+	10900 1950 10900 2050
+Connection ~ 10900 2050
+Wire Wire Line
+	10900 2050 10950 2050
+Wire Wire Line
+	10850 1800 10950 1800
+Wire Wire Line
+	10950 1800 10950 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U56
+U 1 1 5DB4A9E3
+P 12950 2100
+F 0 "U56" H 12950 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 2150 60  0001 C CNN
+F 3 "" H 12950 2150 60  0001 C CNN
+	1    12950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0163
+U 1 1 5DB4A9EF
+P 12350 1800
+F 0 "#PWR0163" H 12350 1650 50  0001 C CNN
+F 1 "+5V" H 12365 1973 50  0000 C CNN
+F 2 "" H 12350 1800 50  0001 C CNN
+F 3 "" H 12350 1800 50  0001 C CNN
+	1    12350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0183
+U 1 1 5DB4A9F5
+P 12300 2450
+F 0 "#PWR0183" H 12300 2200 50  0001 C CNN
+F 1 "GND" H 12305 2277 50  0000 C CNN
+F 2 "" H 12300 2450 50  0001 C CNN
+F 3 "" H 12300 2450 50  0001 C CNN
+	1    12300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 2250 12300 2250
+Wire Wire Line
+	12300 2250 12300 2350
+Wire Wire Line
+	12450 2350 12300 2350
+Connection ~ 12300 2350
+Wire Wire Line
+	12300 2350 12300 2450
+Wire Wire Line
+	12450 2450 12300 2450
+Connection ~ 12300 2450
+Wire Wire Line
+	12450 1950 12400 1950
+Wire Wire Line
+	12400 1950 12400 2050
+Connection ~ 12400 2050
+Wire Wire Line
+	12400 2050 12450 2050
+Wire Wire Line
+	12350 1800 12450 1800
+Wire Wire Line
+	12450 1800 12450 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U57
+U 1 1 5DB4AA09
+P 14450 2100
+F 0 "U57" H 14450 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 2150 60  0001 C CNN
+F 3 "" H 14450 2150 60  0001 C CNN
+	1    14450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0164
+U 1 1 5DB4AA15
+P 13850 1800
+F 0 "#PWR0164" H 13850 1650 50  0001 C CNN
+F 1 "+5V" H 13865 1973 50  0000 C CNN
+F 2 "" H 13850 1800 50  0001 C CNN
+F 3 "" H 13850 1800 50  0001 C CNN
+	1    13850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0184
+U 1 1 5DB4AA1B
+P 13800 2450
+F 0 "#PWR0184" H 13800 2200 50  0001 C CNN
+F 1 "GND" H 13805 2277 50  0000 C CNN
+F 2 "" H 13800 2450 50  0001 C CNN
+F 3 "" H 13800 2450 50  0001 C CNN
+	1    13800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 2250 13800 2250
+Wire Wire Line
+	13800 2250 13800 2350
+Wire Wire Line
+	13950 2350 13800 2350
+Connection ~ 13800 2350
+Wire Wire Line
+	13800 2350 13800 2450
+Wire Wire Line
+	13950 2450 13800 2450
+Connection ~ 13800 2450
+Wire Wire Line
+	13950 1950 13900 1950
+Wire Wire Line
+	13900 1950 13900 2050
+Connection ~ 13900 2050
+Wire Wire Line
+	13900 2050 13950 2050
+Wire Wire Line
+	13850 1800 13950 1800
+Wire Wire Line
+	13950 1800 13950 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U58
+U 1 1 5DB4AA2F
+P 15950 2100
+F 0 "U58" H 15950 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 2150 60  0001 C CNN
+F 3 "" H 15950 2150 60  0001 C CNN
+	1    15950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0165
+U 1 1 5DB4AA3B
+P 15350 1800
+F 0 "#PWR0165" H 15350 1650 50  0001 C CNN
+F 1 "+5V" H 15365 1973 50  0000 C CNN
+F 2 "" H 15350 1800 50  0001 C CNN
+F 3 "" H 15350 1800 50  0001 C CNN
+	1    15350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0185
+U 1 1 5DB4AA41
+P 15300 2450
+F 0 "#PWR0185" H 15300 2200 50  0001 C CNN
+F 1 "GND" H 15305 2277 50  0000 C CNN
+F 2 "" H 15300 2450 50  0001 C CNN
+F 3 "" H 15300 2450 50  0001 C CNN
+	1    15300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 2250 15300 2250
+Wire Wire Line
+	15300 2250 15300 2350
+Wire Wire Line
+	15450 2350 15300 2350
+Connection ~ 15300 2350
+Wire Wire Line
+	15300 2350 15300 2450
+Wire Wire Line
+	15450 2450 15300 2450
+Connection ~ 15300 2450
+Wire Wire Line
+	15450 1950 15400 1950
+Wire Wire Line
+	15400 1950 15400 2050
+Connection ~ 15400 2050
+Wire Wire Line
+	15400 2050 15450 2050
+Wire Wire Line
+	15350 1800 15450 1800
+Wire Wire Line
+	15450 1800 15450 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U59
+U 1 1 5DB4AA55
+P 17450 2100
+F 0 "U59" H 17450 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 2150 60  0001 C CNN
+F 3 "" H 17450 2150 60  0001 C CNN
+	1    17450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0166
+U 1 1 5DB4AA61
+P 16850 1800
+F 0 "#PWR0166" H 16850 1650 50  0001 C CNN
+F 1 "+5V" H 16865 1973 50  0000 C CNN
+F 2 "" H 16850 1800 50  0001 C CNN
+F 3 "" H 16850 1800 50  0001 C CNN
+	1    16850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0186
+U 1 1 5DB4AA67
+P 16800 2450
+F 0 "#PWR0186" H 16800 2200 50  0001 C CNN
+F 1 "GND" H 16805 2277 50  0000 C CNN
+F 2 "" H 16800 2450 50  0001 C CNN
+F 3 "" H 16800 2450 50  0001 C CNN
+	1    16800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 2250 16800 2250
+Wire Wire Line
+	16800 2250 16800 2350
+Wire Wire Line
+	16950 2350 16800 2350
+Connection ~ 16800 2350
+Wire Wire Line
+	16800 2350 16800 2450
+Wire Wire Line
+	16950 2450 16800 2450
+Connection ~ 16800 2450
+Wire Wire Line
+	16950 1950 16900 1950
+Wire Wire Line
+	16900 1950 16900 2050
+Connection ~ 16900 2050
+Wire Wire Line
+	16900 2050 16950 2050
+Wire Wire Line
+	16850 1800 16950 1800
+Wire Wire Line
+	16950 1800 16950 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U60
+U 1 1 5DB4AA7B
+P 18950 2100
+F 0 "U60" H 18950 2687 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 2581 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 2150 60  0001 C CNN
+F 3 "" H 18950 2150 60  0001 C CNN
+	1    18950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0167
+U 1 1 5DB4AA87
+P 18350 1800
+F 0 "#PWR0167" H 18350 1650 50  0001 C CNN
+F 1 "+5V" H 18365 1973 50  0000 C CNN
+F 2 "" H 18350 1800 50  0001 C CNN
+F 3 "" H 18350 1800 50  0001 C CNN
+	1    18350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0187
+U 1 1 5DB4AA8D
+P 18300 2450
+F 0 "#PWR0187" H 18300 2200 50  0001 C CNN
+F 1 "GND" H 18305 2277 50  0000 C CNN
+F 2 "" H 18300 2450 50  0001 C CNN
+F 3 "" H 18300 2450 50  0001 C CNN
+	1    18300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 2250 18300 2250
+Wire Wire Line
+	18300 2250 18300 2350
+Wire Wire Line
+	18450 2350 18300 2350
+Connection ~ 18300 2350
+Wire Wire Line
+	18300 2350 18300 2450
+Wire Wire Line
+	18450 2450 18300 2450
+Connection ~ 18300 2450
+Wire Wire Line
+	18450 1950 18400 1950
+Wire Wire Line
+	18400 1950 18400 2050
+Connection ~ 18400 2050
+Wire Wire Line
+	18400 2050 18450 2050
+Wire Wire Line
+	18350 1800 18450 1800
+Wire Wire Line
+	18450 1800 18450 1850
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U61
+U 1 1 5DBCF622
+P 5450 3550
+F 0 "U61" H 5450 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 3600 60  0001 C CNN
+F 3 "" H 5450 3600 60  0001 C CNN
+	1    5450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0188
+U 1 1 5DBCF62E
+P 4850 3250
+F 0 "#PWR0188" H 4850 3100 50  0001 C CNN
+F 1 "+5V" H 4865 3423 50  0000 C CNN
+F 2 "" H 4850 3250 50  0001 C CNN
+F 3 "" H 4850 3250 50  0001 C CNN
+	1    4850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0208
+U 1 1 5DBCF634
+P 4800 3900
+F 0 "#PWR0208" H 4800 3650 50  0001 C CNN
+F 1 "GND" H 4805 3727 50  0000 C CNN
+F 2 "" H 4800 3900 50  0001 C CNN
+F 3 "" H 4800 3900 50  0001 C CNN
+	1    4800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3700 4800 3700
+Wire Wire Line
+	4800 3700 4800 3800
+Wire Wire Line
+	4950 3800 4800 3800
+Connection ~ 4800 3800
+Wire Wire Line
+	4800 3800 4800 3900
+Wire Wire Line
+	4950 3900 4800 3900
+Connection ~ 4800 3900
+Wire Wire Line
+	4950 3400 4900 3400
+Wire Wire Line
+	4900 3400 4900 3500
+Connection ~ 4900 3500
+Wire Wire Line
+	4900 3500 4950 3500
+Wire Wire Line
+	4850 3250 4950 3250
+Wire Wire Line
+	4950 3250 4950 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U62
+U 1 1 5DBCF648
+P 6950 3550
+F 0 "U62" H 6950 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 3600 60  0001 C CNN
+F 3 "" H 6950 3600 60  0001 C CNN
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0189
+U 1 1 5DBCF654
+P 6350 3250
+F 0 "#PWR0189" H 6350 3100 50  0001 C CNN
+F 1 "+5V" H 6365 3423 50  0000 C CNN
+F 2 "" H 6350 3250 50  0001 C CNN
+F 3 "" H 6350 3250 50  0001 C CNN
+	1    6350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0209
+U 1 1 5DBCF65A
+P 6300 3900
+F 0 "#PWR0209" H 6300 3650 50  0001 C CNN
+F 1 "GND" H 6305 3727 50  0000 C CNN
+F 2 "" H 6300 3900 50  0001 C CNN
+F 3 "" H 6300 3900 50  0001 C CNN
+	1    6300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3700 6300 3700
+Wire Wire Line
+	6300 3700 6300 3800
+Wire Wire Line
+	6450 3800 6300 3800
+Connection ~ 6300 3800
+Wire Wire Line
+	6300 3800 6300 3900
+Wire Wire Line
+	6450 3900 6300 3900
+Connection ~ 6300 3900
+Wire Wire Line
+	6450 3400 6400 3400
+Wire Wire Line
+	6400 3400 6400 3500
+Connection ~ 6400 3500
+Wire Wire Line
+	6400 3500 6450 3500
+Wire Wire Line
+	6350 3250 6450 3250
+Wire Wire Line
+	6450 3250 6450 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U63
+U 1 1 5DBCF66E
+P 8450 3550
+F 0 "U63" H 8450 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 3600 60  0001 C CNN
+F 3 "" H 8450 3600 60  0001 C CNN
+	1    8450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0190
+U 1 1 5DBCF67A
+P 7850 3250
+F 0 "#PWR0190" H 7850 3100 50  0001 C CNN
+F 1 "+5V" H 7865 3423 50  0000 C CNN
+F 2 "" H 7850 3250 50  0001 C CNN
+F 3 "" H 7850 3250 50  0001 C CNN
+	1    7850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0210
+U 1 1 5DBCF680
+P 7800 3900
+F 0 "#PWR0210" H 7800 3650 50  0001 C CNN
+F 1 "GND" H 7805 3727 50  0000 C CNN
+F 2 "" H 7800 3900 50  0001 C CNN
+F 3 "" H 7800 3900 50  0001 C CNN
+	1    7800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3700 7800 3700
+Wire Wire Line
+	7800 3700 7800 3800
+Wire Wire Line
+	7950 3800 7800 3800
+Connection ~ 7800 3800
+Wire Wire Line
+	7800 3800 7800 3900
+Wire Wire Line
+	7950 3900 7800 3900
+Connection ~ 7800 3900
+Wire Wire Line
+	7950 3400 7900 3400
+Wire Wire Line
+	7900 3400 7900 3500
+Connection ~ 7900 3500
+Wire Wire Line
+	7900 3500 7950 3500
+Wire Wire Line
+	7850 3250 7950 3250
+Wire Wire Line
+	7950 3250 7950 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U64
+U 1 1 5DBCF694
+P 9950 3550
+F 0 "U64" H 9950 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 3600 60  0001 C CNN
+F 3 "" H 9950 3600 60  0001 C CNN
+	1    9950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0191
+U 1 1 5DBCF6A0
+P 9350 3250
+F 0 "#PWR0191" H 9350 3100 50  0001 C CNN
+F 1 "+5V" H 9365 3423 50  0000 C CNN
+F 2 "" H 9350 3250 50  0001 C CNN
+F 3 "" H 9350 3250 50  0001 C CNN
+	1    9350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0211
+U 1 1 5DBCF6A6
+P 9300 3900
+F 0 "#PWR0211" H 9300 3650 50  0001 C CNN
+F 1 "GND" H 9305 3727 50  0000 C CNN
+F 2 "" H 9300 3900 50  0001 C CNN
+F 3 "" H 9300 3900 50  0001 C CNN
+	1    9300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3700 9300 3700
+Wire Wire Line
+	9300 3700 9300 3800
+Wire Wire Line
+	9450 3800 9300 3800
+Connection ~ 9300 3800
+Wire Wire Line
+	9300 3800 9300 3900
+Wire Wire Line
+	9450 3900 9300 3900
+Connection ~ 9300 3900
+Wire Wire Line
+	9450 3400 9400 3400
+Wire Wire Line
+	9400 3400 9400 3500
+Connection ~ 9400 3500
+Wire Wire Line
+	9400 3500 9450 3500
+Wire Wire Line
+	9350 3250 9450 3250
+Wire Wire Line
+	9450 3250 9450 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U65
+U 1 1 5DBCF6BA
+P 11450 3550
+F 0 "U65" H 11450 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 3600 60  0001 C CNN
+F 3 "" H 11450 3600 60  0001 C CNN
+	1    11450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0192
+U 1 1 5DBCF6C6
+P 10850 3250
+F 0 "#PWR0192" H 10850 3100 50  0001 C CNN
+F 1 "+5V" H 10865 3423 50  0000 C CNN
+F 2 "" H 10850 3250 50  0001 C CNN
+F 3 "" H 10850 3250 50  0001 C CNN
+	1    10850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0212
+U 1 1 5DBCF6CC
+P 10800 3900
+F 0 "#PWR0212" H 10800 3650 50  0001 C CNN
+F 1 "GND" H 10805 3727 50  0000 C CNN
+F 2 "" H 10800 3900 50  0001 C CNN
+F 3 "" H 10800 3900 50  0001 C CNN
+	1    10800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 3700 10800 3700
+Wire Wire Line
+	10800 3700 10800 3800
+Wire Wire Line
+	10950 3800 10800 3800
+Connection ~ 10800 3800
+Wire Wire Line
+	10800 3800 10800 3900
+Wire Wire Line
+	10950 3900 10800 3900
+Connection ~ 10800 3900
+Wire Wire Line
+	10950 3400 10900 3400
+Wire Wire Line
+	10900 3400 10900 3500
+Connection ~ 10900 3500
+Wire Wire Line
+	10900 3500 10950 3500
+Wire Wire Line
+	10850 3250 10950 3250
+Wire Wire Line
+	10950 3250 10950 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U66
+U 1 1 5DBCF6E0
+P 12950 3550
+F 0 "U66" H 12950 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 3600 60  0001 C CNN
+F 3 "" H 12950 3600 60  0001 C CNN
+	1    12950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0193
+U 1 1 5DBCF6EC
+P 12350 3250
+F 0 "#PWR0193" H 12350 3100 50  0001 C CNN
+F 1 "+5V" H 12365 3423 50  0000 C CNN
+F 2 "" H 12350 3250 50  0001 C CNN
+F 3 "" H 12350 3250 50  0001 C CNN
+	1    12350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0213
+U 1 1 5DBCF6F2
+P 12300 3900
+F 0 "#PWR0213" H 12300 3650 50  0001 C CNN
+F 1 "GND" H 12305 3727 50  0000 C CNN
+F 2 "" H 12300 3900 50  0001 C CNN
+F 3 "" H 12300 3900 50  0001 C CNN
+	1    12300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 3700 12300 3700
+Wire Wire Line
+	12300 3700 12300 3800
+Wire Wire Line
+	12450 3800 12300 3800
+Connection ~ 12300 3800
+Wire Wire Line
+	12300 3800 12300 3900
+Wire Wire Line
+	12450 3900 12300 3900
+Connection ~ 12300 3900
+Wire Wire Line
+	12450 3400 12400 3400
+Wire Wire Line
+	12400 3400 12400 3500
+Connection ~ 12400 3500
+Wire Wire Line
+	12400 3500 12450 3500
+Wire Wire Line
+	12350 3250 12450 3250
+Wire Wire Line
+	12450 3250 12450 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U67
+U 1 1 5DBCF706
+P 14450 3550
+F 0 "U67" H 14450 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 3600 60  0001 C CNN
+F 3 "" H 14450 3600 60  0001 C CNN
+	1    14450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0194
+U 1 1 5DBCF712
+P 13850 3250
+F 0 "#PWR0194" H 13850 3100 50  0001 C CNN
+F 1 "+5V" H 13865 3423 50  0000 C CNN
+F 2 "" H 13850 3250 50  0001 C CNN
+F 3 "" H 13850 3250 50  0001 C CNN
+	1    13850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0214
+U 1 1 5DBCF718
+P 13800 3900
+F 0 "#PWR0214" H 13800 3650 50  0001 C CNN
+F 1 "GND" H 13805 3727 50  0000 C CNN
+F 2 "" H 13800 3900 50  0001 C CNN
+F 3 "" H 13800 3900 50  0001 C CNN
+	1    13800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 3700 13800 3700
+Wire Wire Line
+	13800 3700 13800 3800
+Wire Wire Line
+	13950 3800 13800 3800
+Connection ~ 13800 3800
+Wire Wire Line
+	13800 3800 13800 3900
+Wire Wire Line
+	13950 3900 13800 3900
+Connection ~ 13800 3900
+Wire Wire Line
+	13950 3400 13900 3400
+Wire Wire Line
+	13900 3400 13900 3500
+Connection ~ 13900 3500
+Wire Wire Line
+	13900 3500 13950 3500
+Wire Wire Line
+	13850 3250 13950 3250
+Wire Wire Line
+	13950 3250 13950 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U68
+U 1 1 5DBCF72C
+P 15950 3550
+F 0 "U68" H 15950 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 3600 60  0001 C CNN
+F 3 "" H 15950 3600 60  0001 C CNN
+	1    15950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0195
+U 1 1 5DBCF738
+P 15350 3250
+F 0 "#PWR0195" H 15350 3100 50  0001 C CNN
+F 1 "+5V" H 15365 3423 50  0000 C CNN
+F 2 "" H 15350 3250 50  0001 C CNN
+F 3 "" H 15350 3250 50  0001 C CNN
+	1    15350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0215
+U 1 1 5DBCF73E
+P 15300 3900
+F 0 "#PWR0215" H 15300 3650 50  0001 C CNN
+F 1 "GND" H 15305 3727 50  0000 C CNN
+F 2 "" H 15300 3900 50  0001 C CNN
+F 3 "" H 15300 3900 50  0001 C CNN
+	1    15300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 3700 15300 3700
+Wire Wire Line
+	15300 3700 15300 3800
+Wire Wire Line
+	15450 3800 15300 3800
+Connection ~ 15300 3800
+Wire Wire Line
+	15300 3800 15300 3900
+Wire Wire Line
+	15450 3900 15300 3900
+Connection ~ 15300 3900
+Wire Wire Line
+	15450 3400 15400 3400
+Wire Wire Line
+	15400 3400 15400 3500
+Connection ~ 15400 3500
+Wire Wire Line
+	15400 3500 15450 3500
+Wire Wire Line
+	15350 3250 15450 3250
+Wire Wire Line
+	15450 3250 15450 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U69
+U 1 1 5DBCF752
+P 17450 3550
+F 0 "U69" H 17450 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 3600 60  0001 C CNN
+F 3 "" H 17450 3600 60  0001 C CNN
+	1    17450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0196
+U 1 1 5DBCF75E
+P 16850 3250
+F 0 "#PWR0196" H 16850 3100 50  0001 C CNN
+F 1 "+5V" H 16865 3423 50  0000 C CNN
+F 2 "" H 16850 3250 50  0001 C CNN
+F 3 "" H 16850 3250 50  0001 C CNN
+	1    16850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0216
+U 1 1 5DBCF764
+P 16800 3900
+F 0 "#PWR0216" H 16800 3650 50  0001 C CNN
+F 1 "GND" H 16805 3727 50  0000 C CNN
+F 2 "" H 16800 3900 50  0001 C CNN
+F 3 "" H 16800 3900 50  0001 C CNN
+	1    16800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 3700 16800 3700
+Wire Wire Line
+	16800 3700 16800 3800
+Wire Wire Line
+	16950 3800 16800 3800
+Connection ~ 16800 3800
+Wire Wire Line
+	16800 3800 16800 3900
+Wire Wire Line
+	16950 3900 16800 3900
+Connection ~ 16800 3900
+Wire Wire Line
+	16950 3400 16900 3400
+Wire Wire Line
+	16900 3400 16900 3500
+Connection ~ 16900 3500
+Wire Wire Line
+	16900 3500 16950 3500
+Wire Wire Line
+	16850 3250 16950 3250
+Wire Wire Line
+	16950 3250 16950 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U70
+U 1 1 5DBCF778
+P 18950 3550
+F 0 "U70" H 18950 4137 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 4031 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 3600 60  0001 C CNN
+F 3 "" H 18950 3600 60  0001 C CNN
+	1    18950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0197
+U 1 1 5DBCF784
+P 18350 3250
+F 0 "#PWR0197" H 18350 3100 50  0001 C CNN
+F 1 "+5V" H 18365 3423 50  0000 C CNN
+F 2 "" H 18350 3250 50  0001 C CNN
+F 3 "" H 18350 3250 50  0001 C CNN
+	1    18350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0217
+U 1 1 5DBCF78A
+P 18300 3900
+F 0 "#PWR0217" H 18300 3650 50  0001 C CNN
+F 1 "GND" H 18305 3727 50  0000 C CNN
+F 2 "" H 18300 3900 50  0001 C CNN
+F 3 "" H 18300 3900 50  0001 C CNN
+	1    18300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 3700 18300 3700
+Wire Wire Line
+	18300 3700 18300 3800
+Wire Wire Line
+	18450 3800 18300 3800
+Connection ~ 18300 3800
+Wire Wire Line
+	18300 3800 18300 3900
+Wire Wire Line
+	18450 3900 18300 3900
+Connection ~ 18300 3900
+Wire Wire Line
+	18450 3400 18400 3400
+Wire Wire Line
+	18400 3400 18400 3500
+Connection ~ 18400 3500
+Wire Wire Line
+	18400 3500 18450 3500
+Wire Wire Line
+	18350 3250 18450 3250
+Wire Wire Line
+	18450 3250 18450 3300
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U71
+U 1 1 5DC823C0
+P 5450 5000
+F 0 "U71" H 5450 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 5050 60  0001 C CNN
+F 3 "" H 5450 5050 60  0001 C CNN
+	1    5450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0218
+U 1 1 5DC823CC
+P 4850 4700
+F 0 "#PWR0218" H 4850 4550 50  0001 C CNN
+F 1 "+5V" H 4865 4873 50  0000 C CNN
+F 2 "" H 4850 4700 50  0001 C CNN
+F 3 "" H 4850 4700 50  0001 C CNN
+	1    4850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0238
+U 1 1 5DC823D2
+P 4800 5350
+F 0 "#PWR0238" H 4800 5100 50  0001 C CNN
+F 1 "GND" H 4805 5177 50  0000 C CNN
+F 2 "" H 4800 5350 50  0001 C CNN
+F 3 "" H 4800 5350 50  0001 C CNN
+	1    4800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 5150 4800 5150
+Wire Wire Line
+	4800 5150 4800 5250
+Wire Wire Line
+	4950 5250 4800 5250
+Connection ~ 4800 5250
+Wire Wire Line
+	4800 5250 4800 5350
+Wire Wire Line
+	4950 5350 4800 5350
+Connection ~ 4800 5350
+Wire Wire Line
+	4950 4850 4900 4850
+Wire Wire Line
+	4900 4850 4900 4950
+Connection ~ 4900 4950
+Wire Wire Line
+	4900 4950 4950 4950
+Wire Wire Line
+	4850 4700 4950 4700
+Wire Wire Line
+	4950 4700 4950 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U72
+U 1 1 5DC823E6
+P 6950 5000
+F 0 "U72" H 6950 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 5050 60  0001 C CNN
+F 3 "" H 6950 5050 60  0001 C CNN
+	1    6950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0219
+U 1 1 5DC823F2
+P 6350 4700
+F 0 "#PWR0219" H 6350 4550 50  0001 C CNN
+F 1 "+5V" H 6365 4873 50  0000 C CNN
+F 2 "" H 6350 4700 50  0001 C CNN
+F 3 "" H 6350 4700 50  0001 C CNN
+	1    6350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0239
+U 1 1 5DC823F8
+P 6300 5350
+F 0 "#PWR0239" H 6300 5100 50  0001 C CNN
+F 1 "GND" H 6305 5177 50  0000 C CNN
+F 2 "" H 6300 5350 50  0001 C CNN
+F 3 "" H 6300 5350 50  0001 C CNN
+	1    6300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5150 6300 5150
+Wire Wire Line
+	6300 5150 6300 5250
+Wire Wire Line
+	6450 5250 6300 5250
+Connection ~ 6300 5250
+Wire Wire Line
+	6300 5250 6300 5350
+Wire Wire Line
+	6450 5350 6300 5350
+Connection ~ 6300 5350
+Wire Wire Line
+	6450 4850 6400 4850
+Wire Wire Line
+	6400 4850 6400 4950
+Connection ~ 6400 4950
+Wire Wire Line
+	6400 4950 6450 4950
+Wire Wire Line
+	6350 4700 6450 4700
+Wire Wire Line
+	6450 4700 6450 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U73
+U 1 1 5DC8240C
+P 8450 5000
+F 0 "U73" H 8450 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 5050 60  0001 C CNN
+F 3 "" H 8450 5050 60  0001 C CNN
+	1    8450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0220
+U 1 1 5DC82418
+P 7850 4700
+F 0 "#PWR0220" H 7850 4550 50  0001 C CNN
+F 1 "+5V" H 7865 4873 50  0000 C CNN
+F 2 "" H 7850 4700 50  0001 C CNN
+F 3 "" H 7850 4700 50  0001 C CNN
+	1    7850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0240
+U 1 1 5DC8241E
+P 7800 5350
+F 0 "#PWR0240" H 7800 5100 50  0001 C CNN
+F 1 "GND" H 7805 5177 50  0000 C CNN
+F 2 "" H 7800 5350 50  0001 C CNN
+F 3 "" H 7800 5350 50  0001 C CNN
+	1    7800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5150 7800 5150
+Wire Wire Line
+	7800 5150 7800 5250
+Wire Wire Line
+	7950 5250 7800 5250
+Connection ~ 7800 5250
+Wire Wire Line
+	7800 5250 7800 5350
+Wire Wire Line
+	7950 5350 7800 5350
+Connection ~ 7800 5350
+Wire Wire Line
+	7950 4850 7900 4850
+Wire Wire Line
+	7900 4850 7900 4950
+Connection ~ 7900 4950
+Wire Wire Line
+	7900 4950 7950 4950
+Wire Wire Line
+	7850 4700 7950 4700
+Wire Wire Line
+	7950 4700 7950 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U74
+U 1 1 5DC82432
+P 9950 5000
+F 0 "U74" H 9950 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 5050 60  0001 C CNN
+F 3 "" H 9950 5050 60  0001 C CNN
+	1    9950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0221
+U 1 1 5DC8243E
+P 9350 4700
+F 0 "#PWR0221" H 9350 4550 50  0001 C CNN
+F 1 "+5V" H 9365 4873 50  0000 C CNN
+F 2 "" H 9350 4700 50  0001 C CNN
+F 3 "" H 9350 4700 50  0001 C CNN
+	1    9350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0241
+U 1 1 5DC82444
+P 9300 5350
+F 0 "#PWR0241" H 9300 5100 50  0001 C CNN
+F 1 "GND" H 9305 5177 50  0000 C CNN
+F 2 "" H 9300 5350 50  0001 C CNN
+F 3 "" H 9300 5350 50  0001 C CNN
+	1    9300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 5150 9300 5150
+Wire Wire Line
+	9300 5150 9300 5250
+Wire Wire Line
+	9450 5250 9300 5250
+Connection ~ 9300 5250
+Wire Wire Line
+	9300 5250 9300 5350
+Wire Wire Line
+	9450 5350 9300 5350
+Connection ~ 9300 5350
+Wire Wire Line
+	9450 4850 9400 4850
+Wire Wire Line
+	9400 4850 9400 4950
+Connection ~ 9400 4950
+Wire Wire Line
+	9400 4950 9450 4950
+Wire Wire Line
+	9350 4700 9450 4700
+Wire Wire Line
+	9450 4700 9450 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U75
+U 1 1 5DC82458
+P 11450 5000
+F 0 "U75" H 11450 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 5050 60  0001 C CNN
+F 3 "" H 11450 5050 60  0001 C CNN
+	1    11450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0222
+U 1 1 5DC82464
+P 10850 4700
+F 0 "#PWR0222" H 10850 4550 50  0001 C CNN
+F 1 "+5V" H 10865 4873 50  0000 C CNN
+F 2 "" H 10850 4700 50  0001 C CNN
+F 3 "" H 10850 4700 50  0001 C CNN
+	1    10850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0242
+U 1 1 5DC8246A
+P 10800 5350
+F 0 "#PWR0242" H 10800 5100 50  0001 C CNN
+F 1 "GND" H 10805 5177 50  0000 C CNN
+F 2 "" H 10800 5350 50  0001 C CNN
+F 3 "" H 10800 5350 50  0001 C CNN
+	1    10800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 5150 10800 5150
+Wire Wire Line
+	10800 5150 10800 5250
+Wire Wire Line
+	10950 5250 10800 5250
+Connection ~ 10800 5250
+Wire Wire Line
+	10800 5250 10800 5350
+Wire Wire Line
+	10950 5350 10800 5350
+Connection ~ 10800 5350
+Wire Wire Line
+	10950 4850 10900 4850
+Wire Wire Line
+	10900 4850 10900 4950
+Connection ~ 10900 4950
+Wire Wire Line
+	10900 4950 10950 4950
+Wire Wire Line
+	10850 4700 10950 4700
+Wire Wire Line
+	10950 4700 10950 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U76
+U 1 1 5DC8247E
+P 12950 5000
+F 0 "U76" H 12950 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 5050 60  0001 C CNN
+F 3 "" H 12950 5050 60  0001 C CNN
+	1    12950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0223
+U 1 1 5DC8248A
+P 12350 4700
+F 0 "#PWR0223" H 12350 4550 50  0001 C CNN
+F 1 "+5V" H 12365 4873 50  0000 C CNN
+F 2 "" H 12350 4700 50  0001 C CNN
+F 3 "" H 12350 4700 50  0001 C CNN
+	1    12350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0243
+U 1 1 5DC82490
+P 12300 5350
+F 0 "#PWR0243" H 12300 5100 50  0001 C CNN
+F 1 "GND" H 12305 5177 50  0000 C CNN
+F 2 "" H 12300 5350 50  0001 C CNN
+F 3 "" H 12300 5350 50  0001 C CNN
+	1    12300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 5150 12300 5150
+Wire Wire Line
+	12300 5150 12300 5250
+Wire Wire Line
+	12450 5250 12300 5250
+Connection ~ 12300 5250
+Wire Wire Line
+	12300 5250 12300 5350
+Wire Wire Line
+	12450 5350 12300 5350
+Connection ~ 12300 5350
+Wire Wire Line
+	12450 4850 12400 4850
+Wire Wire Line
+	12400 4850 12400 4950
+Connection ~ 12400 4950
+Wire Wire Line
+	12400 4950 12450 4950
+Wire Wire Line
+	12350 4700 12450 4700
+Wire Wire Line
+	12450 4700 12450 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U77
+U 1 1 5DC824A4
+P 14450 5000
+F 0 "U77" H 14450 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 5050 60  0001 C CNN
+F 3 "" H 14450 5050 60  0001 C CNN
+	1    14450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0224
+U 1 1 5DC824B0
+P 13850 4700
+F 0 "#PWR0224" H 13850 4550 50  0001 C CNN
+F 1 "+5V" H 13865 4873 50  0000 C CNN
+F 2 "" H 13850 4700 50  0001 C CNN
+F 3 "" H 13850 4700 50  0001 C CNN
+	1    13850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0244
+U 1 1 5DC824B6
+P 13800 5350
+F 0 "#PWR0244" H 13800 5100 50  0001 C CNN
+F 1 "GND" H 13805 5177 50  0000 C CNN
+F 2 "" H 13800 5350 50  0001 C CNN
+F 3 "" H 13800 5350 50  0001 C CNN
+	1    13800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 5150 13800 5150
+Wire Wire Line
+	13800 5150 13800 5250
+Wire Wire Line
+	13950 5250 13800 5250
+Connection ~ 13800 5250
+Wire Wire Line
+	13800 5250 13800 5350
+Wire Wire Line
+	13950 5350 13800 5350
+Connection ~ 13800 5350
+Wire Wire Line
+	13950 4850 13900 4850
+Wire Wire Line
+	13900 4850 13900 4950
+Connection ~ 13900 4950
+Wire Wire Line
+	13900 4950 13950 4950
+Wire Wire Line
+	13850 4700 13950 4700
+Wire Wire Line
+	13950 4700 13950 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U78
+U 1 1 5DC824CA
+P 15950 5000
+F 0 "U78" H 15950 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 5050 60  0001 C CNN
+F 3 "" H 15950 5050 60  0001 C CNN
+	1    15950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0225
+U 1 1 5DC824D6
+P 15350 4700
+F 0 "#PWR0225" H 15350 4550 50  0001 C CNN
+F 1 "+5V" H 15365 4873 50  0000 C CNN
+F 2 "" H 15350 4700 50  0001 C CNN
+F 3 "" H 15350 4700 50  0001 C CNN
+	1    15350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0245
+U 1 1 5DC824DC
+P 15300 5350
+F 0 "#PWR0245" H 15300 5100 50  0001 C CNN
+F 1 "GND" H 15305 5177 50  0000 C CNN
+F 2 "" H 15300 5350 50  0001 C CNN
+F 3 "" H 15300 5350 50  0001 C CNN
+	1    15300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 5150 15300 5150
+Wire Wire Line
+	15300 5150 15300 5250
+Wire Wire Line
+	15450 5250 15300 5250
+Connection ~ 15300 5250
+Wire Wire Line
+	15300 5250 15300 5350
+Wire Wire Line
+	15450 5350 15300 5350
+Connection ~ 15300 5350
+Wire Wire Line
+	15450 4850 15400 4850
+Wire Wire Line
+	15400 4850 15400 4950
+Connection ~ 15400 4950
+Wire Wire Line
+	15400 4950 15450 4950
+Wire Wire Line
+	15350 4700 15450 4700
+Wire Wire Line
+	15450 4700 15450 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U79
+U 1 1 5DC824F0
+P 17450 5000
+F 0 "U79" H 17450 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 5050 60  0001 C CNN
+F 3 "" H 17450 5050 60  0001 C CNN
+	1    17450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0226
+U 1 1 5DC824FC
+P 16850 4700
+F 0 "#PWR0226" H 16850 4550 50  0001 C CNN
+F 1 "+5V" H 16865 4873 50  0000 C CNN
+F 2 "" H 16850 4700 50  0001 C CNN
+F 3 "" H 16850 4700 50  0001 C CNN
+	1    16850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0246
+U 1 1 5DC82502
+P 16800 5350
+F 0 "#PWR0246" H 16800 5100 50  0001 C CNN
+F 1 "GND" H 16805 5177 50  0000 C CNN
+F 2 "" H 16800 5350 50  0001 C CNN
+F 3 "" H 16800 5350 50  0001 C CNN
+	1    16800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 5150 16800 5150
+Wire Wire Line
+	16800 5150 16800 5250
+Wire Wire Line
+	16950 5250 16800 5250
+Connection ~ 16800 5250
+Wire Wire Line
+	16800 5250 16800 5350
+Wire Wire Line
+	16950 5350 16800 5350
+Connection ~ 16800 5350
+Wire Wire Line
+	16950 4850 16900 4850
+Wire Wire Line
+	16900 4850 16900 4950
+Connection ~ 16900 4950
+Wire Wire Line
+	16900 4950 16950 4950
+Wire Wire Line
+	16850 4700 16950 4700
+Wire Wire Line
+	16950 4700 16950 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U80
+U 1 1 5DC82516
+P 18950 5000
+F 0 "U80" H 18950 5587 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 5481 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 5050 60  0001 C CNN
+F 3 "" H 18950 5050 60  0001 C CNN
+	1    18950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0227
+U 1 1 5DC82522
+P 18350 4700
+F 0 "#PWR0227" H 18350 4550 50  0001 C CNN
+F 1 "+5V" H 18365 4873 50  0000 C CNN
+F 2 "" H 18350 4700 50  0001 C CNN
+F 3 "" H 18350 4700 50  0001 C CNN
+	1    18350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0247
+U 1 1 5DC82528
+P 18300 5350
+F 0 "#PWR0247" H 18300 5100 50  0001 C CNN
+F 1 "GND" H 18305 5177 50  0000 C CNN
+F 2 "" H 18300 5350 50  0001 C CNN
+F 3 "" H 18300 5350 50  0001 C CNN
+	1    18300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 5150 18300 5150
+Wire Wire Line
+	18300 5150 18300 5250
+Wire Wire Line
+	18450 5250 18300 5250
+Connection ~ 18300 5250
+Wire Wire Line
+	18300 5250 18300 5350
+Wire Wire Line
+	18450 5350 18300 5350
+Connection ~ 18300 5350
+Wire Wire Line
+	18450 4850 18400 4850
+Wire Wire Line
+	18400 4850 18400 4950
+Connection ~ 18400 4950
+Wire Wire Line
+	18400 4950 18450 4950
+Wire Wire Line
+	18350 4700 18450 4700
+Wire Wire Line
+	18450 4700 18450 4750
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U81
+U 1 1 5DD6CD2E
+P 5450 6450
+F 0 "U81" H 5450 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 6500 60  0001 C CNN
+F 3 "" H 5450 6500 60  0001 C CNN
+	1    5450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0248
+U 1 1 5DD6CD3A
+P 4850 6150
+F 0 "#PWR0248" H 4850 6000 50  0001 C CNN
+F 1 "+5V" H 4865 6323 50  0000 C CNN
+F 2 "" H 4850 6150 50  0001 C CNN
+F 3 "" H 4850 6150 50  0001 C CNN
+	1    4850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0268
+U 1 1 5DD6CD40
+P 4800 6800
+F 0 "#PWR0268" H 4800 6550 50  0001 C CNN
+F 1 "GND" H 4805 6627 50  0000 C CNN
+F 2 "" H 4800 6800 50  0001 C CNN
+F 3 "" H 4800 6800 50  0001 C CNN
+	1    4800 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6600 4800 6600
+Wire Wire Line
+	4800 6600 4800 6700
+Wire Wire Line
+	4950 6700 4800 6700
+Connection ~ 4800 6700
+Wire Wire Line
+	4800 6700 4800 6800
+Wire Wire Line
+	4950 6800 4800 6800
+Connection ~ 4800 6800
+Wire Wire Line
+	4950 6300 4900 6300
+Wire Wire Line
+	4900 6300 4900 6400
+Connection ~ 4900 6400
+Wire Wire Line
+	4900 6400 4950 6400
+Wire Wire Line
+	4850 6150 4950 6150
+Wire Wire Line
+	4950 6150 4950 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U82
+U 1 1 5DD6CD54
+P 6950 6450
+F 0 "U82" H 6950 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 6500 60  0001 C CNN
+F 3 "" H 6950 6500 60  0001 C CNN
+	1    6950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0249
+U 1 1 5DD6CD60
+P 6350 6150
+F 0 "#PWR0249" H 6350 6000 50  0001 C CNN
+F 1 "+5V" H 6365 6323 50  0000 C CNN
+F 2 "" H 6350 6150 50  0001 C CNN
+F 3 "" H 6350 6150 50  0001 C CNN
+	1    6350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0269
+U 1 1 5DD6CD66
+P 6300 6800
+F 0 "#PWR0269" H 6300 6550 50  0001 C CNN
+F 1 "GND" H 6305 6627 50  0000 C CNN
+F 2 "" H 6300 6800 50  0001 C CNN
+F 3 "" H 6300 6800 50  0001 C CNN
+	1    6300 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 6600 6300 6600
+Wire Wire Line
+	6300 6600 6300 6700
+Wire Wire Line
+	6450 6700 6300 6700
+Connection ~ 6300 6700
+Wire Wire Line
+	6300 6700 6300 6800
+Wire Wire Line
+	6450 6800 6300 6800
+Connection ~ 6300 6800
+Wire Wire Line
+	6450 6300 6400 6300
+Wire Wire Line
+	6400 6300 6400 6400
+Connection ~ 6400 6400
+Wire Wire Line
+	6400 6400 6450 6400
+Wire Wire Line
+	6350 6150 6450 6150
+Wire Wire Line
+	6450 6150 6450 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U83
+U 1 1 5DD6CD7A
+P 8450 6450
+F 0 "U83" H 8450 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 6500 60  0001 C CNN
+F 3 "" H 8450 6500 60  0001 C CNN
+	1    8450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0250
+U 1 1 5DD6CD86
+P 7850 6150
+F 0 "#PWR0250" H 7850 6000 50  0001 C CNN
+F 1 "+5V" H 7865 6323 50  0000 C CNN
+F 2 "" H 7850 6150 50  0001 C CNN
+F 3 "" H 7850 6150 50  0001 C CNN
+	1    7850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0270
+U 1 1 5DD6CD8C
+P 7800 6800
+F 0 "#PWR0270" H 7800 6550 50  0001 C CNN
+F 1 "GND" H 7805 6627 50  0000 C CNN
+F 2 "" H 7800 6800 50  0001 C CNN
+F 3 "" H 7800 6800 50  0001 C CNN
+	1    7800 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 6600 7800 6600
+Wire Wire Line
+	7800 6600 7800 6700
+Wire Wire Line
+	7950 6700 7800 6700
+Connection ~ 7800 6700
+Wire Wire Line
+	7800 6700 7800 6800
+Wire Wire Line
+	7950 6800 7800 6800
+Connection ~ 7800 6800
+Wire Wire Line
+	7950 6300 7900 6300
+Wire Wire Line
+	7900 6300 7900 6400
+Connection ~ 7900 6400
+Wire Wire Line
+	7900 6400 7950 6400
+Wire Wire Line
+	7850 6150 7950 6150
+Wire Wire Line
+	7950 6150 7950 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U84
+U 1 1 5DD6CDA0
+P 9950 6450
+F 0 "U84" H 9950 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 6500 60  0001 C CNN
+F 3 "" H 9950 6500 60  0001 C CNN
+	1    9950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0251
+U 1 1 5DD6CDAC
+P 9350 6150
+F 0 "#PWR0251" H 9350 6000 50  0001 C CNN
+F 1 "+5V" H 9365 6323 50  0000 C CNN
+F 2 "" H 9350 6150 50  0001 C CNN
+F 3 "" H 9350 6150 50  0001 C CNN
+	1    9350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0271
+U 1 1 5DD6CDB2
+P 9300 6800
+F 0 "#PWR0271" H 9300 6550 50  0001 C CNN
+F 1 "GND" H 9305 6627 50  0000 C CNN
+F 2 "" H 9300 6800 50  0001 C CNN
+F 3 "" H 9300 6800 50  0001 C CNN
+	1    9300 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 6600 9300 6600
+Wire Wire Line
+	9300 6600 9300 6700
+Wire Wire Line
+	9450 6700 9300 6700
+Connection ~ 9300 6700
+Wire Wire Line
+	9300 6700 9300 6800
+Wire Wire Line
+	9450 6800 9300 6800
+Connection ~ 9300 6800
+Wire Wire Line
+	9450 6300 9400 6300
+Wire Wire Line
+	9400 6300 9400 6400
+Connection ~ 9400 6400
+Wire Wire Line
+	9400 6400 9450 6400
+Wire Wire Line
+	9350 6150 9450 6150
+Wire Wire Line
+	9450 6150 9450 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U85
+U 1 1 5DD6CDC6
+P 11450 6450
+F 0 "U85" H 11450 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 6500 60  0001 C CNN
+F 3 "" H 11450 6500 60  0001 C CNN
+	1    11450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0252
+U 1 1 5DD6CDD2
+P 10850 6150
+F 0 "#PWR0252" H 10850 6000 50  0001 C CNN
+F 1 "+5V" H 10865 6323 50  0000 C CNN
+F 2 "" H 10850 6150 50  0001 C CNN
+F 3 "" H 10850 6150 50  0001 C CNN
+	1    10850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0272
+U 1 1 5DD6CDD8
+P 10800 6800
+F 0 "#PWR0272" H 10800 6550 50  0001 C CNN
+F 1 "GND" H 10805 6627 50  0000 C CNN
+F 2 "" H 10800 6800 50  0001 C CNN
+F 3 "" H 10800 6800 50  0001 C CNN
+	1    10800 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 6600 10800 6600
+Wire Wire Line
+	10800 6600 10800 6700
+Wire Wire Line
+	10950 6700 10800 6700
+Connection ~ 10800 6700
+Wire Wire Line
+	10800 6700 10800 6800
+Wire Wire Line
+	10950 6800 10800 6800
+Connection ~ 10800 6800
+Wire Wire Line
+	10950 6300 10900 6300
+Wire Wire Line
+	10900 6300 10900 6400
+Connection ~ 10900 6400
+Wire Wire Line
+	10900 6400 10950 6400
+Wire Wire Line
+	10850 6150 10950 6150
+Wire Wire Line
+	10950 6150 10950 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U86
+U 1 1 5DD6CDEC
+P 12950 6450
+F 0 "U86" H 12950 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 6500 60  0001 C CNN
+F 3 "" H 12950 6500 60  0001 C CNN
+	1    12950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0253
+U 1 1 5DD6CDF8
+P 12350 6150
+F 0 "#PWR0253" H 12350 6000 50  0001 C CNN
+F 1 "+5V" H 12365 6323 50  0000 C CNN
+F 2 "" H 12350 6150 50  0001 C CNN
+F 3 "" H 12350 6150 50  0001 C CNN
+	1    12350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0273
+U 1 1 5DD6CDFE
+P 12300 6800
+F 0 "#PWR0273" H 12300 6550 50  0001 C CNN
+F 1 "GND" H 12305 6627 50  0000 C CNN
+F 2 "" H 12300 6800 50  0001 C CNN
+F 3 "" H 12300 6800 50  0001 C CNN
+	1    12300 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 6600 12300 6600
+Wire Wire Line
+	12300 6600 12300 6700
+Wire Wire Line
+	12450 6700 12300 6700
+Connection ~ 12300 6700
+Wire Wire Line
+	12300 6700 12300 6800
+Wire Wire Line
+	12450 6800 12300 6800
+Connection ~ 12300 6800
+Wire Wire Line
+	12450 6300 12400 6300
+Wire Wire Line
+	12400 6300 12400 6400
+Connection ~ 12400 6400
+Wire Wire Line
+	12400 6400 12450 6400
+Wire Wire Line
+	12350 6150 12450 6150
+Wire Wire Line
+	12450 6150 12450 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U87
+U 1 1 5DD6CE12
+P 14450 6450
+F 0 "U87" H 14450 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 6500 60  0001 C CNN
+F 3 "" H 14450 6500 60  0001 C CNN
+	1    14450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0254
+U 1 1 5DD6CE1E
+P 13850 6150
+F 0 "#PWR0254" H 13850 6000 50  0001 C CNN
+F 1 "+5V" H 13865 6323 50  0000 C CNN
+F 2 "" H 13850 6150 50  0001 C CNN
+F 3 "" H 13850 6150 50  0001 C CNN
+	1    13850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0274
+U 1 1 5DD6CE24
+P 13800 6800
+F 0 "#PWR0274" H 13800 6550 50  0001 C CNN
+F 1 "GND" H 13805 6627 50  0000 C CNN
+F 2 "" H 13800 6800 50  0001 C CNN
+F 3 "" H 13800 6800 50  0001 C CNN
+	1    13800 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 6600 13800 6600
+Wire Wire Line
+	13800 6600 13800 6700
+Wire Wire Line
+	13950 6700 13800 6700
+Connection ~ 13800 6700
+Wire Wire Line
+	13800 6700 13800 6800
+Wire Wire Line
+	13950 6800 13800 6800
+Connection ~ 13800 6800
+Wire Wire Line
+	13950 6300 13900 6300
+Wire Wire Line
+	13900 6300 13900 6400
+Connection ~ 13900 6400
+Wire Wire Line
+	13900 6400 13950 6400
+Wire Wire Line
+	13850 6150 13950 6150
+Wire Wire Line
+	13950 6150 13950 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U88
+U 1 1 5DD6CE38
+P 15950 6450
+F 0 "U88" H 15950 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 6500 60  0001 C CNN
+F 3 "" H 15950 6500 60  0001 C CNN
+	1    15950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0255
+U 1 1 5DD6CE44
+P 15350 6150
+F 0 "#PWR0255" H 15350 6000 50  0001 C CNN
+F 1 "+5V" H 15365 6323 50  0000 C CNN
+F 2 "" H 15350 6150 50  0001 C CNN
+F 3 "" H 15350 6150 50  0001 C CNN
+	1    15350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0275
+U 1 1 5DD6CE4A
+P 15300 6800
+F 0 "#PWR0275" H 15300 6550 50  0001 C CNN
+F 1 "GND" H 15305 6627 50  0000 C CNN
+F 2 "" H 15300 6800 50  0001 C CNN
+F 3 "" H 15300 6800 50  0001 C CNN
+	1    15300 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 6600 15300 6600
+Wire Wire Line
+	15300 6600 15300 6700
+Wire Wire Line
+	15450 6700 15300 6700
+Connection ~ 15300 6700
+Wire Wire Line
+	15300 6700 15300 6800
+Wire Wire Line
+	15450 6800 15300 6800
+Connection ~ 15300 6800
+Wire Wire Line
+	15450 6300 15400 6300
+Wire Wire Line
+	15400 6300 15400 6400
+Connection ~ 15400 6400
+Wire Wire Line
+	15400 6400 15450 6400
+Wire Wire Line
+	15350 6150 15450 6150
+Wire Wire Line
+	15450 6150 15450 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U89
+U 1 1 5DD6CE5E
+P 17450 6450
+F 0 "U89" H 17450 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 6500 60  0001 C CNN
+F 3 "" H 17450 6500 60  0001 C CNN
+	1    17450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0256
+U 1 1 5DD6CE6A
+P 16850 6150
+F 0 "#PWR0256" H 16850 6000 50  0001 C CNN
+F 1 "+5V" H 16865 6323 50  0000 C CNN
+F 2 "" H 16850 6150 50  0001 C CNN
+F 3 "" H 16850 6150 50  0001 C CNN
+	1    16850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0276
+U 1 1 5DD6CE70
+P 16800 6800
+F 0 "#PWR0276" H 16800 6550 50  0001 C CNN
+F 1 "GND" H 16805 6627 50  0000 C CNN
+F 2 "" H 16800 6800 50  0001 C CNN
+F 3 "" H 16800 6800 50  0001 C CNN
+	1    16800 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 6600 16800 6600
+Wire Wire Line
+	16800 6600 16800 6700
+Wire Wire Line
+	16950 6700 16800 6700
+Connection ~ 16800 6700
+Wire Wire Line
+	16800 6700 16800 6800
+Wire Wire Line
+	16950 6800 16800 6800
+Connection ~ 16800 6800
+Wire Wire Line
+	16950 6300 16900 6300
+Wire Wire Line
+	16900 6300 16900 6400
+Connection ~ 16900 6400
+Wire Wire Line
+	16900 6400 16950 6400
+Wire Wire Line
+	16850 6150 16950 6150
+Wire Wire Line
+	16950 6150 16950 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U90
+U 1 1 5DD6CE84
+P 18950 6450
+F 0 "U90" H 18950 7037 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 6931 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 6500 60  0001 C CNN
+F 3 "" H 18950 6500 60  0001 C CNN
+	1    18950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0257
+U 1 1 5DD6CE90
+P 18350 6150
+F 0 "#PWR0257" H 18350 6000 50  0001 C CNN
+F 1 "+5V" H 18365 6323 50  0000 C CNN
+F 2 "" H 18350 6150 50  0001 C CNN
+F 3 "" H 18350 6150 50  0001 C CNN
+	1    18350 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0277
+U 1 1 5DD6CE96
+P 18300 6800
+F 0 "#PWR0277" H 18300 6550 50  0001 C CNN
+F 1 "GND" H 18305 6627 50  0000 C CNN
+F 2 "" H 18300 6800 50  0001 C CNN
+F 3 "" H 18300 6800 50  0001 C CNN
+	1    18300 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 6600 18300 6600
+Wire Wire Line
+	18300 6600 18300 6700
+Wire Wire Line
+	18450 6700 18300 6700
+Connection ~ 18300 6700
+Wire Wire Line
+	18300 6700 18300 6800
+Wire Wire Line
+	18450 6800 18300 6800
+Connection ~ 18300 6800
+Wire Wire Line
+	18450 6300 18400 6300
+Wire Wire Line
+	18400 6300 18400 6400
+Connection ~ 18400 6400
+Wire Wire Line
+	18400 6400 18450 6400
+Wire Wire Line
+	18350 6150 18450 6150
+Wire Wire Line
+	18450 6150 18450 6200
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U91
+U 1 1 5DE88EC3
+P 5450 7900
+F 0 "U91" H 5450 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5450 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5450 7950 60  0001 C CNN
+F 3 "" H 5450 7950 60  0001 C CNN
+	1    5450 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0278
+U 1 1 5DE88ECF
+P 4850 7600
+F 0 "#PWR0278" H 4850 7450 50  0001 C CNN
+F 1 "+5V" H 4865 7773 50  0000 C CNN
+F 2 "" H 4850 7600 50  0001 C CNN
+F 3 "" H 4850 7600 50  0001 C CNN
+	1    4850 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0298
+U 1 1 5DE88ED5
+P 4800 8250
+F 0 "#PWR0298" H 4800 8000 50  0001 C CNN
+F 1 "GND" H 4805 8077 50  0000 C CNN
+F 2 "" H 4800 8250 50  0001 C CNN
+F 3 "" H 4800 8250 50  0001 C CNN
+	1    4800 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 8050 4800 8050
+Wire Wire Line
+	4800 8050 4800 8150
+Wire Wire Line
+	4950 8150 4800 8150
+Connection ~ 4800 8150
+Wire Wire Line
+	4800 8150 4800 8250
+Wire Wire Line
+	4950 8250 4800 8250
+Connection ~ 4800 8250
+Wire Wire Line
+	4950 7750 4900 7750
+Wire Wire Line
+	4900 7750 4900 7850
+Connection ~ 4900 7850
+Wire Wire Line
+	4900 7850 4950 7850
+Wire Wire Line
+	4850 7600 4950 7600
+Wire Wire Line
+	4950 7600 4950 7650
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U92
+U 1 1 5DE88EE9
+P 6950 7900
+F 0 "U92" H 6950 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 6950 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 6950 7950 60  0001 C CNN
+F 3 "" H 6950 7950 60  0001 C CNN
+	1    6950 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0279
+U 1 1 5DE88EF5
+P 6350 7600
+F 0 "#PWR0279" H 6350 7450 50  0001 C CNN
+F 1 "+5V" H 6365 7773 50  0000 C CNN
+F 2 "" H 6350 7600 50  0001 C CNN
+F 3 "" H 6350 7600 50  0001 C CNN
+	1    6350 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0299
+U 1 1 5DE88EFB
+P 6300 8250
+F 0 "#PWR0299" H 6300 8000 50  0001 C CNN
+F 1 "GND" H 6305 8077 50  0000 C CNN
+F 2 "" H 6300 8250 50  0001 C CNN
+F 3 "" H 6300 8250 50  0001 C CNN
+	1    6300 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 8050 6300 8050
+Wire Wire Line
+	6300 8050 6300 8150
+Wire Wire Line
+	6450 8150 6300 8150
+Connection ~ 6300 8150
+Wire Wire Line
+	6300 8150 6300 8250
+Wire Wire Line
+	6450 8250 6300 8250
+Connection ~ 6300 8250
+Wire Wire Line
+	6450 7750 6400 7750
+Wire Wire Line
+	6400 7750 6400 7850
+Connection ~ 6400 7850
+Wire Wire Line
+	6400 7850 6450 7850
+Wire Wire Line
+	6350 7600 6450 7600
+Wire Wire Line
+	6450 7600 6450 7650
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U93
+U 1 1 5DE88F0F
+P 8450 7900
+F 0 "U93" H 8450 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 8450 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 8450 7950 60  0001 C CNN
+F 3 "" H 8450 7950 60  0001 C CNN
+	1    8450 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0280
+U 1 1 5DE88F1B
+P 7850 7600
+F 0 "#PWR0280" H 7850 7450 50  0001 C CNN
+F 1 "+5V" H 7865 7773 50  0000 C CNN
+F 2 "" H 7850 7600 50  0001 C CNN
+F 3 "" H 7850 7600 50  0001 C CNN
+	1    7850 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0300
+U 1 1 5DE88F21
+P 7800 8250
+F 0 "#PWR0300" H 7800 8000 50  0001 C CNN
+F 1 "GND" H 7805 8077 50  0000 C CNN
+F 2 "" H 7800 8250 50  0001 C CNN
+F 3 "" H 7800 8250 50  0001 C CNN
+	1    7800 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 8050 7800 8050
+Wire Wire Line
+	7800 8050 7800 8150
+Wire Wire Line
+	7950 8150 7800 8150
+Connection ~ 7800 8150
+Wire Wire Line
+	7800 8150 7800 8250
+Wire Wire Line
+	7950 8250 7800 8250
+Connection ~ 7800 8250
+Wire Wire Line
+	7950 7750 7900 7750
+Wire Wire Line
+	7900 7750 7900 7850
+Connection ~ 7900 7850
+Wire Wire Line
+	7900 7850 7950 7850
+Wire Wire Line
+	7850 7600 7950 7600
+Wire Wire Line
+	7950 7600 7950 7650
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U94
+U 1 1 5DE88F35
+P 9950 7900
+F 0 "U94" H 9950 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9950 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9950 7950 60  0001 C CNN
+F 3 "" H 9950 7950 60  0001 C CNN
+	1    9950 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0281
+U 1 1 5DE88F41
+P 9350 7600
+F 0 "#PWR0281" H 9350 7450 50  0001 C CNN
+F 1 "+5V" H 9365 7773 50  0000 C CNN
+F 2 "" H 9350 7600 50  0001 C CNN
+F 3 "" H 9350 7600 50  0001 C CNN
+	1    9350 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0301
+U 1 1 5DE88F47
+P 9300 8250
+F 0 "#PWR0301" H 9300 8000 50  0001 C CNN
+F 1 "GND" H 9305 8077 50  0000 C CNN
+F 2 "" H 9300 8250 50  0001 C CNN
+F 3 "" H 9300 8250 50  0001 C CNN
+	1    9300 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 8050 9300 8050
+Wire Wire Line
+	9300 8050 9300 8150
+Wire Wire Line
+	9450 8150 9300 8150
+Connection ~ 9300 8150
+Wire Wire Line
+	9300 8150 9300 8250
+Wire Wire Line
+	9450 8250 9300 8250
+Connection ~ 9300 8250
+Wire Wire Line
+	9450 7750 9400 7750
+Wire Wire Line
+	9400 7750 9400 7850
+Connection ~ 9400 7850
+Wire Wire Line
+	9400 7850 9450 7850
+Wire Wire Line
+	9350 7600 9450 7600
+Wire Wire Line
+	9450 7600 9450 7650
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U95
+U 1 1 5DE88F5B
+P 11450 7900
+F 0 "U95" H 11450 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 11450 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 11450 7950 60  0001 C CNN
+F 3 "" H 11450 7950 60  0001 C CNN
+	1    11450 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0282
+U 1 1 5DE88F67
+P 10850 7600
+F 0 "#PWR0282" H 10850 7450 50  0001 C CNN
+F 1 "+5V" H 10865 7773 50  0000 C CNN
+F 2 "" H 10850 7600 50  0001 C CNN
+F 3 "" H 10850 7600 50  0001 C CNN
+	1    10850 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0302
+U 1 1 5DE88F6D
+P 10800 8250
+F 0 "#PWR0302" H 10800 8000 50  0001 C CNN
+F 1 "GND" H 10805 8077 50  0000 C CNN
+F 2 "" H 10800 8250 50  0001 C CNN
+F 3 "" H 10800 8250 50  0001 C CNN
+	1    10800 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 8050 10800 8050
+Wire Wire Line
+	10800 8050 10800 8150
+Wire Wire Line
+	10950 8150 10800 8150
+Connection ~ 10800 8150
+Wire Wire Line
+	10800 8150 10800 8250
+Wire Wire Line
+	10950 8250 10800 8250
+Connection ~ 10800 8250
+Wire Wire Line
+	10950 7750 10900 7750
+Wire Wire Line
+	10900 7750 10900 7850
+Connection ~ 10900 7850
+Wire Wire Line
+	10900 7850 10950 7850
+Wire Wire Line
+	10850 7600 10950 7600
+Wire Wire Line
+	10950 7600 10950 7650
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U96
+U 1 1 5DE88F81
+P 12950 7900
+F 0 "U96" H 12950 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 12950 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 12950 7950 60  0001 C CNN
+F 3 "" H 12950 7950 60  0001 C CNN
+	1    12950 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0283
+U 1 1 5DE88F8D
+P 12350 7600
+F 0 "#PWR0283" H 12350 7450 50  0001 C CNN
+F 1 "+5V" H 12365 7773 50  0000 C CNN
+F 2 "" H 12350 7600 50  0001 C CNN
+F 3 "" H 12350 7600 50  0001 C CNN
+	1    12350 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0303
+U 1 1 5DE88F93
+P 12300 8250
+F 0 "#PWR0303" H 12300 8000 50  0001 C CNN
+F 1 "GND" H 12305 8077 50  0000 C CNN
+F 2 "" H 12300 8250 50  0001 C CNN
+F 3 "" H 12300 8250 50  0001 C CNN
+	1    12300 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 8050 12300 8050
+Wire Wire Line
+	12300 8050 12300 8150
+Wire Wire Line
+	12450 8150 12300 8150
+Connection ~ 12300 8150
+Wire Wire Line
+	12300 8150 12300 8250
+Wire Wire Line
+	12450 8250 12300 8250
+Connection ~ 12300 8250
+Wire Wire Line
+	12450 7750 12400 7750
+Wire Wire Line
+	12400 7750 12400 7850
+Connection ~ 12400 7850
+Wire Wire Line
+	12400 7850 12450 7850
+Wire Wire Line
+	12350 7600 12450 7600
+Wire Wire Line
+	12450 7600 12450 7650
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U97
+U 1 1 5DE88FA7
+P 14450 7900
+F 0 "U97" H 14450 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 14450 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 14450 7950 60  0001 C CNN
+F 3 "" H 14450 7950 60  0001 C CNN
+	1    14450 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0284
+U 1 1 5DE88FB3
+P 13850 7600
+F 0 "#PWR0284" H 13850 7450 50  0001 C CNN
+F 1 "+5V" H 13865 7773 50  0000 C CNN
+F 2 "" H 13850 7600 50  0001 C CNN
+F 3 "" H 13850 7600 50  0001 C CNN
+	1    13850 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0304
+U 1 1 5DE88FB9
+P 13800 8250
+F 0 "#PWR0304" H 13800 8000 50  0001 C CNN
+F 1 "GND" H 13805 8077 50  0000 C CNN
+F 2 "" H 13800 8250 50  0001 C CNN
+F 3 "" H 13800 8250 50  0001 C CNN
+	1    13800 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 8050 13800 8050
+Wire Wire Line
+	13800 8050 13800 8150
+Wire Wire Line
+	13950 8150 13800 8150
+Connection ~ 13800 8150
+Wire Wire Line
+	13800 8150 13800 8250
+Wire Wire Line
+	13950 8250 13800 8250
+Connection ~ 13800 8250
+Wire Wire Line
+	13950 7750 13900 7750
+Wire Wire Line
+	13900 7750 13900 7850
+Connection ~ 13900 7850
+Wire Wire Line
+	13900 7850 13950 7850
+Wire Wire Line
+	13850 7600 13950 7600
+Wire Wire Line
+	13950 7600 13950 7650
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U98
+U 1 1 5DE88FCD
+P 15950 7900
+F 0 "U98" H 15950 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 15950 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 15950 7950 60  0001 C CNN
+F 3 "" H 15950 7950 60  0001 C CNN
+	1    15950 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0285
+U 1 1 5DE88FD9
+P 15350 7600
+F 0 "#PWR0285" H 15350 7450 50  0001 C CNN
+F 1 "+5V" H 15365 7773 50  0000 C CNN
+F 2 "" H 15350 7600 50  0001 C CNN
+F 3 "" H 15350 7600 50  0001 C CNN
+	1    15350 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0305
+U 1 1 5DE88FDF
+P 15300 8250
+F 0 "#PWR0305" H 15300 8000 50  0001 C CNN
+F 1 "GND" H 15305 8077 50  0000 C CNN
+F 2 "" H 15300 8250 50  0001 C CNN
+F 3 "" H 15300 8250 50  0001 C CNN
+	1    15300 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15450 8050 15300 8050
+Wire Wire Line
+	15300 8050 15300 8150
+Wire Wire Line
+	15450 8150 15300 8150
+Connection ~ 15300 8150
+Wire Wire Line
+	15300 8150 15300 8250
+Wire Wire Line
+	15450 8250 15300 8250
+Connection ~ 15300 8250
+Wire Wire Line
+	15450 7750 15400 7750
+Wire Wire Line
+	15400 7750 15400 7850
+Connection ~ 15400 7850
+Wire Wire Line
+	15400 7850 15450 7850
+Wire Wire Line
+	15350 7600 15450 7600
+Wire Wire Line
+	15450 7600 15450 7650
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U99
+U 1 1 5DE88FF3
+P 17450 7900
+F 0 "U99" H 17450 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 17450 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 17450 7950 60  0001 C CNN
+F 3 "" H 17450 7950 60  0001 C CNN
+	1    17450 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0286
+U 1 1 5DE88FFF
+P 16850 7600
+F 0 "#PWR0286" H 16850 7450 50  0001 C CNN
+F 1 "+5V" H 16865 7773 50  0000 C CNN
+F 2 "" H 16850 7600 50  0001 C CNN
+F 3 "" H 16850 7600 50  0001 C CNN
+	1    16850 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0306
+U 1 1 5DE89005
+P 16800 8250
+F 0 "#PWR0306" H 16800 8000 50  0001 C CNN
+F 1 "GND" H 16805 8077 50  0000 C CNN
+F 2 "" H 16800 8250 50  0001 C CNN
+F 3 "" H 16800 8250 50  0001 C CNN
+	1    16800 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16950 8050 16800 8050
+Wire Wire Line
+	16800 8050 16800 8150
+Wire Wire Line
+	16950 8150 16800 8150
+Connection ~ 16800 8150
+Wire Wire Line
+	16800 8150 16800 8250
+Wire Wire Line
+	16950 8250 16800 8250
+Connection ~ 16800 8250
+Wire Wire Line
+	16950 7750 16900 7750
+Wire Wire Line
+	16900 7750 16900 7850
+Connection ~ 16900 7850
+Wire Wire Line
+	16900 7850 16950 7850
+Wire Wire Line
+	16850 7600 16950 7600
+Wire Wire Line
+	16950 7600 16950 7650
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U100
+U 1 1 5DE89019
+P 18950 7900
+F 0 "U100" H 18950 8487 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 18950 8381 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 18950 7950 60  0001 C CNN
+F 3 "" H 18950 7950 60  0001 C CNN
+	1    18950 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0287
+U 1 1 5DE89025
+P 18350 7600
+F 0 "#PWR0287" H 18350 7450 50  0001 C CNN
+F 1 "+5V" H 18365 7773 50  0000 C CNN
+F 2 "" H 18350 7600 50  0001 C CNN
+F 3 "" H 18350 7600 50  0001 C CNN
+	1    18350 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0307
+U 1 1 5DE8902B
+P 18300 8250
+F 0 "#PWR0307" H 18300 8000 50  0001 C CNN
+F 1 "GND" H 18305 8077 50  0000 C CNN
+F 2 "" H 18300 8250 50  0001 C CNN
+F 3 "" H 18300 8250 50  0001 C CNN
+	1    18300 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 8050 18300 8050
+Wire Wire Line
+	18300 8050 18300 8150
+Wire Wire Line
+	18450 8150 18300 8150
+Connection ~ 18300 8150
+Wire Wire Line
+	18300 8150 18300 8250
+Wire Wire Line
+	18450 8250 18300 8250
+Connection ~ 18300 8250
+Wire Wire Line
+	18450 7750 18400 7750
+Wire Wire Line
+	18400 7750 18400 7850
+Connection ~ 18400 7850
+Wire Wire Line
+	18400 7850 18450 7850
+Wire Wire Line
+	18350 7600 18450 7600
+Wire Wire Line
+	18450 7600 18450 7650
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5F5185F8
+P 3250 4000
+F 0 "J2" H 3307 4467 50  0000 C CNN
+F 1 "USB_B_Micro" H 3307 4376 50  0000 C CNN
+F 2 "AmphenolMicroUSB:10118192-0002LF" H 3400 3950 50  0001 C CNN
+F 3 "~" H 3400 3950 50  0001 C CNN
+	1    3250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5F51B8A1
+P 1950 6400
+F 0 "#PWR0108" H 1950 6250 50  0001 C CNN
+F 1 "+5V" H 1965 6573 50  0000 C CNN
+F 2 "" H 1950 6400 50  0001 C CNN
+F 3 "" H 1950 6400 50  0001 C CNN
+	1    1950 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5F51BCE5
+P 3250 4550
+F 0 "#PWR0109" H 3250 4300 50  0001 C CNN
+F 1 "GND" H 3255 4377 50  0000 C CNN
+F 2 "" H 3250 4550 50  0001 C CNN
+F 3 "" H 3250 4550 50  0001 C CNN
+	1    3250 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3800 3750 3800
+Wire Wire Line
+	3250 4400 3250 4500
+Wire Wire Line
+	3250 4500 3150 4500
+Wire Wire Line
+	3150 4500 3150 4400
+Wire Wire Line
+	3250 4500 3250 4550
+Connection ~ 3250 4500
+$Comp
+L Regulator_Linear:AZ1117-3.3 U101
+U 1 1 5F93B458
+P 4250 9200
+F 0 "U101" H 4250 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 4250 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 4250 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 4250 9200 50  0001 C CNN
+	1    4250 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F93E947
+P 4250 9650
+F 0 "#PWR0110" H 4250 9400 50  0001 C CNN
+F 1 "GND" H 4255 9477 50  0000 C CNN
+F 2 "" H 4250 9650 50  0001 C CNN
+F 3 "" H 4250 9650 50  0001 C CNN
+	1    4250 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 5F93EC40
+P 3700 9200
+F 0 "#PWR0111" H 3700 9050 50  0001 C CNN
+F 1 "+5V" H 3715 9373 50  0000 C CNN
+F 2 "" H 3700 9200 50  0001 C CNN
+F 3 "" H 3700 9200 50  0001 C CNN
+	1    3700 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F942017
+P 3800 9400
+F 0 "C1" H 3915 9446 50  0000 L CNN
+F 1 "10uF" H 3915 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3838 9250 50  0001 C CNN
+F 3 "~" H 3800 9400 50  0001 C CNN
+	1    3800 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FAFA2B2
+P 4700 9400
+F 0 "C2" H 4815 9446 50  0000 L CNN
+F 1 "10uF" H 4815 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4738 9250 50  0001 C CNN
+F 3 "~" H 4700 9400 50  0001 C CNN
+	1    4700 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 9500 4250 9550
+Wire Wire Line
+	4700 9550 4250 9550
+Connection ~ 4250 9550
+Wire Wire Line
+	4250 9550 4250 9650
+Wire Wire Line
+	4250 9550 3800 9550
+Wire Wire Line
+	3950 9200 3800 9200
+Wire Wire Line
+	3800 9250 3800 9200
+Connection ~ 3800 9200
+Wire Wire Line
+	3800 9200 3700 9200
+Wire Wire Line
+	4550 9200 4700 9200
+Wire Wire Line
+	4700 9200 4700 9250
+$Comp
+L Regulator_Linear:AZ1117-3.3 U102
+U 1 1 604C2DFC
+P 5750 9200
+F 0 "U102" H 5750 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 5750 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 5750 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 5750 9200 50  0001 C CNN
+	1    5750 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 604C2E02
+P 5750 9650
+F 0 "#PWR0112" H 5750 9400 50  0001 C CNN
+F 1 "GND" H 5755 9477 50  0000 C CNN
+F 2 "" H 5750 9650 50  0001 C CNN
+F 3 "" H 5750 9650 50  0001 C CNN
+	1    5750 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 604C2E08
+P 5200 9200
+F 0 "#PWR0113" H 5200 9050 50  0001 C CNN
+F 1 "+5V" H 5215 9373 50  0000 C CNN
+F 2 "" H 5200 9200 50  0001 C CNN
+F 3 "" H 5200 9200 50  0001 C CNN
+	1    5200 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 604C2E0E
+P 5300 9400
+F 0 "C3" H 5415 9446 50  0000 L CNN
+F 1 "10uF" H 5415 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5338 9250 50  0001 C CNN
+F 3 "~" H 5300 9400 50  0001 C CNN
+	1    5300 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 604C2E14
+P 6200 9400
+F 0 "C4" H 6315 9446 50  0000 L CNN
+F 1 "10uF" H 6315 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6238 9250 50  0001 C CNN
+F 3 "~" H 6200 9400 50  0001 C CNN
+	1    6200 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 9500 5750 9550
+Wire Wire Line
+	6200 9550 5750 9550
+Connection ~ 5750 9550
+Wire Wire Line
+	5750 9550 5750 9650
+Wire Wire Line
+	5750 9550 5300 9550
+Wire Wire Line
+	5450 9200 5300 9200
+Wire Wire Line
+	5300 9250 5300 9200
+Connection ~ 5300 9200
+Wire Wire Line
+	5300 9200 5200 9200
+Wire Wire Line
+	6050 9200 6200 9200
+Wire Wire Line
+	6200 9200 6200 9250
+$Comp
+L Regulator_Linear:AZ1117-3.3 U103
+U 1 1 60631351
+P 7250 9200
+F 0 "U103" H 7250 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 7250 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 7250 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 7250 9200 50  0001 C CNN
+	1    7250 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 60631357
+P 7250 9650
+F 0 "#PWR0114" H 7250 9400 50  0001 C CNN
+F 1 "GND" H 7255 9477 50  0000 C CNN
+F 2 "" H 7250 9650 50  0001 C CNN
+F 3 "" H 7250 9650 50  0001 C CNN
+	1    7250 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0115
+U 1 1 6063135D
+P 6700 9200
+F 0 "#PWR0115" H 6700 9050 50  0001 C CNN
+F 1 "+5V" H 6715 9373 50  0000 C CNN
+F 2 "" H 6700 9200 50  0001 C CNN
+F 3 "" H 6700 9200 50  0001 C CNN
+	1    6700 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 60631363
+P 6800 9400
+F 0 "C5" H 6915 9446 50  0000 L CNN
+F 1 "10uF" H 6915 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6838 9250 50  0001 C CNN
+F 3 "~" H 6800 9400 50  0001 C CNN
+	1    6800 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60631369
+P 7700 9400
+F 0 "C6" H 7815 9446 50  0000 L CNN
+F 1 "10uF" H 7815 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7738 9250 50  0001 C CNN
+F 3 "~" H 7700 9400 50  0001 C CNN
+	1    7700 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 9500 7250 9550
+Wire Wire Line
+	7700 9550 7250 9550
+Connection ~ 7250 9550
+Wire Wire Line
+	7250 9550 7250 9650
+Wire Wire Line
+	7250 9550 6800 9550
+Wire Wire Line
+	6950 9200 6800 9200
+Wire Wire Line
+	6800 9250 6800 9200
+Connection ~ 6800 9200
+Wire Wire Line
+	6800 9200 6700 9200
+Wire Wire Line
+	7550 9200 7700 9200
+Wire Wire Line
+	7700 9200 7700 9250
+$Comp
+L Regulator_Linear:AZ1117-3.3 U105
+U 1 1 609226EB
+P 10250 9200
+F 0 "U105" H 10250 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 10250 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 10250 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 10250 9200 50  0001 C CNN
+	1    10250 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 609226F1
+P 10250 9650
+F 0 "#PWR0138" H 10250 9400 50  0001 C CNN
+F 1 "GND" H 10255 9477 50  0000 C CNN
+F 2 "" H 10250 9650 50  0001 C CNN
+F 3 "" H 10250 9650 50  0001 C CNN
+	1    10250 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0139
+U 1 1 609226F7
+P 9700 9200
+F 0 "#PWR0139" H 9700 9050 50  0001 C CNN
+F 1 "+5V" H 9715 9373 50  0000 C CNN
+F 2 "" H 9700 9200 50  0001 C CNN
+F 3 "" H 9700 9200 50  0001 C CNN
+	1    9700 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 609226FD
+P 9800 9400
+F 0 "C9" H 9915 9446 50  0000 L CNN
+F 1 "10uF" H 9915 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9838 9250 50  0001 C CNN
+F 3 "~" H 9800 9400 50  0001 C CNN
+	1    9800 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 60922703
+P 10700 9400
+F 0 "C10" H 10815 9446 50  0000 L CNN
+F 1 "10uF" H 10815 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10738 9250 50  0001 C CNN
+F 3 "~" H 10700 9400 50  0001 C CNN
+	1    10700 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 9500 10250 9550
+Wire Wire Line
+	10700 9550 10250 9550
+Connection ~ 10250 9550
+Wire Wire Line
+	10250 9550 10250 9650
+Wire Wire Line
+	10250 9550 9800 9550
+Wire Wire Line
+	9950 9200 9800 9200
+Wire Wire Line
+	9800 9250 9800 9200
+Connection ~ 9800 9200
+Wire Wire Line
+	9800 9200 9700 9200
+Wire Wire Line
+	10550 9200 10700 9200
+Wire Wire Line
+	10700 9200 10700 9250
+$Comp
+L Regulator_Linear:AZ1117-3.3 U106
+U 1 1 60AAE7C5
+P 11750 9200
+F 0 "U106" H 11750 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 11750 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 11750 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 11750 9200 50  0001 C CNN
+	1    11750 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 60AAE7CB
+P 11750 9650
+F 0 "#PWR0140" H 11750 9400 50  0001 C CNN
+F 1 "GND" H 11755 9477 50  0000 C CNN
+F 2 "" H 11750 9650 50  0001 C CNN
+F 3 "" H 11750 9650 50  0001 C CNN
+	1    11750 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0141
+U 1 1 60AAE7D1
+P 11200 9200
+F 0 "#PWR0141" H 11200 9050 50  0001 C CNN
+F 1 "+5V" H 11215 9373 50  0000 C CNN
+F 2 "" H 11200 9200 50  0001 C CNN
+F 3 "" H 11200 9200 50  0001 C CNN
+	1    11200 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 60AAE7D7
+P 11300 9400
+F 0 "C11" H 11415 9446 50  0000 L CNN
+F 1 "10uF" H 11415 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 11338 9250 50  0001 C CNN
+F 3 "~" H 11300 9400 50  0001 C CNN
+	1    11300 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 60AAE7DD
+P 12200 9400
+F 0 "C12" H 12315 9446 50  0000 L CNN
+F 1 "10uF" H 12315 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 12238 9250 50  0001 C CNN
+F 3 "~" H 12200 9400 50  0001 C CNN
+	1    12200 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 9500 11750 9550
+Wire Wire Line
+	12200 9550 11750 9550
+Connection ~ 11750 9550
+Wire Wire Line
+	11750 9550 11750 9650
+Wire Wire Line
+	11750 9550 11300 9550
+Wire Wire Line
+	11450 9200 11300 9200
+Wire Wire Line
+	11300 9250 11300 9200
+Connection ~ 11300 9200
+Wire Wire Line
+	11300 9200 11200 9200
+Wire Wire Line
+	12050 9200 12200 9200
+Wire Wire Line
+	12200 9200 12200 9250
+$Comp
+L Regulator_Linear:AZ1117-3.3 U107
+U 1 1 60AAE7EE
+P 13250 9200
+F 0 "U107" H 13250 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 13250 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 13250 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 13250 9200 50  0001 C CNN
+	1    13250 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 60AAE7F4
+P 13250 9650
+F 0 "#PWR0142" H 13250 9400 50  0001 C CNN
+F 1 "GND" H 13255 9477 50  0000 C CNN
+F 2 "" H 13250 9650 50  0001 C CNN
+F 3 "" H 13250 9650 50  0001 C CNN
+	1    13250 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0143
+U 1 1 60AAE7FA
+P 12700 9200
+F 0 "#PWR0143" H 12700 9050 50  0001 C CNN
+F 1 "+5V" H 12715 9373 50  0000 C CNN
+F 2 "" H 12700 9200 50  0001 C CNN
+F 3 "" H 12700 9200 50  0001 C CNN
+	1    12700 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 60AAE800
+P 12800 9400
+F 0 "C13" H 12915 9446 50  0000 L CNN
+F 1 "10uF" H 12915 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 12838 9250 50  0001 C CNN
+F 3 "~" H 12800 9400 50  0001 C CNN
+	1    12800 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 60AAE806
+P 13700 9400
+F 0 "C14" H 13815 9446 50  0000 L CNN
+F 1 "10uF" H 13815 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 13738 9250 50  0001 C CNN
+F 3 "~" H 13700 9400 50  0001 C CNN
+	1    13700 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 9500 13250 9550
+Wire Wire Line
+	13700 9550 13250 9550
+Connection ~ 13250 9550
+Wire Wire Line
+	13250 9550 13250 9650
+Wire Wire Line
+	13250 9550 12800 9550
+Wire Wire Line
+	12950 9200 12800 9200
+Wire Wire Line
+	12800 9250 12800 9200
+Connection ~ 12800 9200
+Wire Wire Line
+	12800 9200 12700 9200
+Wire Wire Line
+	13550 9200 13700 9200
+Wire Wire Line
+	13700 9200 13700 9250
+$Comp
+L Regulator_Linear:AZ1117-3.3 U108
+U 1 1 60AAE817
+P 14750 9200
+F 0 "U108" H 14750 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 14750 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 14750 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 14750 9200 50  0001 C CNN
+	1    14750 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0144
+U 1 1 60AAE81D
+P 14750 9650
+F 0 "#PWR0144" H 14750 9400 50  0001 C CNN
+F 1 "GND" H 14755 9477 50  0000 C CNN
+F 2 "" H 14750 9650 50  0001 C CNN
+F 3 "" H 14750 9650 50  0001 C CNN
+	1    14750 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0145
+U 1 1 60AAE823
+P 14200 9200
+F 0 "#PWR0145" H 14200 9050 50  0001 C CNN
+F 1 "+5V" H 14215 9373 50  0000 C CNN
+F 2 "" H 14200 9200 50  0001 C CNN
+F 3 "" H 14200 9200 50  0001 C CNN
+	1    14200 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 60AAE829
+P 14300 9400
+F 0 "C15" H 14415 9446 50  0000 L CNN
+F 1 "10uF" H 14415 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 14338 9250 50  0001 C CNN
+F 3 "~" H 14300 9400 50  0001 C CNN
+	1    14300 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 60AAE82F
+P 15200 9400
+F 0 "C16" H 15315 9446 50  0000 L CNN
+F 1 "10uF" H 15315 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 15238 9250 50  0001 C CNN
+F 3 "~" H 15200 9400 50  0001 C CNN
+	1    15200 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14750 9500 14750 9550
+Wire Wire Line
+	15200 9550 14750 9550
+Connection ~ 14750 9550
+Wire Wire Line
+	14750 9550 14750 9650
+Wire Wire Line
+	14750 9550 14300 9550
+Wire Wire Line
+	14450 9200 14300 9200
+Wire Wire Line
+	14300 9250 14300 9200
+Connection ~ 14300 9200
+Wire Wire Line
+	14300 9200 14200 9200
+Wire Wire Line
+	15050 9200 15200 9200
+Wire Wire Line
+	15200 9200 15200 9250
+$Comp
+L Regulator_Linear:AZ1117-3.3 U109
+U 1 1 60AAE840
+P 16250 9200
+F 0 "U109" H 16250 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 16250 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 16250 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 16250 9200 50  0001 C CNN
+	1    16250 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 60AAE846
+P 16250 9650
+F 0 "#PWR0146" H 16250 9400 50  0001 C CNN
+F 1 "GND" H 16255 9477 50  0000 C CNN
+F 2 "" H 16250 9650 50  0001 C CNN
+F 3 "" H 16250 9650 50  0001 C CNN
+	1    16250 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0147
+U 1 1 60AAE84C
+P 15700 9200
+F 0 "#PWR0147" H 15700 9050 50  0001 C CNN
+F 1 "+5V" H 15715 9373 50  0000 C CNN
+F 2 "" H 15700 9200 50  0001 C CNN
+F 3 "" H 15700 9200 50  0001 C CNN
+	1    15700 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 60AAE852
+P 15800 9400
+F 0 "C17" H 15915 9446 50  0000 L CNN
+F 1 "10uF" H 15915 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 15838 9250 50  0001 C CNN
+F 3 "~" H 15800 9400 50  0001 C CNN
+	1    15800 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 60AAE858
+P 16700 9400
+F 0 "C18" H 16815 9446 50  0000 L CNN
+F 1 "10uF" H 16815 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 16738 9250 50  0001 C CNN
+F 3 "~" H 16700 9400 50  0001 C CNN
+	1    16700 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16250 9500 16250 9550
+Wire Wire Line
+	16700 9550 16250 9550
+Connection ~ 16250 9550
+Wire Wire Line
+	16250 9550 16250 9650
+Wire Wire Line
+	16250 9550 15800 9550
+Wire Wire Line
+	15950 9200 15800 9200
+Wire Wire Line
+	15800 9250 15800 9200
+Connection ~ 15800 9200
+Wire Wire Line
+	15800 9200 15700 9200
+Wire Wire Line
+	16550 9200 16700 9200
+Wire Wire Line
+	16700 9200 16700 9250
+$Comp
+L Regulator_Linear:AZ1117-3.3 U110
+U 1 1 60AAE869
+P 17750 9200
+F 0 "U110" H 17750 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 17750 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 17750 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 17750 9200 50  0001 C CNN
+	1    17750 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0168
+U 1 1 60AAE86F
+P 17750 9650
+F 0 "#PWR0168" H 17750 9400 50  0001 C CNN
+F 1 "GND" H 17755 9477 50  0000 C CNN
+F 2 "" H 17750 9650 50  0001 C CNN
+F 3 "" H 17750 9650 50  0001 C CNN
+	1    17750 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0169
+U 1 1 60AAE875
+P 17200 9200
+F 0 "#PWR0169" H 17200 9050 50  0001 C CNN
+F 1 "+5V" H 17215 9373 50  0000 C CNN
+F 2 "" H 17200 9200 50  0001 C CNN
+F 3 "" H 17200 9200 50  0001 C CNN
+	1    17200 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 60AAE87B
+P 17300 9400
+F 0 "C19" H 17415 9446 50  0000 L CNN
+F 1 "10uF" H 17415 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 17338 9250 50  0001 C CNN
+F 3 "~" H 17300 9400 50  0001 C CNN
+	1    17300 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 60AAE881
+P 18200 9400
+F 0 "C20" H 18315 9446 50  0000 L CNN
+F 1 "10uF" H 18315 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 18238 9250 50  0001 C CNN
+F 3 "~" H 18200 9400 50  0001 C CNN
+	1    18200 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17750 9500 17750 9550
+Wire Wire Line
+	18200 9550 17750 9550
+Connection ~ 17750 9550
+Wire Wire Line
+	17750 9550 17750 9650
+Wire Wire Line
+	17750 9550 17300 9550
+Wire Wire Line
+	17450 9200 17300 9200
+Wire Wire Line
+	17300 9250 17300 9200
+Connection ~ 17300 9200
+Wire Wire Line
+	17300 9200 17200 9200
+Wire Wire Line
+	18050 9200 18200 9200
+Wire Wire Line
+	18200 9200 18200 9250
+Wire Wire Line
+	4700 -5200 4900 -5200
+Connection ~ 4700 9200
+Wire Wire Line
+	6200 -5200 6200 -3750
+Wire Wire Line
+	6200 -5200 6400 -5200
+Connection ~ 6200 9200
+Wire Wire Line
+	7700 -5200 7900 -5200
+Connection ~ 7700 9200
+Wire Wire Line
+	9200 -5200 9200 -3750
+Wire Wire Line
+	9200 -5200 9400 -5200
+Wire Wire Line
+	10700 -5200 10900 -5200
+Connection ~ 10700 9200
+Wire Wire Line
+	12200 -5200 12400 -5200
+Connection ~ 12200 9200
+Wire Wire Line
+	13700 -5200 13900 -5200
+Connection ~ 13700 9200
+Wire Wire Line
+	15200 -5200 15200 -3750
+Wire Wire Line
+	15200 -5200 15400 -5200
+Connection ~ 15200 9200
+Wire Wire Line
+	16700 -5200 16900 -5200
+Connection ~ 16700 9200
+Wire Wire Line
+	18200 -5200 18200 -3750
+Wire Wire Line
+	18200 -5200 18400 -5200
+Connection ~ 18200 9200
+Wire Wire Line
+	4700 7850 4900 7850
+Wire Wire Line
+	4700 7850 4700 6400
+Wire Wire Line
+	4700 6400 4900 6400
+Connection ~ 4700 6400
+Wire Wire Line
+	4700 6400 4700 4950
+Wire Wire Line
+	4700 4950 4900 4950
+Connection ~ 4700 4950
+Wire Wire Line
+	4700 4950 4700 3500
+Wire Wire Line
+	6200 4950 6400 4950
+Connection ~ 6200 4950
+Wire Wire Line
+	6200 4950 6200 6400
+Wire Wire Line
+	6200 7850 6400 7850
+Wire Wire Line
+	6200 6400 6400 6400
+Connection ~ 6200 6400
+Wire Wire Line
+	6200 6400 6200 7850
+Wire Wire Line
+	7700 6400 7900 6400
+Connection ~ 7700 6400
+Wire Wire Line
+	7700 6400 7700 4950
+Wire Wire Line
+	7700 7850 7900 7850
+Wire Wire Line
+	7700 7850 7700 6400
+Wire Wire Line
+	9200 7850 9400 7850
+Connection ~ 9200 7850
+Wire Wire Line
+	9200 6400 9400 6400
+Connection ~ 9200 6400
+Wire Wire Line
+	9200 6400 9200 7850
+Wire Wire Line
+	10700 6400 10900 6400
+Connection ~ 10700 6400
+Wire Wire Line
+	10700 6400 10700 4950
+Wire Wire Line
+	10700 7850 10900 7850
+Wire Wire Line
+	10700 6400 10700 7850
+Connection ~ 10700 7850
+Wire Wire Line
+	12200 -5200 12200 -3750
+Wire Wire Line
+	12200 7850 12400 7850
+Connection ~ 12200 7850
+Wire Wire Line
+	12200 6400 12400 6400
+Connection ~ 12200 6400
+Wire Wire Line
+	12200 6400 12200 7850
+Wire Wire Line
+	13700 7850 13900 7850
+Connection ~ 13700 7850
+Wire Wire Line
+	13700 7850 13700 6400
+Wire Wire Line
+	13700 6400 13900 6400
+Connection ~ 13700 6400
+Wire Wire Line
+	13700 6400 13700 4950
+Wire Wire Line
+	15200 6400 15400 6400
+Connection ~ 15200 6400
+Wire Wire Line
+	15200 6400 15200 7850
+Wire Wire Line
+	15200 7850 15400 7850
+Connection ~ 15200 7850
+Wire Wire Line
+	18200 7850 18400 7850
+Connection ~ 18200 7850
+Wire Wire Line
+	16700 7850 16900 7850
+Connection ~ 16700 7850
+Wire Wire Line
+	16700 7850 16700 6400
+Wire Wire Line
+	16700 6400 16900 6400
+Connection ~ 16700 6400
+Wire Wire Line
+	16700 6400 16700 4950
+Wire Wire Line
+	18200 6400 18400 6400
+Connection ~ 18200 6400
+Wire Wire Line
+	18200 6400 18200 7850
+Wire Wire Line
+	18200 4950 18400 4950
+Connection ~ 18200 4950
+Wire Wire Line
+	18200 4950 18200 6400
+Wire Wire Line
+	16700 4950 16900 4950
+Connection ~ 16700 4950
+Wire Wire Line
+	16700 4950 16700 3500
+Wire Wire Line
+	15200 4950 15400 4950
+Connection ~ 15200 4950
+Wire Wire Line
+	15200 4950 15200 6400
+Wire Wire Line
+	13700 4950 13900 4950
+Connection ~ 13700 4950
+Wire Wire Line
+	13700 4950 13700 3500
+Wire Wire Line
+	12200 4950 12400 4950
+Connection ~ 12200 4950
+Wire Wire Line
+	12200 4950 12200 6400
+Wire Wire Line
+	10700 4950 10900 4950
+Connection ~ 10700 4950
+Wire Wire Line
+	10700 4950 10700 3500
+Wire Wire Line
+	18200 3500 18400 3500
+Connection ~ 18200 3500
+Wire Wire Line
+	18200 3500 18200 4950
+Wire Wire Line
+	18200 2050 18400 2050
+Connection ~ 18200 2050
+Wire Wire Line
+	18200 2050 18200 3500
+Wire Wire Line
+	18200 600  18400 600 
+Connection ~ 18200 600 
+Wire Wire Line
+	18200 600  18200 2050
+Wire Wire Line
+	16700 600  16900 600 
+Connection ~ 16700 600 
+Wire Wire Line
+	16700 600  16700 -850
+Wire Wire Line
+	16700 2050 16900 2050
+Connection ~ 16700 2050
+Wire Wire Line
+	16700 2050 16700 600 
+Wire Wire Line
+	16700 3500 16900 3500
+Connection ~ 16700 3500
+Wire Wire Line
+	16700 3500 16700 2050
+Wire Wire Line
+	15200 3500 15400 3500
+Connection ~ 15200 3500
+Wire Wire Line
+	15200 3500 15200 4950
+Wire Wire Line
+	15200 2050 15400 2050
+Connection ~ 15200 2050
+Wire Wire Line
+	15200 2050 15200 3500
+Wire Wire Line
+	15200 600  15400 600 
+Connection ~ 15200 600 
+Wire Wire Line
+	15200 600  15200 2050
+Wire Wire Line
+	13700 600  13900 600 
+Connection ~ 13700 600 
+Wire Wire Line
+	13700 600  13700 -850
+Wire Wire Line
+	13700 2050 13900 2050
+Connection ~ 13700 2050
+Wire Wire Line
+	13700 2050 13700 600 
+Wire Wire Line
+	13700 3500 13900 3500
+Connection ~ 13700 3500
+Wire Wire Line
+	13700 3500 13700 2050
+Wire Wire Line
+	12200 3500 12400 3500
+Connection ~ 12200 3500
+Wire Wire Line
+	12200 3500 12200 4950
+Wire Wire Line
+	10700 3500 10900 3500
+Connection ~ 10700 3500
+Wire Wire Line
+	10700 3500 10700 2050
+Wire Wire Line
+	10700 2050 10900 2050
+Connection ~ 10700 2050
+Wire Wire Line
+	10700 2050 10700 600 
+Wire Wire Line
+	12200 2050 12400 2050
+Connection ~ 12200 2050
+Wire Wire Line
+	12200 2050 12200 3500
+Wire Wire Line
+	12200 600  12400 600 
+Connection ~ 12200 600 
+Wire Wire Line
+	12200 600  12200 2050
+Wire Wire Line
+	10700 600  10900 600 
+Connection ~ 10700 600 
+Wire Wire Line
+	10700 600  10700 -850
+Wire Wire Line
+	18200 -3750 18400 -3750
+Connection ~ 18200 -3750
+Wire Wire Line
+	18200 -3750 18200 -2300
+Wire Wire Line
+	16700 -3750 16900 -3750
+Connection ~ 16700 -3750
+Wire Wire Line
+	16700 -3750 16700 -5200
+Wire Wire Line
+	15200 -3750 15400 -3750
+Connection ~ 15200 -3750
+Wire Wire Line
+	15200 -3750 15200 -2300
+Wire Wire Line
+	13700 -3750 13900 -3750
+Connection ~ 13700 -3750
+Wire Wire Line
+	13700 -3750 13700 -5200
+Wire Wire Line
+	12200 -3750 12400 -3750
+Connection ~ 12200 -3750
+Wire Wire Line
+	12200 -3750 12200 -2300
+Wire Wire Line
+	10700 -3750 10900 -3750
+Connection ~ 10700 -3750
+Wire Wire Line
+	10700 -3750 10700 -5200
+Wire Wire Line
+	10700 -2300 10900 -2300
+Connection ~ 10700 -2300
+Wire Wire Line
+	10700 -2300 10700 -3750
+Wire Wire Line
+	12200 -2300 12400 -2300
+Connection ~ 12200 -2300
+Wire Wire Line
+	12200 -2300 12200 -850
+Wire Wire Line
+	13700 -2300 13900 -2300
+Connection ~ 13700 -2300
+Wire Wire Line
+	13700 -2300 13700 -3750
+Wire Wire Line
+	15200 -2300 15400 -2300
+Connection ~ 15200 -2300
+Wire Wire Line
+	15200 -2300 15200 -850
+Wire Wire Line
+	16700 -2300 16900 -2300
+Connection ~ 16700 -2300
+Wire Wire Line
+	16700 -2300 16700 -3750
+Wire Wire Line
+	18200 -2300 18400 -2300
+Connection ~ 18200 -2300
+Wire Wire Line
+	18200 -2300 18200 -850
+Wire Wire Line
+	18200 -850 18400 -850
+Connection ~ 18200 -850
+Wire Wire Line
+	18200 -850 18200 600 
+Wire Wire Line
+	16700 -850 16900 -850
+Connection ~ 16700 -850
+Wire Wire Line
+	16700 -850 16700 -2300
+Wire Wire Line
+	15200 -850 15400 -850
+Connection ~ 15200 -850
+Wire Wire Line
+	15200 -850 15200 600 
+Wire Wire Line
+	13700 -850 13900 -850
+Connection ~ 13700 -850
+Wire Wire Line
+	13700 -850 13700 -2300
+Wire Wire Line
+	12200 -850 12400 -850
+Connection ~ 12200 -850
+Wire Wire Line
+	12200 -850 12200 600 
+Wire Wire Line
+	10700 -850 10900 -850
+Connection ~ 10700 -850
+Wire Wire Line
+	10700 -850 10700 -2300
+Wire Wire Line
+	9200 -3750 9400 -3750
+Connection ~ 9200 -3750
+Wire Wire Line
+	9200 -3750 9200 -2300
+Wire Wire Line
+	7700 -3750 7900 -3750
+Connection ~ 7700 -3750
+Wire Wire Line
+	7700 -3750 7700 -5200
+Wire Wire Line
+	6200 -3750 6400 -3750
+Connection ~ 6200 -3750
+Wire Wire Line
+	6200 -3750 6200 -2300
+Wire Wire Line
+	4700 -3750 4900 -3750
+Connection ~ 4700 -3750
+Wire Wire Line
+	4700 -3750 4700 -5200
+Wire Wire Line
+	4700 -2300 4900 -2300
+Connection ~ 4700 -2300
+Wire Wire Line
+	4700 -2300 4700 -3750
+Wire Wire Line
+	6200 -2300 6400 -2300
+Connection ~ 6200 -2300
+Wire Wire Line
+	6200 -2300 6200 -850
+Wire Wire Line
+	7700 -2300 7900 -2300
+Connection ~ 7700 -2300
+Wire Wire Line
+	7700 -2300 7700 -3750
+Wire Wire Line
+	9200 -2300 9400 -2300
+Connection ~ 9200 -2300
+Wire Wire Line
+	9200 -2300 9200 -850
+Wire Wire Line
+	9200 -850 9400 -850
+Connection ~ 9200 -850
+Wire Wire Line
+	9200 -850 9200 600 
+Wire Wire Line
+	7700 -850 7900 -850
+Connection ~ 7700 -850
+Wire Wire Line
+	7700 -850 7700 -2300
+Wire Wire Line
+	6200 -850 6400 -850
+Connection ~ 6200 -850
+Wire Wire Line
+	6200 -850 6200 600 
+Wire Wire Line
+	4700 -850 4900 -850
+Connection ~ 4700 -850
+Wire Wire Line
+	4700 -850 4700 -2300
+Wire Wire Line
+	9200 600  9400 600 
+Connection ~ 9200 600 
+Wire Wire Line
+	9200 600  9200 2050
+Wire Wire Line
+	7700 600  7900 600 
+Connection ~ 7700 600 
+Wire Wire Line
+	7700 600  7700 -850
+Wire Wire Line
+	6200 600  6400 600 
+Connection ~ 6200 600 
+Wire Wire Line
+	6200 600  6200 2050
+Wire Wire Line
+	4700 600  4900 600 
+Connection ~ 4700 600 
+Wire Wire Line
+	4700 600  4700 -850
+Wire Wire Line
+	4700 2050 4900 2050
+Connection ~ 4700 2050
+Wire Wire Line
+	4700 2050 4700 600 
+Wire Wire Line
+	6200 2050 6400 2050
+Connection ~ 6200 2050
+Wire Wire Line
+	6200 2050 6200 3500
+Wire Wire Line
+	7700 2050 7900 2050
+Connection ~ 7700 2050
+Wire Wire Line
+	7700 2050 7700 600 
+Wire Wire Line
+	9200 2050 9400 2050
+Connection ~ 9200 2050
+Wire Wire Line
+	9200 2050 9200 3500
+Wire Wire Line
+	9200 3500 9400 3500
+Connection ~ 9200 3500
+Wire Wire Line
+	9200 3500 9200 4950
+Wire Wire Line
+	7700 3500 7900 3500
+Connection ~ 7700 3500
+Wire Wire Line
+	7700 3500 7700 2050
+Wire Wire Line
+	6200 3500 6400 3500
+Connection ~ 6200 3500
+Wire Wire Line
+	6200 3500 6200 4950
+Wire Wire Line
+	4700 3500 4900 3500
+Connection ~ 4700 3500
+Wire Wire Line
+	4700 3500 4700 2050
+Wire Wire Line
+	7700 4950 7900 4950
+Connection ~ 7700 4950
+Wire Wire Line
+	7700 4950 7700 3500
+Wire Wire Line
+	9200 4950 9400 4950
+Connection ~ 9200 4950
+Wire Wire Line
+	9200 4950 9200 6400
+Text GLabel 19450 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 19450 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 19450 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 19450 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 19450 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 19450 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 19450 -550 2    50   Input ~ 0
+SDA
+Text GLabel 19450 -450 2    50   Input ~ 0
+SCL
+Text GLabel 19450 900  2    50   Input ~ 0
+SDA
+Text GLabel 19450 1000 2    50   Input ~ 0
+SCL
+Text GLabel 19450 2350 2    50   Input ~ 0
+SDA
+Text GLabel 19450 2450 2    50   Input ~ 0
+SCL
+Text GLabel 19450 3800 2    50   Input ~ 0
+SDA
+Text GLabel 19450 3900 2    50   Input ~ 0
+SCL
+Text GLabel 19450 5250 2    50   Input ~ 0
+SDA
+Text GLabel 19450 5350 2    50   Input ~ 0
+SCL
+Text GLabel 19450 6700 2    50   Input ~ 0
+SDA
+Text GLabel 19450 6800 2    50   Input ~ 0
+SCL
+Text GLabel 19450 8150 2    50   Input ~ 0
+SDA
+Text GLabel 19450 8250 2    50   Input ~ 0
+SCL
+Text GLabel 17950 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 17950 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 17950 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 17950 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 17950 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 17950 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 17950 -550 2    50   Input ~ 0
+SDA
+Text GLabel 17950 -450 2    50   Input ~ 0
+SCL
+Text GLabel 17950 900  2    50   Input ~ 0
+SDA
+Text GLabel 17950 1000 2    50   Input ~ 0
+SCL
+Text GLabel 17950 2350 2    50   Input ~ 0
+SDA
+Text GLabel 17950 2450 2    50   Input ~ 0
+SCL
+Text GLabel 17950 3800 2    50   Input ~ 0
+SDA
+Text GLabel 17950 3900 2    50   Input ~ 0
+SCL
+Text GLabel 17950 5250 2    50   Input ~ 0
+SDA
+Text GLabel 17950 5350 2    50   Input ~ 0
+SCL
+Text GLabel 17950 6700 2    50   Input ~ 0
+SDA
+Text GLabel 17950 6800 2    50   Input ~ 0
+SCL
+Text GLabel 17950 8150 2    50   Input ~ 0
+SDA
+Text GLabel 17950 8250 2    50   Input ~ 0
+SCL
+Text GLabel 16450 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 16450 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 16450 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 16450 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 16450 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 16450 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 16450 -550 2    50   Input ~ 0
+SDA
+Text GLabel 16450 -450 2    50   Input ~ 0
+SCL
+Text GLabel 16450 900  2    50   Input ~ 0
+SDA
+Text GLabel 16450 1000 2    50   Input ~ 0
+SCL
+Text GLabel 16450 2350 2    50   Input ~ 0
+SDA
+Text GLabel 16450 2450 2    50   Input ~ 0
+SCL
+Text GLabel 16450 3800 2    50   Input ~ 0
+SDA
+Text GLabel 16450 3900 2    50   Input ~ 0
+SCL
+Text GLabel 16450 5250 2    50   Input ~ 0
+SDA
+Text GLabel 16450 5350 2    50   Input ~ 0
+SCL
+Text GLabel 16450 6700 2    50   Input ~ 0
+SDA
+Text GLabel 16450 6800 2    50   Input ~ 0
+SCL
+Text GLabel 16450 8150 2    50   Input ~ 0
+SDA
+Text GLabel 16450 8250 2    50   Input ~ 0
+SCL
+Text GLabel 14950 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 14950 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 14950 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 14950 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 14950 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 14950 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 14950 -550 2    50   Input ~ 0
+SDA
+Text GLabel 14950 -450 2    50   Input ~ 0
+SCL
+Text GLabel 14950 900  2    50   Input ~ 0
+SDA
+Text GLabel 14950 1000 2    50   Input ~ 0
+SCL
+Text GLabel 14950 2350 2    50   Input ~ 0
+SDA
+Text GLabel 14950 2450 2    50   Input ~ 0
+SCL
+Text GLabel 14950 3800 2    50   Input ~ 0
+SDA
+Text GLabel 14950 3900 2    50   Input ~ 0
+SCL
+Text GLabel 14950 5250 2    50   Input ~ 0
+SDA
+Text GLabel 14950 5350 2    50   Input ~ 0
+SCL
+Text GLabel 14950 6700 2    50   Input ~ 0
+SDA
+Text GLabel 14950 6800 2    50   Input ~ 0
+SCL
+Text GLabel 14950 8150 2    50   Input ~ 0
+SDA
+Text GLabel 14950 8250 2    50   Input ~ 0
+SCL
+Text GLabel 13450 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 13450 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 13450 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 13450 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 13450 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 13450 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 13450 -550 2    50   Input ~ 0
+SDA
+Text GLabel 13450 -450 2    50   Input ~ 0
+SCL
+Text GLabel 13450 900  2    50   Input ~ 0
+SDA
+Text GLabel 13450 1000 2    50   Input ~ 0
+SCL
+Text GLabel 13450 2350 2    50   Input ~ 0
+SDA
+Text GLabel 13450 2450 2    50   Input ~ 0
+SCL
+Text GLabel 13450 3800 2    50   Input ~ 0
+SDA
+Text GLabel 13450 3900 2    50   Input ~ 0
+SCL
+Text GLabel 13450 5250 2    50   Input ~ 0
+SDA
+Text GLabel 13450 5350 2    50   Input ~ 0
+SCL
+Text GLabel 13450 6700 2    50   Input ~ 0
+SDA
+Text GLabel 13450 6800 2    50   Input ~ 0
+SCL
+Text GLabel 13450 8150 2    50   Input ~ 0
+SDA
+Text GLabel 13450 8250 2    50   Input ~ 0
+SCL
+Text GLabel 11950 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 11950 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 11950 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 11950 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 11950 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 11950 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 11950 -550 2    50   Input ~ 0
+SDA
+Text GLabel 11950 -450 2    50   Input ~ 0
+SCL
+Text GLabel 11950 900  2    50   Input ~ 0
+SDA
+Text GLabel 11950 1000 2    50   Input ~ 0
+SCL
+Text GLabel 11950 2350 2    50   Input ~ 0
+SDA
+Text GLabel 11950 2450 2    50   Input ~ 0
+SCL
+Text GLabel 11950 3800 2    50   Input ~ 0
+SDA
+Text GLabel 11950 3900 2    50   Input ~ 0
+SCL
+Text GLabel 11950 5250 2    50   Input ~ 0
+SDA
+Text GLabel 11950 5350 2    50   Input ~ 0
+SCL
+Text GLabel 11950 6700 2    50   Input ~ 0
+SDA
+Text GLabel 11950 6800 2    50   Input ~ 0
+SCL
+Text GLabel 11950 8150 2    50   Input ~ 0
+SDA
+Text GLabel 11950 8250 2    50   Input ~ 0
+SCL
+Text GLabel 10450 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 10450 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 10450 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 10450 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 10450 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 10450 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 10450 -550 2    50   Input ~ 0
+SDA
+Text GLabel 10450 -450 2    50   Input ~ 0
+SCL
+Text GLabel 10450 900  2    50   Input ~ 0
+SDA
+Text GLabel 10450 1000 2    50   Input ~ 0
+SCL
+Text GLabel 10450 2350 2    50   Input ~ 0
+SDA
+Text GLabel 10450 2450 2    50   Input ~ 0
+SCL
+Text GLabel 10450 3800 2    50   Input ~ 0
+SDA
+Text GLabel 10450 3900 2    50   Input ~ 0
+SCL
+Text GLabel 10450 5250 2    50   Input ~ 0
+SDA
+Text GLabel 10450 5350 2    50   Input ~ 0
+SCL
+Text GLabel 10450 6700 2    50   Input ~ 0
+SDA
+Text GLabel 10450 6800 2    50   Input ~ 0
+SCL
+Text GLabel 10450 8150 2    50   Input ~ 0
+SDA
+Text GLabel 10450 8250 2    50   Input ~ 0
+SCL
+Text GLabel 8950 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 8950 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 8950 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 8950 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 8950 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 8950 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 8950 -550 2    50   Input ~ 0
+SDA
+Text GLabel 8950 -450 2    50   Input ~ 0
+SCL
+Text GLabel 8950 900  2    50   Input ~ 0
+SDA
+Text GLabel 8950 1000 2    50   Input ~ 0
+SCL
+Text GLabel 8950 2350 2    50   Input ~ 0
+SDA
+Text GLabel 8950 2450 2    50   Input ~ 0
+SCL
+Text GLabel 8950 3800 2    50   Input ~ 0
+SDA
+Text GLabel 8950 3900 2    50   Input ~ 0
+SCL
+Text GLabel 8950 5250 2    50   Input ~ 0
+SDA
+Text GLabel 8950 5350 2    50   Input ~ 0
+SCL
+Text GLabel 8950 6700 2    50   Input ~ 0
+SDA
+Text GLabel 8950 6800 2    50   Input ~ 0
+SCL
+Text GLabel 8950 8150 2    50   Input ~ 0
+SDA
+Text GLabel 8950 8250 2    50   Input ~ 0
+SCL
+Text GLabel 7450 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 7450 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 7450 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 7450 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 7450 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 7450 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 7450 -550 2    50   Input ~ 0
+SDA
+Text GLabel 7450 -450 2    50   Input ~ 0
+SCL
+Text GLabel 7450 900  2    50   Input ~ 0
+SDA
+Text GLabel 7450 1000 2    50   Input ~ 0
+SCL
+Text GLabel 7450 2350 2    50   Input ~ 0
+SDA
+Text GLabel 7450 2450 2    50   Input ~ 0
+SCL
+Text GLabel 7450 3800 2    50   Input ~ 0
+SDA
+Text GLabel 7450 3900 2    50   Input ~ 0
+SCL
+Text GLabel 7450 5250 2    50   Input ~ 0
+SDA
+Text GLabel 7450 5350 2    50   Input ~ 0
+SCL
+Text GLabel 7450 6700 2    50   Input ~ 0
+SDA
+Text GLabel 7450 6800 2    50   Input ~ 0
+SCL
+Text GLabel 7450 8150 2    50   Input ~ 0
+SDA
+Text GLabel 7450 8250 2    50   Input ~ 0
+SCL
+Text GLabel 5950 -4900 2    50   Input ~ 0
+SDA
+Text GLabel 5950 -4800 2    50   Input ~ 0
+SCL
+Text GLabel 5950 -3450 2    50   Input ~ 0
+SDA
+Text GLabel 5950 -3350 2    50   Input ~ 0
+SCL
+Text GLabel 5950 -2000 2    50   Input ~ 0
+SDA
+Text GLabel 5950 -1900 2    50   Input ~ 0
+SCL
+Text GLabel 5950 -550 2    50   Input ~ 0
+SDA
+Text GLabel 5950 -450 2    50   Input ~ 0
+SCL
+Text GLabel 5950 900  2    50   Input ~ 0
+SDA
+Text GLabel 5950 1000 2    50   Input ~ 0
+SCL
+Text GLabel 5950 2350 2    50   Input ~ 0
+SDA
+Text GLabel 5950 2450 2    50   Input ~ 0
+SCL
+Text GLabel 5950 3800 2    50   Input ~ 0
+SDA
+Text GLabel 5950 3900 2    50   Input ~ 0
+SCL
+Text GLabel 5950 5250 2    50   Input ~ 0
+SDA
+Text GLabel 5950 5350 2    50   Input ~ 0
+SCL
+Text GLabel 5950 6700 2    50   Input ~ 0
+SDA
+Text GLabel 5950 6800 2    50   Input ~ 0
+SCL
+Text GLabel 5950 8150 2    50   Input ~ 0
+SDA
+Text GLabel 5950 8250 2    50   Input ~ 0
+SCL
+Connection ~ 4700 7850
+Connection ~ 6200 7850
+Connection ~ 7700 7850
+Connection ~ 9200 9200
+Wire Wire Line
+	9200 9200 9200 9250
+Wire Wire Line
+	9050 9200 9200 9200
+Wire Wire Line
+	8300 9200 8200 9200
+Connection ~ 8300 9200
+Wire Wire Line
+	8300 9250 8300 9200
+Wire Wire Line
+	8450 9200 8300 9200
+Wire Wire Line
+	8750 9550 8300 9550
+Wire Wire Line
+	8750 9550 8750 9650
+Connection ~ 8750 9550
+Wire Wire Line
+	9200 9550 8750 9550
+Wire Wire Line
+	8750 9500 8750 9550
+$Comp
+L Device:C C8
+U 1 1 607A72B5
+P 9200 9400
+F 0 "C8" H 9315 9446 50  0000 L CNN
+F 1 "10uF" H 9315 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9238 9250 50  0001 C CNN
+F 3 "~" H 9200 9400 50  0001 C CNN
+	1    9200 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 607A72AF
+P 8300 9400
+F 0 "C7" H 8415 9446 50  0000 L CNN
+F 1 "10uF" H 8415 9355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8338 9250 50  0001 C CNN
+F 3 "~" H 8300 9400 50  0001 C CNN
+	1    8300 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0117
+U 1 1 607A72A9
+P 8200 9200
+F 0 "#PWR0117" H 8200 9050 50  0001 C CNN
+F 1 "+5V" H 8215 9373 50  0000 C CNN
+F 2 "" H 8200 9200 50  0001 C CNN
+F 3 "" H 8200 9200 50  0001 C CNN
+	1    8200 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 607A72A3
+P 8750 9650
+F 0 "#PWR0116" H 8750 9400 50  0001 C CNN
+F 1 "GND" H 8755 9477 50  0000 C CNN
+F 2 "" H 8750 9650 50  0001 C CNN
+F 3 "" H 8750 9650 50  0001 C CNN
+	1    8750 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AZ1117-3.3 U104
+U 1 1 607A729D
+P 8750 9200
+F 0 "U104" H 8750 9442 50  0000 C CNN
+F 1 "AZ1117-3.3" H 8750 9351 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 8750 9450 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 8750 9200 50  0001 C CNN
+	1    8750 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 7850 6200 9200
+Wire Wire Line
+	4700 7850 4700 9200
+Wire Wire Line
+	7700 7850 7700 9200
+Wire Wire Line
+	9200 7850 9200 9200
+Wire Wire Line
+	10700 7850 10700 9200
+Wire Wire Line
+	12200 7850 12200 9200
+Wire Wire Line
+	13700 7850 13700 9200
+Wire Wire Line
+	15200 7850 15200 9200
+Wire Wire Line
+	16700 7850 16700 9200
+Wire Wire Line
+	18200 7850 18200 9200
+Wire Wire Line
+	1100 4450 1600 4450
+Text GLabel 1600 4550 0    50   Input ~ 0
+SDA
+Text GLabel 1600 4650 0    50   Input ~ 0
+SCL
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 1 1 74F3C8BD
+P 2300 6400
+F 0 "SW1" H 2300 6685 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 2300 6594 50  0000 C CNN
+F 2 "libraries:MFS201N-9-Z" H 2300 6400 50  0001 C CNN
+F 3 "~" H 2300 6400 50  0001 C CNN
+	1    2300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 2 1 74F3ED2D
+P 2300 7100
+F 0 "SW1" H 2300 7385 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 2300 7294 50  0000 C CNN
+F 2 "libraries:MFS201N-9-Z" H 2300 7100 50  0001 C CNN
+F 3 "~" H 2300 7100 50  0001 C CNN
+	2    2300 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 3800 2    50   Input ~ 0
+USBVCC
+Text GLabel 1500 4350 0    50   Input ~ 0
+VCC
+Text GLabel 2600 6500 2    50   Input ~ 0
+VCC
+Text GLabel 2600 7200 2    50   Input ~ 0
+VCC
+Text GLabel 2600 6300 2    50   Input ~ 0
+USBVCC
+Text GLabel 2600 7000 2    50   Input ~ 0
+USBVCC
+Wire Wire Line
+	2600 6300 2500 6300
+Wire Wire Line
+	2500 6500 2600 6500
+Wire Wire Line
+	2100 6400 1950 6400
+Wire Wire Line
+	1950 7100 2100 7100
+Wire Wire Line
+	2500 7000 2600 7000
+Wire Wire Line
+	2600 7200 2500 7200
+$EndSCHEMATC

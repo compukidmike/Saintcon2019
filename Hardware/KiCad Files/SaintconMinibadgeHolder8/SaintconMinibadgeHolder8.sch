@@ -1,0 +1,1326 @@
+EESchema Schematic File Version 4
+LIBS:Saintcon2019-cache
+LIBS:Saintcon2018-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5900 6250 6450 6250
+Wire Wire Line
+	5400 6250 4700 6250
+Wire Wire Line
+	4950 5550 5400 5550
+$Comp
+L power:VCC #PWR031
+U 1 1 5D899E77
+P 4950 5550
+F 0 "#PWR031" H 4950 5400 50  0001 C CNN
+F 1 "VCC" H 4967 5723 50  0000 C CNN
+F 2 "" H 4950 5550 50  0001 C CNN
+F 3 "" H 4950 5550 50  0001 C CNN
+	1    4950 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6450 5400 6450
+Wire Wire Line
+	5400 6350 5300 6350
+Wire Wire Line
+	6000 6450 5900 6450
+Wire Wire Line
+	6000 6350 5900 6350
+Wire Wire Line
+	5900 5550 6300 5550
+$Comp
+L power:VCC #PWR032
+U 1 1 5D899E67
+P 6300 5550
+F 0 "#PWR032" H 6300 5400 50  0001 C CNN
+F 1 "VCC" H 6317 5723 50  0000 C CNN
+F 2 "" H 6300 5550 50  0001 C CNN
+F 3 "" H 6300 5550 50  0001 C CNN
+	1    6300 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR033
+U 1 1 5D899E61
+P 4700 6250
+F 0 "#PWR033" H 4700 6100 50  0001 C CNN
+F 1 "+3V3" H 4715 6423 50  0000 C CNN
+F 2 "" H 4700 6250 50  0001 C CNN
+F 3 "" H 4700 6250 50  0001 C CNN
+	1    4700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 5D899E5B
+P 5300 6450
+F 0 "#PWR035" H 5300 6200 50  0001 C CNN
+F 1 "GND" H 5305 6277 50  0000 C CNN
+F 2 "" H 5300 6450 50  0001 C CNN
+F 3 "" H 5300 6450 50  0001 C CNN
+	1    5300 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR034
+U 1 1 5D899E51
+P 6450 6250
+F 0 "#PWR034" H 6450 6100 50  0001 C CNN
+F 1 "+3V3" H 6465 6423 50  0000 C CNN
+F 2 "" H 6450 6250 50  0001 C CNN
+F 3 "" H 6450 6250 50  0001 C CNN
+	1    6450 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5D899E4B
+P 6000 6450
+F 0 "#PWR036" H 6000 6200 50  0001 C CNN
+F 1 "GND" H 6005 6277 50  0000 C CNN
+F 2 "" H 6000 6450 50  0001 C CNN
+F 3 "" H 6000 6450 50  0001 C CNN
+	1    6000 6450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 6350 2    50   Input ~ 0
+MB_SCL
+Text GLabel 5300 6350 0    50   Input ~ 0
+MB_SDA
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even X2
+U 1 1 5D899E3F
+P 5600 5950
+F 0 "X2" H 5650 6567 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 5650 6476 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 5600 5950 50  0001 C CNN
+F 3 "~" H 5600 5950 50  0001 C CNN
+	1    5600 5950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 2800 2    50   Input ~ 0
+MB_CS1
+Wire Wire Line
+	3300 2800 3250 2800
+Wire Wire Line
+	3250 2700 3300 2700
+Wire Wire Line
+	3300 2600 3250 2600
+Wire Wire Line
+	3250 2500 3300 2500
+Text GLabel 3300 2600 2    50   Input ~ 0
+MB_SCK
+Text GLabel 3300 2700 2    50   Input ~ 0
+MB_MOSI
+Text GLabel 3300 2500 2    50   Input ~ 0
+MB_MISO
+Text GLabel 3300 3100 2    50   Input ~ 0
+MB_SCL
+Text GLabel 3300 3000 2    50   Input ~ 0
+MB_SDA
+$Comp
+L power:VCC #PWR07
+U 1 1 5D870FE3
+P 2100 2500
+F 0 "#PWR07" H 2100 2350 50  0001 C CNN
+F 1 "VCC" H 2117 2673 50  0000 C CNN
+F 2 "" H 2100 2500 50  0001 C CNN
+F 3 "" H 2100 2500 50  0001 C CNN
+	1    2100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3000 3250 3000
+Wire Wire Line
+	3250 3100 3300 3100
+Connection ~ 2100 3000
+Wire Wire Line
+	2100 2900 2100 3000
+Wire Wire Line
+	2250 2900 2100 2900
+Wire Wire Line
+	2100 3000 2100 3100
+Wire Wire Line
+	2250 3000 2100 3000
+Wire Wire Line
+	2250 3100 2100 3100
+Connection ~ 2200 2700
+Wire Wire Line
+	2200 2600 2200 2700
+Wire Wire Line
+	2250 2600 2200 2600
+Wire Wire Line
+	2200 2850 2050 2850
+Wire Wire Line
+	2200 2700 2200 2850
+Wire Wire Line
+	2250 2700 2200 2700
+Wire Wire Line
+	2100 2500 2250 2500
+$Comp
+L Saintcon2018-rescue:+3V3-power #PWR011
+U 1 1 64D41E71
+P 2050 2850
+F 0 "#PWR011" H 2050 2700 50  0001 C CNN
+F 1 "+3V3" H 2065 3023 50  0000 C CNN
+F 2 "" H 2050 2850 50  0001 C CNN
+F 3 "" H 2050 2850 50  0001 C CNN
+	1    2050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Saintcon2018-rescue:GND-power #PWR015
+U 1 1 64D411BE
+P 1950 3500
+F 0 "#PWR015" H 1950 3250 50  0001 C CNN
+F 1 "GND" H 1955 3327 50  0000 C CNN
+F 2 "" H 1950 3500 50  0001 C CNN
+F 3 "" H 1950 3500 50  0001 C CNN
+	1    1950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge J1
+U 1 1 5B31A175
+P 2750 2750
+F 0 "J1" H 2750 3337 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 2750 3231 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 2750 2800 60  0001 C CNN
+F 3 "" H 2750 2800 60  0001 C CNN
+	1    2750 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1200 5350 1200
+Wire Wire Line
+	5350 1100 5450 1100
+Wire Wire Line
+	5450 1000 5350 1000
+Wire Wire Line
+	6050 1000 5950 1000
+Wire Wire Line
+	5950 1600 6500 1600
+Wire Wire Line
+	5450 1600 4750 1600
+Wire Wire Line
+	5000 900  5450 900 
+$Comp
+L power:VCC #PWR01
+U 1 1 5F4A9B42
+P 5000 900
+F 0 "#PWR01" H 5000 750 50  0001 C CNN
+F 1 "VCC" H 5017 1073 50  0000 C CNN
+F 2 "" H 5000 900 50  0001 C CNN
+F 3 "" H 5000 900 50  0001 C CNN
+	1    5000 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1800 5450 1800
+Wire Wire Line
+	5450 1700 5350 1700
+Wire Wire Line
+	5450 1400 5350 1400
+Wire Wire Line
+	5450 1300 5350 1300
+Wire Wire Line
+	6050 1800 5950 1800
+Wire Wire Line
+	6050 1700 5950 1700
+Wire Wire Line
+	5950 1300 6050 1300
+Wire Wire Line
+	6050 1200 5950 1200
+Wire Wire Line
+	5950 1100 6050 1100
+Wire Wire Line
+	5950 900  6350 900 
+$Comp
+L power:VCC #PWR02
+U 1 1 5D09E264
+P 6350 900
+F 0 "#PWR02" H 6350 750 50  0001 C CNN
+F 1 "VCC" H 6367 1073 50  0000 C CNN
+F 2 "" H 6350 900 50  0001 C CNN
+F 3 "" H 6350 900 50  0001 C CNN
+	1    6350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5D09DA84
+P 4750 1600
+F 0 "#PWR03" H 4750 1450 50  0001 C CNN
+F 1 "+3V3" H 4765 1773 50  0000 C CNN
+F 2 "" H 4750 1600 50  0001 C CNN
+F 3 "" H 4750 1600 50  0001 C CNN
+	1    4750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5D09D60B
+P 5350 1800
+F 0 "#PWR05" H 5350 1550 50  0001 C CNN
+F 1 "GND" H 5355 1627 50  0000 C CNN
+F 2 "" H 5350 1800 50  0001 C CNN
+F 3 "" H 5350 1800 50  0001 C CNN
+	1    5350 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 1200 2    50   Input ~ 0
+MB_CS3
+Text GLabel 5350 1300 0    50   Input ~ 0
+MB_CS4
+Text GLabel 5350 1200 0    50   Input ~ 0
+MB_CS2
+Text GLabel 5350 1400 0    50   Input ~ 0
+MB_RESET
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5D09BDBC
+P 6500 1600
+F 0 "#PWR04" H 6500 1450 50  0001 C CNN
+F 1 "+3V3" H 6515 1773 50  0000 C CNN
+F 2 "" H 6500 1600 50  0001 C CNN
+F 3 "" H 6500 1600 50  0001 C CNN
+	1    6500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5D09B9E4
+P 6050 1800
+F 0 "#PWR06" H 6050 1550 50  0001 C CNN
+F 1 "GND" H 6055 1627 50  0000 C CNN
+F 2 "" H 6050 1800 50  0001 C CNN
+F 3 "" H 6050 1800 50  0001 C CNN
+	1    6050 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 1700 2    50   Input ~ 0
+MB_SCL
+Text GLabel 5350 1700 0    50   Input ~ 0
+MB_SDA
+Text GLabel 6050 1100 2    50   Input ~ 0
+MB_CS1
+Text GLabel 5350 1000 0    50   Input ~ 0
+MB_MOSI
+Text GLabel 5350 1100 0    50   Input ~ 0
+MB_SCK
+Text GLabel 6050 1000 2    50   Input ~ 0
+MB_MISO
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even X1
+U 1 1 5D08BA53
+P 5650 1300
+F 0 "X1" H 5700 1917 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 5700 1826 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 5650 1300 50  0001 C CNN
+F 3 "~" H 5650 1300 50  0001 C CNN
+	1    5650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:TCA9534 U1
+U 1 1 5D91F5FA
+P 2550 6400
+F 0 "U1" H 2550 7181 50  0000 C CNN
+F 1 "TCA9534" H 2550 7090 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16W_7.5x10.3mm_Pitch1.27mm" H 3500 5850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9534.pdf" H 2650 6300 50  0001 C CNN
+	1    2550 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_Array:ULN2803A U2
+U 1 1 5D920B18
+P 3650 6300
+F 0 "U2" H 3650 6867 50  0000 C CNN
+F 1 "TBD62083A" H 3650 6776 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-18W_7.5x11.6mm_Pitch1.27mm" H 3700 5650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 3750 6100 50  0001 C CNN
+	1    3650 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6100 3250 6100
+Wire Wire Line
+	3250 6200 2950 6200
+Wire Wire Line
+	2950 6300 3250 6300
+Wire Wire Line
+	3250 6400 2950 6400
+Wire Wire Line
+	2950 6500 3250 6500
+Wire Wire Line
+	3250 6600 2950 6600
+Wire Wire Line
+	2950 6700 3250 6700
+Wire Wire Line
+	3250 6800 2950 6800
+$Comp
+L power:GND #PWR043
+U 1 1 5D98BED0
+P 3650 7050
+F 0 "#PWR043" H 3650 6800 50  0001 C CNN
+F 1 "GND" H 3655 6877 50  0000 C CNN
+F 2 "" H 3650 7050 50  0001 C CNN
+F 3 "" H 3650 7050 50  0001 C CNN
+	1    3650 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR044
+U 1 1 5D98C248
+P 2550 7150
+F 0 "#PWR044" H 2550 6900 50  0001 C CNN
+F 1 "GND" H 2555 6977 50  0000 C CNN
+F 2 "" H 2550 7150 50  0001 C CNN
+F 3 "" H 2550 7150 50  0001 C CNN
+	1    2550 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR037
+U 1 1 5D98C630
+P 2200 5800
+F 0 "#PWR037" H 2200 5650 50  0001 C CNN
+F 1 "+3V3" H 2215 5973 50  0000 C CNN
+F 2 "" H 2200 5800 50  0001 C CNN
+F 3 "" H 2200 5800 50  0001 C CNN
+	1    2200 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5800 2550 5800
+Wire Wire Line
+	2550 7100 2550 7150
+Wire Wire Line
+	3650 7000 3650 7050
+Text GLabel 2100 6100 0    50   Input ~ 0
+MB_SCL
+Text GLabel 2100 6200 0    50   Input ~ 0
+MB_SDA
+Wire Wire Line
+	2100 6100 2150 6100
+Wire Wire Line
+	2100 6200 2150 6200
+Text GLabel 4100 6100 2    50   Input ~ 0
+MB_GND1
+Text GLabel 4100 6200 2    50   Input ~ 0
+MB_GND2
+Text GLabel 4100 6300 2    50   Input ~ 0
+MB_GND3
+Text GLabel 4100 6400 2    50   Input ~ 0
+MB_GND4
+Text GLabel 4100 6500 2    50   Input ~ 0
+MB_GND5
+Text GLabel 4100 6600 2    50   Input ~ 0
+MB_GND6
+Text GLabel 4100 6700 2    50   Input ~ 0
+MB_GND7
+Text GLabel 4100 6800 2    50   Input ~ 0
+MB_GND8
+Wire Wire Line
+	4050 6100 4100 6100
+Wire Wire Line
+	4100 6200 4050 6200
+Wire Wire Line
+	4050 6300 4100 6300
+Wire Wire Line
+	4100 6400 4050 6400
+Wire Wire Line
+	4050 6500 4100 6500
+Wire Wire Line
+	4100 6600 4050 6600
+Wire Wire Line
+	4050 6700 4100 6700
+Wire Wire Line
+	4100 6800 4050 6800
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5DA4D739
+P 1950 3250
+F 0 "JP1" V 1904 3318 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 1950 2350 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-2-NO_YES_SILK" H 1950 3250 50  0001 C CNN
+F 3 "~" H 1950 3250 50  0001 C CNN
+	1    1950 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP9
+U 1 1 5DA4E2EF
+P 1050 6150
+F 0 "JP9" V 1004 6217 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1095 6217 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-3-NO_YES_SILK" H 1050 6150 50  0001 C CNN
+F 3 "~" H 1050 6150 50  0001 C CNN
+	1    1050 6150
+	0    -1   1    0   
+$EndComp
+Text GLabel 1950 2900 0    50   Input ~ 0
+MB_GND1
+Wire Wire Line
+	2100 2900 1950 2900
+Connection ~ 2100 2900
+Wire Wire Line
+	2100 3100 1950 3100
+Connection ~ 2100 3100
+Wire Wire Line
+	1950 3400 1950 3500
+Wire Wire Line
+	5600 2800 5550 2800
+Wire Wire Line
+	5550 2700 5600 2700
+Wire Wire Line
+	5600 2600 5550 2600
+Wire Wire Line
+	5550 2500 5600 2500
+Text GLabel 5600 2600 2    50   Input ~ 0
+MB_SCK
+Text GLabel 5600 2700 2    50   Input ~ 0
+MB_MOSI
+Text GLabel 5600 2500 2    50   Input ~ 0
+MB_MISO
+Text GLabel 5600 3100 2    50   Input ~ 0
+MB_SCL
+Text GLabel 5600 3000 2    50   Input ~ 0
+MB_SDA
+$Comp
+L power:VCC #PWR08
+U 1 1 5DAD55FC
+P 4400 2500
+F 0 "#PWR08" H 4400 2350 50  0001 C CNN
+F 1 "VCC" H 4417 2673 50  0000 C CNN
+F 2 "" H 4400 2500 50  0001 C CNN
+F 3 "" H 4400 2500 50  0001 C CNN
+	1    4400 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3000 5550 3000
+Wire Wire Line
+	5550 3100 5600 3100
+Connection ~ 4400 3000
+Wire Wire Line
+	4400 2900 4400 3000
+Wire Wire Line
+	4550 2900 4400 2900
+Wire Wire Line
+	4400 3000 4400 3100
+Wire Wire Line
+	4550 3000 4400 3000
+Wire Wire Line
+	4550 3100 4400 3100
+Connection ~ 4500 2700
+Wire Wire Line
+	4500 2600 4500 2700
+Wire Wire Line
+	4550 2600 4500 2600
+Wire Wire Line
+	4500 2850 4350 2850
+Wire Wire Line
+	4500 2700 4500 2850
+Wire Wire Line
+	4550 2700 4500 2700
+Wire Wire Line
+	4400 2500 4550 2500
+$Comp
+L Saintcon2018-rescue:+3V3-power #PWR012
+U 1 1 5DAD5611
+P 4350 2850
+F 0 "#PWR012" H 4350 2700 50  0001 C CNN
+F 1 "+3V3" H 4365 3023 50  0000 C CNN
+F 2 "" H 4350 2850 50  0001 C CNN
+F 3 "" H 4350 2850 50  0001 C CNN
+	1    4350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Saintcon2018-rescue:GND-power #PWR016
+U 1 1 5DAD5617
+P 4250 3500
+F 0 "#PWR016" H 4250 3250 50  0001 C CNN
+F 1 "GND" H 4255 3327 50  0000 C CNN
+F 2 "" H 4250 3500 50  0001 C CNN
+F 3 "" H 4250 3500 50  0001 C CNN
+	1    4250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge J2
+U 1 1 5DAD561D
+P 5050 2750
+F 0 "J2" H 5050 3337 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5050 3231 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5050 2800 60  0001 C CNN
+F 3 "" H 5050 2800 60  0001 C CNN
+	1    5050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5DAD5623
+P 4250 3250
+F 0 "JP2" V 4204 3318 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 4250 2350 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-2-NO_YES_SILK" H 4250 3250 50  0001 C CNN
+F 3 "~" H 4250 3250 50  0001 C CNN
+	1    4250 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 2900 4250 2900
+Connection ~ 4400 2900
+Wire Wire Line
+	4400 3100 4250 3100
+Connection ~ 4400 3100
+Wire Wire Line
+	4250 3400 4250 3500
+Wire Wire Line
+	7900 2800 7850 2800
+Wire Wire Line
+	7850 2700 7900 2700
+Wire Wire Line
+	7900 2600 7850 2600
+Wire Wire Line
+	7850 2500 7900 2500
+Text GLabel 7900 2600 2    50   Input ~ 0
+MB_SCK
+Text GLabel 7900 2700 2    50   Input ~ 0
+MB_MOSI
+Text GLabel 7900 2500 2    50   Input ~ 0
+MB_MISO
+Text GLabel 7900 3100 2    50   Input ~ 0
+MB_SCL
+Text GLabel 7900 3000 2    50   Input ~ 0
+MB_SDA
+$Comp
+L power:VCC #PWR09
+U 1 1 5DADCFED
+P 6700 2500
+F 0 "#PWR09" H 6700 2350 50  0001 C CNN
+F 1 "VCC" H 6717 2673 50  0000 C CNN
+F 2 "" H 6700 2500 50  0001 C CNN
+F 3 "" H 6700 2500 50  0001 C CNN
+	1    6700 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3000 7850 3000
+Wire Wire Line
+	7850 3100 7900 3100
+Connection ~ 6700 3000
+Wire Wire Line
+	6700 2900 6700 3000
+Wire Wire Line
+	6850 2900 6700 2900
+Wire Wire Line
+	6700 3000 6700 3100
+Wire Wire Line
+	6850 3000 6700 3000
+Wire Wire Line
+	6850 3100 6700 3100
+Connection ~ 6800 2700
+Wire Wire Line
+	6800 2600 6800 2700
+Wire Wire Line
+	6850 2600 6800 2600
+Wire Wire Line
+	6800 2850 6650 2850
+Wire Wire Line
+	6800 2700 6800 2850
+Wire Wire Line
+	6850 2700 6800 2700
+Wire Wire Line
+	6700 2500 6850 2500
+$Comp
+L Saintcon2018-rescue:+3V3-power #PWR013
+U 1 1 5DADD002
+P 6650 2850
+F 0 "#PWR013" H 6650 2700 50  0001 C CNN
+F 1 "+3V3" H 6665 3023 50  0000 C CNN
+F 2 "" H 6650 2850 50  0001 C CNN
+F 3 "" H 6650 2850 50  0001 C CNN
+	1    6650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Saintcon2018-rescue:GND-power #PWR017
+U 1 1 5DADD008
+P 6550 3500
+F 0 "#PWR017" H 6550 3250 50  0001 C CNN
+F 1 "GND" H 6555 3327 50  0000 C CNN
+F 2 "" H 6550 3500 50  0001 C CNN
+F 3 "" H 6550 3500 50  0001 C CNN
+	1    6550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge J3
+U 1 1 5DADD00E
+P 7350 2750
+F 0 "J3" H 7350 3337 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 7350 3231 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 7350 2800 60  0001 C CNN
+F 3 "" H 7350 2800 60  0001 C CNN
+	1    7350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5DADD014
+P 6550 3250
+F 0 "JP3" V 6504 3318 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 6550 2350 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-2-NO_YES_SILK" H 6550 3250 50  0001 C CNN
+F 3 "~" H 6550 3250 50  0001 C CNN
+	1    6550 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2900 6550 2900
+Connection ~ 6700 2900
+Wire Wire Line
+	6700 3100 6550 3100
+Connection ~ 6700 3100
+Wire Wire Line
+	6550 3400 6550 3500
+Wire Wire Line
+	10200 2800 10150 2800
+Wire Wire Line
+	10150 2700 10200 2700
+Wire Wire Line
+	10200 2600 10150 2600
+Wire Wire Line
+	10150 2500 10200 2500
+Text GLabel 10200 2600 2    50   Input ~ 0
+MB_SCK
+Text GLabel 10200 2700 2    50   Input ~ 0
+MB_MOSI
+Text GLabel 10200 2500 2    50   Input ~ 0
+MB_MISO
+Text GLabel 10200 3100 2    50   Input ~ 0
+MB_SCL
+Text GLabel 10200 3000 2    50   Input ~ 0
+MB_SDA
+$Comp
+L power:VCC #PWR010
+U 1 1 5DAE48FD
+P 9000 2500
+F 0 "#PWR010" H 9000 2350 50  0001 C CNN
+F 1 "VCC" H 9017 2673 50  0000 C CNN
+F 2 "" H 9000 2500 50  0001 C CNN
+F 3 "" H 9000 2500 50  0001 C CNN
+	1    9000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 3000 10150 3000
+Wire Wire Line
+	10150 3100 10200 3100
+Connection ~ 9000 3000
+Wire Wire Line
+	9000 2900 9000 3000
+Wire Wire Line
+	9150 2900 9000 2900
+Wire Wire Line
+	9000 3000 9000 3100
+Wire Wire Line
+	9150 3000 9000 3000
+Wire Wire Line
+	9150 3100 9000 3100
+Connection ~ 9100 2700
+Wire Wire Line
+	9100 2600 9100 2700
+Wire Wire Line
+	9150 2600 9100 2600
+Wire Wire Line
+	9100 2850 8950 2850
+Wire Wire Line
+	9100 2700 9100 2850
+Wire Wire Line
+	9150 2700 9100 2700
+Wire Wire Line
+	9000 2500 9150 2500
+$Comp
+L Saintcon2018-rescue:+3V3-power #PWR014
+U 1 1 5DAE4912
+P 8950 2850
+F 0 "#PWR014" H 8950 2700 50  0001 C CNN
+F 1 "+3V3" H 8965 3023 50  0000 C CNN
+F 2 "" H 8950 2850 50  0001 C CNN
+F 3 "" H 8950 2850 50  0001 C CNN
+	1    8950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Saintcon2018-rescue:GND-power #PWR018
+U 1 1 5DAE4918
+P 8850 3500
+F 0 "#PWR018" H 8850 3250 50  0001 C CNN
+F 1 "GND" H 8855 3327 50  0000 C CNN
+F 2 "" H 8850 3500 50  0001 C CNN
+F 3 "" H 8850 3500 50  0001 C CNN
+	1    8850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge J4
+U 1 1 5DAE491E
+P 9650 2750
+F 0 "J4" H 9650 3337 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9650 3231 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9650 2800 60  0001 C CNN
+F 3 "" H 9650 2800 60  0001 C CNN
+	1    9650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5DAE4924
+P 8850 3250
+F 0 "JP4" V 8804 3318 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 8850 2350 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-2-NO_YES_SILK" H 8850 3250 50  0001 C CNN
+F 3 "~" H 8850 3250 50  0001 C CNN
+	1    8850 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 2900 8850 2900
+Connection ~ 9000 2900
+Wire Wire Line
+	9000 3100 8850 3100
+Connection ~ 9000 3100
+Wire Wire Line
+	8850 3400 8850 3500
+Text GLabel 3300 4650 2    50   Input ~ 0
+MB_SCL
+Text GLabel 3300 4550 2    50   Input ~ 0
+MB_SDA
+$Comp
+L power:VCC #PWR019
+U 1 1 5DAFC7D2
+P 2100 4050
+F 0 "#PWR019" H 2100 3900 50  0001 C CNN
+F 1 "VCC" H 2117 4223 50  0000 C CNN
+F 2 "" H 2100 4050 50  0001 C CNN
+F 3 "" H 2100 4050 50  0001 C CNN
+	1    2100 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4550 3250 4550
+Wire Wire Line
+	3250 4650 3300 4650
+Connection ~ 2100 4550
+Wire Wire Line
+	2100 4450 2100 4550
+Wire Wire Line
+	2250 4450 2100 4450
+Wire Wire Line
+	2100 4550 2100 4650
+Wire Wire Line
+	2250 4550 2100 4550
+Wire Wire Line
+	2250 4650 2100 4650
+Connection ~ 2200 4250
+Wire Wire Line
+	2200 4150 2200 4250
+Wire Wire Line
+	2250 4150 2200 4150
+Wire Wire Line
+	2200 4400 2050 4400
+Wire Wire Line
+	2200 4250 2200 4400
+Wire Wire Line
+	2250 4250 2200 4250
+Wire Wire Line
+	2100 4050 2250 4050
+$Comp
+L Saintcon2018-rescue:+3V3-power #PWR023
+U 1 1 5DAFC7E7
+P 2050 4400
+F 0 "#PWR023" H 2050 4250 50  0001 C CNN
+F 1 "+3V3" H 2065 4573 50  0000 C CNN
+F 2 "" H 2050 4400 50  0001 C CNN
+F 3 "" H 2050 4400 50  0001 C CNN
+	1    2050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Saintcon2018-rescue:GND-power #PWR027
+U 1 1 5DAFC7ED
+P 1950 5050
+F 0 "#PWR027" H 1950 4800 50  0001 C CNN
+F 1 "GND" H 1955 4877 50  0000 C CNN
+F 2 "" H 1950 5050 50  0001 C CNN
+F 3 "" H 1950 5050 50  0001 C CNN
+	1    1950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge J5
+U 1 1 5DAFC7F3
+P 2750 4300
+F 0 "J5" H 2750 4887 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 2750 4781 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 2750 4350 60  0001 C CNN
+F 3 "" H 2750 4350 60  0001 C CNN
+	1    2750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5DAFC7F9
+P 1950 4800
+F 0 "JP5" V 1904 4868 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 1950 3900 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-2-NO_YES_SILK" H 1950 4800 50  0001 C CNN
+F 3 "~" H 1950 4800 50  0001 C CNN
+	1    1950 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 4450 1950 4450
+Connection ~ 2100 4450
+Wire Wire Line
+	2100 4650 1950 4650
+Connection ~ 2100 4650
+Wire Wire Line
+	1950 4950 1950 5050
+Text GLabel 5600 4650 2    50   Input ~ 0
+MB_SCL
+Text GLabel 5600 4550 2    50   Input ~ 0
+MB_SDA
+$Comp
+L power:VCC #PWR020
+U 1 1 5DAFC80E
+P 4400 4050
+F 0 "#PWR020" H 4400 3900 50  0001 C CNN
+F 1 "VCC" H 4417 4223 50  0000 C CNN
+F 2 "" H 4400 4050 50  0001 C CNN
+F 3 "" H 4400 4050 50  0001 C CNN
+	1    4400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4550 5550 4550
+Wire Wire Line
+	5550 4650 5600 4650
+Connection ~ 4400 4550
+Wire Wire Line
+	4400 4450 4400 4550
+Wire Wire Line
+	4550 4450 4400 4450
+Wire Wire Line
+	4400 4550 4400 4650
+Wire Wire Line
+	4550 4550 4400 4550
+Wire Wire Line
+	4550 4650 4400 4650
+Connection ~ 4500 4250
+Wire Wire Line
+	4500 4150 4500 4250
+Wire Wire Line
+	4550 4150 4500 4150
+Wire Wire Line
+	4500 4400 4350 4400
+Wire Wire Line
+	4500 4250 4500 4400
+Wire Wire Line
+	4550 4250 4500 4250
+Wire Wire Line
+	4400 4050 4550 4050
+$Comp
+L Saintcon2018-rescue:+3V3-power #PWR024
+U 1 1 5DAFC823
+P 4350 4400
+F 0 "#PWR024" H 4350 4250 50  0001 C CNN
+F 1 "+3V3" H 4365 4573 50  0000 C CNN
+F 2 "" H 4350 4400 50  0001 C CNN
+F 3 "" H 4350 4400 50  0001 C CNN
+	1    4350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Saintcon2018-rescue:GND-power #PWR028
+U 1 1 5DAFC829
+P 4250 5050
+F 0 "#PWR028" H 4250 4800 50  0001 C CNN
+F 1 "GND" H 4255 4877 50  0000 C CNN
+F 2 "" H 4250 5050 50  0001 C CNN
+F 3 "" H 4250 5050 50  0001 C CNN
+	1    4250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge J6
+U 1 1 5DAFC82F
+P 5050 4300
+F 0 "J6" H 5050 4887 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5050 4781 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 5050 4350 60  0001 C CNN
+F 3 "" H 5050 4350 60  0001 C CNN
+	1    5050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP6
+U 1 1 5DAFC835
+P 4250 4800
+F 0 "JP6" V 4204 4868 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 4250 3900 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-2-NO_YES_SILK" H 4250 4800 50  0001 C CNN
+F 3 "~" H 4250 4800 50  0001 C CNN
+	1    4250 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 4450 4250 4450
+Connection ~ 4400 4450
+Wire Wire Line
+	4400 4650 4250 4650
+Connection ~ 4400 4650
+Wire Wire Line
+	4250 4950 4250 5050
+Text GLabel 7900 4650 2    50   Input ~ 0
+MB_SCL
+Text GLabel 7900 4550 2    50   Input ~ 0
+MB_SDA
+$Comp
+L power:VCC #PWR021
+U 1 1 5DAFC849
+P 6700 4050
+F 0 "#PWR021" H 6700 3900 50  0001 C CNN
+F 1 "VCC" H 6717 4223 50  0000 C CNN
+F 2 "" H 6700 4050 50  0001 C CNN
+F 3 "" H 6700 4050 50  0001 C CNN
+	1    6700 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4550 7850 4550
+Wire Wire Line
+	7850 4650 7900 4650
+Connection ~ 6700 4550
+Wire Wire Line
+	6700 4450 6700 4550
+Wire Wire Line
+	6850 4450 6700 4450
+Wire Wire Line
+	6700 4550 6700 4650
+Wire Wire Line
+	6850 4550 6700 4550
+Wire Wire Line
+	6850 4650 6700 4650
+Connection ~ 6800 4250
+Wire Wire Line
+	6800 4150 6800 4250
+Wire Wire Line
+	6850 4150 6800 4150
+Wire Wire Line
+	6800 4400 6650 4400
+Wire Wire Line
+	6800 4250 6800 4400
+Wire Wire Line
+	6850 4250 6800 4250
+Wire Wire Line
+	6700 4050 6850 4050
+$Comp
+L Saintcon2018-rescue:+3V3-power #PWR025
+U 1 1 5DAFC85E
+P 6650 4400
+F 0 "#PWR025" H 6650 4250 50  0001 C CNN
+F 1 "+3V3" H 6665 4573 50  0000 C CNN
+F 2 "" H 6650 4400 50  0001 C CNN
+F 3 "" H 6650 4400 50  0001 C CNN
+	1    6650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Saintcon2018-rescue:GND-power #PWR029
+U 1 1 5DAFC864
+P 6550 5050
+F 0 "#PWR029" H 6550 4800 50  0001 C CNN
+F 1 "GND" H 6555 4877 50  0000 C CNN
+F 2 "" H 6550 5050 50  0001 C CNN
+F 3 "" H 6550 5050 50  0001 C CNN
+	1    6550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge J7
+U 1 1 5DAFC86A
+P 7350 4300
+F 0 "J7" H 7350 4887 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 7350 4781 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 7350 4350 60  0001 C CNN
+F 3 "" H 7350 4350 60  0001 C CNN
+	1    7350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP7
+U 1 1 5DAFC870
+P 6550 4800
+F 0 "JP7" V 6504 4868 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 6550 3900 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-2-NO_YES_SILK" H 6550 4800 50  0001 C CNN
+F 3 "~" H 6550 4800 50  0001 C CNN
+	1    6550 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 4450 6550 4450
+Connection ~ 6700 4450
+Wire Wire Line
+	6700 4650 6550 4650
+Connection ~ 6700 4650
+Wire Wire Line
+	6550 4950 6550 5050
+Text GLabel 10200 4650 2    50   Input ~ 0
+MB_SCL
+Text GLabel 10200 4550 2    50   Input ~ 0
+MB_SDA
+$Comp
+L power:VCC #PWR022
+U 1 1 5DAFC884
+P 9000 4050
+F 0 "#PWR022" H 9000 3900 50  0001 C CNN
+F 1 "VCC" H 9017 4223 50  0000 C CNN
+F 2 "" H 9000 4050 50  0001 C CNN
+F 3 "" H 9000 4050 50  0001 C CNN
+	1    9000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 4550 10150 4550
+Wire Wire Line
+	10150 4650 10200 4650
+Connection ~ 9000 4550
+Wire Wire Line
+	9000 4450 9000 4550
+Wire Wire Line
+	9150 4450 9000 4450
+Wire Wire Line
+	9000 4550 9000 4650
+Wire Wire Line
+	9150 4550 9000 4550
+Wire Wire Line
+	9150 4650 9000 4650
+Connection ~ 9100 4250
+Wire Wire Line
+	9100 4150 9100 4250
+Wire Wire Line
+	9150 4150 9100 4150
+Wire Wire Line
+	9100 4400 8950 4400
+Wire Wire Line
+	9100 4250 9100 4400
+Wire Wire Line
+	9150 4250 9100 4250
+Wire Wire Line
+	9000 4050 9150 4050
+$Comp
+L Saintcon2018-rescue:+3V3-power #PWR026
+U 1 1 5DAFC899
+P 8950 4400
+F 0 "#PWR026" H 8950 4250 50  0001 C CNN
+F 1 "+3V3" H 8965 4573 50  0000 C CNN
+F 2 "" H 8950 4400 50  0001 C CNN
+F 3 "" H 8950 4400 50  0001 C CNN
+	1    8950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Saintcon2018-rescue:GND-power #PWR030
+U 1 1 5DAFC89F
+P 8850 5050
+F 0 "#PWR030" H 8850 4800 50  0001 C CNN
+F 1 "GND" H 8855 4877 50  0000 C CNN
+F 2 "" H 8850 5050 50  0001 C CNN
+F 3 "" H 8850 5050 50  0001 C CNN
+	1    8850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge J8
+U 1 1 5DAFC8A5
+P 9650 4300
+F 0 "J8" H 9650 4887 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 9650 4781 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge-Shiny" H 9650 4350 60  0001 C CNN
+F 3 "" H 9650 4350 60  0001 C CNN
+	1    9650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP8
+U 1 1 5DAFC8AB
+P 8850 4800
+F 0 "JP8" V 8804 4868 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 8850 3900 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-2-NO_YES_SILK" H 8850 4800 50  0001 C CNN
+F 3 "~" H 8850 4800 50  0001 C CNN
+	1    8850 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 4450 8850 4450
+Connection ~ 9000 4450
+Wire Wire Line
+	9000 4650 8850 4650
+Connection ~ 9000 4650
+Wire Wire Line
+	8850 4950 8850 5050
+Text GLabel 5600 2800 2    50   Input ~ 0
+MB_CS2
+Text GLabel 7900 2800 2    50   Input ~ 0
+MB_CS3
+Text GLabel 10200 2800 2    50   Input ~ 0
+MB_CS4
+Text GLabel 4250 2900 0    50   Input ~ 0
+MB_GND2
+Text GLabel 6550 2900 0    50   Input ~ 0
+MB_GND3
+Text GLabel 8850 2900 0    50   Input ~ 0
+MB_GND4
+Text GLabel 1950 4450 0    50   Input ~ 0
+MB_GND5
+Text GLabel 4250 4450 0    50   Input ~ 0
+MB_GND6
+Text GLabel 6550 4450 0    50   Input ~ 0
+MB_GND7
+Text GLabel 8850 4450 0    50   Input ~ 0
+MB_GND8
+$Comp
+L power:GND #PWR039
+U 1 1 5DB4C41D
+P 1050 6400
+F 0 "#PWR039" H 1050 6150 50  0001 C CNN
+F 1 "GND" H 1055 6227 50  0000 C CNN
+F 2 "" H 1050 6400 50  0001 C CNN
+F 3 "" H 1050 6400 50  0001 C CNN
+	1    1050 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR038
+U 1 1 5DB4C7C8
+P 1050 5900
+F 0 "#PWR038" H 1050 5750 50  0001 C CNN
+F 1 "+3V3" H 1065 6073 50  0000 C CNN
+F 2 "" H 1050 5900 50  0001 C CNN
+F 3 "" H 1050 5900 50  0001 C CNN
+	1    1050 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 5900 1050 5950
+Wire Wire Line
+	1050 6350 1050 6400
+$Comp
+L Jumper:SolderJumper_3_Open JP10
+U 1 1 5DB6D0AB
+P 1300 6700
+F 0 "JP10" V 1254 6767 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1345 6767 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-3-NO_YES_SILK" H 1300 6700 50  0001 C CNN
+F 3 "~" H 1300 6700 50  0001 C CNN
+	1    1300 6700
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 5DB6D0B1
+P 1300 6950
+F 0 "#PWR041" H 1300 6700 50  0001 C CNN
+F 1 "GND" H 1305 6777 50  0000 C CNN
+F 2 "" H 1300 6950 50  0001 C CNN
+F 3 "" H 1300 6950 50  0001 C CNN
+	1    1300 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR040
+U 1 1 5DB6D0B7
+P 1300 6450
+F 0 "#PWR040" H 1300 6300 50  0001 C CNN
+F 1 "+3V3" H 1315 6623 50  0000 C CNN
+F 2 "" H 1300 6450 50  0001 C CNN
+F 3 "" H 1300 6450 50  0001 C CNN
+	1    1300 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6450 1300 6500
+Wire Wire Line
+	1300 6900 1300 6950
+$Comp
+L Jumper:SolderJumper_3_Open JP11
+U 1 1 5DB8F7C8
+P 1550 7250
+F 0 "JP11" V 1504 7317 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1595 7317 50  0000 L CNN
+F 2 "SparkFun-Passives:PAD-JUMPER-3-NO_YES_SILK" H 1550 7250 50  0001 C CNN
+F 3 "~" H 1550 7250 50  0001 C CNN
+	1    1550 7250
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR045
+U 1 1 5DB8F7CE
+P 1550 7500
+F 0 "#PWR045" H 1550 7250 50  0001 C CNN
+F 1 "GND" H 1555 7327 50  0000 C CNN
+F 2 "" H 1550 7500 50  0001 C CNN
+F 3 "" H 1550 7500 50  0001 C CNN
+	1    1550 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR042
+U 1 1 5DB8F7D4
+P 1550 7000
+F 0 "#PWR042" H 1550 6850 50  0001 C CNN
+F 1 "+3V3" H 1565 7173 50  0000 C CNN
+F 2 "" H 1550 7000 50  0001 C CNN
+F 3 "" H 1550 7000 50  0001 C CNN
+	1    1550 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 7000 1550 7050
+Wire Wire Line
+	1550 7450 1550 7500
+Wire Wire Line
+	2150 6800 2150 7250
+Wire Wire Line
+	2150 7250 1700 7250
+Wire Wire Line
+	1450 6700 2150 6700
+Wire Wire Line
+	2150 6600 1500 6600
+Wire Wire Line
+	1500 6600 1500 6150
+Wire Wire Line
+	1500 6150 1200 6150
+$EndSCHEMATC

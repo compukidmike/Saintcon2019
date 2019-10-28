@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Saintcon2019)(type KiCad)(uri ${KIPRJMOD}/Saintcon2019.pretty)(options "")(descr ""))
+)
