@@ -1,0 +1,5 @@
+
+void MinibadgeDisplayMode();
+void UpdateMinibadges();
+void InitMinibadgeMatrix();
+void InitMinibadges();

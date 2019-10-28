@@ -1,0 +1,3 @@
+
+void DisplayAnimation(uint8_t leftBadgeLevel, uint8_t leftBadgeNum, uint8_t animationCommand, uint8_t badgeLevel);
+

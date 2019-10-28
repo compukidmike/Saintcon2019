@@ -1,0 +1,4 @@
+
+void DisplayAnimation();
+
+void ForceLevelUp();

@@ -1,0 +1,93 @@
+#include "stdint.h"
+#include "main.h"
+
+#define ARED 0x52
+#define AGRN 0x42
+#define ABLU 0x32
+#define BRED 0x8C
+#define BGRN 0x7C
+#define BBLU 0x6C
+#define CRED 0x88
+#define CGRN 0x78
+#define CBLU 0x68
+#define DRED 0x56
+#define DGRN 0x46
+#define DBLU 0x36
+#define ERED 0x24
+#define EGRN 0x14
+#define EBLU 0x04
+#define FRED 0x58
+#define FGRN 0x48
+#define FBLU 0x38
+#define GRED 0x5A
+#define GGRN 0x4A
+#define GBLU 0x3A
+#define HRED 0x5C
+#define HGRN 0x4C
+#define HBLU 0x3C
+#define IRED 0x2E
+#define IGRN 0x1E
+#define IBLU 0x0E
+#define JRED 0x5E
+#define JGRN 0x4E
+#define JBLU 0x3E
+#define KRED 0x80
+#define KGRN 0x70
+#define KBLU 0x60
+#define LRED 0xB2
+#define LGRN 0xA2
+#define LBLU 0x92
+#define MRED 0xB0
+#define MGRN 0xA0
+#define MBLU 0x90
+#define NRED 0x8E
+#define NGRN 0x7E
+#define NBLU 0x6E
+#define ORED 0x50
+#define OGRN 0x40
+#define OBLU 0x30
+#define PRED 0x82
+#define PGRN 0x72
+#define PBLU 0x62
+#define QRED 0x20
+#define QGRN 0x10
+#define QBLU 0x00
+#define RRED 0x26
+#define RGRN 0x16
+#define RBLU 0x06
+#define SRED 0x54
+#define SGRN 0x44
+#define SBLU 0x34
+#define TRED 0x28
+#define TGRN 0x18
+#define TBLU 0x08
+#define URED 0x2C
+#define UGRN 0x1C
+#define UBLU 0x0C
+#define VRED 0x8A
+#define VGRN 0x7A
+#define VBLU 0x6A
+#define WRED 0x22
+#define WGRN 0x12
+#define WBLU 0x02
+#define XRED 0x86
+#define XGRN 0x76
+#define XBLU 0x66
+#define YRED 0x84
+#define YGRN 0x74
+#define YBLU 0x64
+#define ZRED 0x2A
+#define ZGRN 0x1A
+#define ZBLU 0x0A
+
+
+
+void lampboard_setLetter(char letter, RGB color);
+
+void lampboard_setLamp(uint8_t lamp, RGB color);
+
+void lampboard_fill(RGB color);
+
+void lampboard_update();
+
+void lampboard_clear();

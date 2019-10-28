@@ -1,0 +1,182 @@
+/*
+ * animations.c
+ *
+ *  Created on: Oct 13, 2019
+ *      Author: compukidmike
+ */
+#include "main.h"
+#include "images.h"
+#include "keyboard.h"
+#include "minibadge.h"
+#include "matrix.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+extern volatile uint8_t nextFrame;
+
+extern volatile int syncCounter;
+
+extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart2;
+
+extern volatile int LeftRecvBufferHead;
+extern volatile int LeftRecvBufferTail;
+extern volatile uint8_t LeftRecvBuffer[];
+extern volatile int RightRecvBufferHead;
+extern volatile int RightRecvBufferTail;
+extern volatile uint8_t RightRecvBuffer[];
+
+uint32_t lastSerialTime = 0;
+uint8_t LeftSerialState = 0;
+uint8_t RightSerialState = 0;
+uint8_t badgeNum = 1;
+uint8_t revealAnimation = 0;
+uint8_t messageLength = 0;
+uint8_t messageRecvCounter = 0;
+char message[256];
+
+void DisplayAnimation(uint8_t leftBadgeLevel, uint8_t leftBadgeNum, uint8_t Command, uint8_t badgeLevel){
+	lastSerialTime = HAL_GetTick();
+	syncCounter = 0;
+	//Commands:
+	//0 - Enigma Rotor w/number (Default when connected)
+	//3 - Display Text
+	//4 - Display Animation
+
+	//Reveal Animations:
+	//0 - Text Wipe
+	//1 - Decode
+	//2 - Nyan Cat
+	//3 - Fire
+	uint8_t loop = 1;
+	while (loop){
+		if(nextFrame == 1){ //Set by Timer16 - 30FPS
+			nextFrame = 0;
+			uint32_t currentTime = HAL_GetTick();
+			if(currentTime - lastSerialTime > 500) loop = 0;
+			UpdateMinibadges();
+			//Button Test Code
+			uint32_t buttons = 0;
+			buttons = keyboardUpdate();
+			if(buttons > 0) loop = 0;
+			int startX = (badgeNum - 1)*64;
+				int startChar = startX/6;
+			switch(Command){
+			case 0: //Rotor
+				matrix_clear();
+				matrix_drawImageWrap(rotorImage, syncCounter, 0, 64, 16);
+				char buffer[3];
+				sprintf(buffer, "%02d", leftBadgeNum + 1);
+				matrix_drawChar(buffer, (26+syncCounter)%64, 6, COLOR_WHITE);
+				matrix_update();
+				break;
+			case 3: //Display Text
+
+				switch(revealAnimation){
+				case 0: //Text Wipe
+					if(syncCounter >= startX){
+					matrix_clear();
+					matrix_drawChar(message, 0-startX, 0, COLOR_WHITE);
+					matrix_drawRect(syncCounter % 64, 0, 64, 16, COLOR_BLACK);
+					matrix_update();
+					}
+					break;
+				case 1: //Decode
+					matrix_clear();
+					if(syncCounter >= startX){
+						matrix_clear();
+						matrix_drawChar(message, 0-startX, 0, COLOR_WHITE);
+						matrix_drawRect((syncCounter - startChar)*6, 0, 64, 16, COLOR_BLACK);
+						matrix_drawChar((char[1]){((rand()%96)+32)}, (syncCounter - startChar + 1)*6, 0, COLOR_WHITE);
+						matrix_update();
+					}
+				}
+				break;
+			}
+
+			uint8_t outData[4] = {0xAA, badgeLevel, leftBadgeLevel + 1, 1};
+				HAL_UART_Transmit(&huart1, outData, 4, 100); //Send Hello to Right side
+		}
+
+		//Check for serial data
+		if(LeftRecvBufferHead != LeftRecvBufferTail){
+			uint8_t data = LeftRecvBuffer[LeftRecvBufferTail];
+			LeftRecvBufferTail = (LeftRecvBufferTail + 1) % UART_BUFFER_SIZE;
+			LeftSerialState ++;
+
+			if(data == SYNC){
+				lastSerialTime = HAL_GetTick();
+				LeftSerialState = 0;
+			}
+
+			switch(LeftSerialState){
+			case 0: //Sync byte
+				break;
+			case 1: //Badge Level
+				leftBadgeLevel = data;
+				LeftSerialState ++;
+				break;
+			case 2: // Badge Number
+				leftBadgeNum = data;
+				badgeNum = leftBadgeNum + 1;
+				LeftSerialState ++;
+				break;
+			case 3: //Command
+				if(data == 1){ //Hello message
+					uint8_t ack[4];
+					ack[0] = 0xAA;
+					ack[1] = badgeLevel;
+					ack[2] = leftBadgeNum + 1;
+					ack[3] = 2;
+					HAL_UART_Transmit(&huart2, ack, 4, 100); //Send ACK
+				} else {
+					Command = data;
+					syncCounter = 0;
+				}
+				LeftSerialState ++;
+				break;
+			case 4: //Reveal Animation
+				revealAnimation = data;
+				LeftSerialState ++;
+				break;
+			case 5: //Message Length
+				messageLength = data;
+				messageRecvCounter = 0;
+				LeftSerialState ++;
+				break;
+			case 6:
+				if(messageRecvCounter <= messageLength){
+					message[messageRecvCounter] = data;
+					messageRecvCounter ++;
+				}
+				LeftSerialState ++;
+				break;
+			}
+
+			//Send incoming data to Right side
+			if(badgeNum < 26){
+				uint8_t outData;
+				if(LeftSerialState == 2){
+					if(leftBadgeLevel < badgeLevel){
+						outData = leftBadgeLevel;
+					} else {
+						outData = data;
+					}
+				} else {
+					outData = data;
+				}
+				HAL_UART_Transmit(&huart1, &outData, 1, 100);
+			}
+
+		}
+
+		if(RightRecvBufferHead != RightRecvBufferTail){
+			uint8_t data = RightRecvBuffer[RightRecvBufferTail];
+			RightRecvBufferTail = (RightRecvBufferTail + 1) % UART_BUFFER_SIZE;
+						if(data == SYNC){
+							lastSerialTime = HAL_GetTick();
+						}
+		}
+	}
+}
+

@@ -1,0 +1,211 @@
+#include "minibadge.h"
+#include "eeprom_emul.h"
+#include "matrix.h"
+#include "keyboard.h"
+#include "lampboard.h"
+#include "i2c.h"
+
+#define CURSOR_BLINK_RATE 15
+#define MINIBADGE_NUM_STATES 5
+
+// Minibadge States
+// 0 - Off
+// 1 - On
+// 2 - Pattern 1 - Chase
+// 3 - Pattern 2 - Circle
+// 4 - Pattern 3 - Horizontal Lines
+// 5 - Pattern 4 - Vertical Lines
+// 6 - Pattern 5 -
+
+extern volatile uint8_t nextFrame;
+
+uint8_t numMinibadgeBoards = 0;
+
+uint8_t minibadgeState = 0;
+
+uint8_t minibadgeMatrix[16];
+
+
+void MinibadgeDisplayMode(){
+
+
+	//EE_ReadVariable8bits(EEP_MINIBADGE_STATE, &minibadgeState);
+	//EE_ReadVariable8bits(10, &data);
+	//if(minibadgeState > MINIBADGE_NUM_STATES) minibadgeState=1;
+
+
+	lampboard_clear();
+		lampboard_setLetter('W', COLOR_RED);
+		lampboard_setLetter('S', COLOR_RED);
+		lampboard_setLetter('K', COLOR_RED);
+		lampboard_update();
+
+	uint8_t loop = 1;
+	while(loop){
+		if(nextFrame == 1){ //Set by Timer16 - 30FPS
+			nextFrame = 0;
+			uint32_t buttons = 0;
+			buttons = keyboardUpdate();
+			if(buttons>>22 & 1){ //W
+				minibadgeState --;
+				if(minibadgeState == 255) minibadgeState = MINIBADGE_NUM_STATES;
+				InitMinibadgeMatrix();
+			}
+			if(buttons>>18 & 1){ //S
+				minibadgeState ++;
+				if(minibadgeState > MINIBADGE_NUM_STATES) minibadgeState = 0;
+				InitMinibadgeMatrix();
+			}
+			if(buttons>>10 & 1) { //K
+				EE_WriteVariable8bits(EEP_MINIBADGE_STATE, minibadgeState);
+				loop = 0;
+			}
+
+			matrix_clear();
+			matrix_drawCharCentered("MINIBADGES",0,0,COLOR_WHITE);
+
+			switch(minibadgeState){
+			case 0:
+				matrix_drawCharCentered("OFF",0,8,COLOR_WHITE);
+				break;
+			case 1:
+				matrix_drawCharCentered("ON",0,8,COLOR_WHITE);
+				break;
+			case 2:
+				matrix_drawCharCentered("Pattern 1",0,8,COLOR_WHITE);
+				break;
+			case 3:
+				matrix_drawCharCentered("Pattern 2",0,8,COLOR_WHITE);
+				break;
+			case 4:
+				matrix_drawCharCentered("Pattern 3",0,8,COLOR_WHITE);
+				break;
+			case 5:
+				matrix_drawCharCentered("Pattern 4",0,8,COLOR_WHITE);
+				break;
+			}
+			UpdateMinibadges();
+			for(int x=0; x<16; x++){
+				if(minibadgeMatrix[x] & 0x01) matrix_drawPixel(60, x, COLOR_WHITE);
+				if(minibadgeMatrix[x] & 0x02) matrix_drawPixel(61, x, COLOR_WHITE);
+				if(minibadgeMatrix[x] & 0x04) matrix_drawPixel(62, x, COLOR_WHITE);
+				if(minibadgeMatrix[x] & 0x08) matrix_drawPixel(63, x, COLOR_WHITE);
+			}
+			matrix_update();
+
+		}
+	}
+
+}
+
+void UpdateMinibadges(){
+
+	static int minibadgeAnimationCounter = 0;
+	static int minibadgeFrameCounter = 0;
+	static int minibadgeMatrixX = 0;
+	static int minibadgeMatrixY = 0;
+
+	minibadgeFrameCounter ++;
+	uint8_t data[2] = {0x01,0x00};
+
+
+		  switch(minibadgeState){
+		  case 0:
+			  for(int x=0; x<numMinibadgeBoards; x++){
+				  data[1] = 0x00;
+				  HAL_I2C_Master_Transmit(&hi2c2, (32+x)<<1, data, 2, 100);
+			  }
+			  break;
+		  case 1:
+			  for(int x=0; x<numMinibadgeBoards; x++){
+				  data[1] = 0xFF;
+				  HAL_I2C_Master_Transmit(&hi2c2, (32+x)<<1, data, 2, 100);
+			  }
+			  break;
+		  case 2:
+			  if(minibadgeFrameCounter > 6){
+				  minibadgeFrameCounter = 0;
+				  minibadgeAnimationCounter ++;
+				  minibadgeMatrix[minibadgeMatrixY] = 0x00;
+				  minibadgeMatrixX ++;
+				  if(minibadgeMatrixX > 3){
+					  minibadgeMatrixX = 0;
+					  minibadgeMatrixY ++;
+					  if(minibadgeMatrixY > (numMinibadgeBoards*2)-1){
+						  minibadgeMatrixY = 0;
+					  }
+				  }
+				  minibadgeMatrix[minibadgeMatrixY] = 1<<minibadgeMatrixX;
+				  for(int x=0; x<numMinibadgeBoards; x++){
+				  			  data[1] = minibadgeMatrix[x*2];
+				  			  data[1] |= minibadgeMatrix[(x*2)+1]<<4;
+				  			  HAL_I2C_Master_Transmit(&hi2c2, (32+x)<<1, data, 2, 100);
+				  		  }
+			  }
+			  break;
+		  case 3:
+			  if(minibadgeFrameCounter > 6){
+				  minibadgeFrameCounter = 0;
+				  minibadgeAnimationCounter ++;
+				  if(minibadgeAnimationCounter > 3) minibadgeAnimationCounter = 0;
+				  for(int x=0; x<16; x++){
+					  minibadgeMatrix[x] = 1<<minibadgeAnimationCounter;
+					  minibadgeAnimationCounter--;
+					  if(minibadgeAnimationCounter < 0) minibadgeAnimationCounter = 3;
+				  }
+				  for(int x=0; x<numMinibadgeBoards; x++){
+					  data[1] = minibadgeMatrix[x*2];
+					  data[1] |= minibadgeMatrix[(x*2)+1]<<4;
+					  HAL_I2C_Master_Transmit(&hi2c2, (32+x)<<1, data, 2, 100);
+				  }
+			  }
+			  break;
+		  case 4:
+
+			  break;
+		  case 5:
+
+			  break;
+		  //default:
+			  //data[1] = 0x00;
+			  //HAL_I2C_Master_Transmit(&hi2c2, x+64, data, 2, 100);
+		  }
+
+
+
+}
+
+void InitMinibadgeMatrix(){
+	switch(minibadgeState){
+	case 0:
+	case 1:
+	case 2:
+		for(int x=0; x<16; x++){
+			minibadgeMatrix[x] = 0;
+		}
+		break;
+	case 3:
+
+		break;
+	case 4:
+
+		break;
+	case 5:
+
+		break;
+
+	}
+}
+
+void InitMinibadges(){
+	EE_ReadVariable8bits(EEP_MINIBADGE_STATE, &minibadgeState);
+	if(minibadgeState > MINIBADGE_NUM_STATES) minibadgeState=1;
+
+	uint8_t data[] = {0x03,0x00};
+	  for(uint8_t address = 32; address < 40; address++){
+		  if (HAL_I2C_Master_Transmit(&hi2c2, address<<1, data, 2, 100) == HAL_OK){
+			  numMinibadgeBoards++;
+		  }
+	  }
+}
+

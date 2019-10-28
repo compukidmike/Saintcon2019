@@ -1,0 +1,15 @@
+/*
+ * screen_animations.h
+ *
+ *  Created on: Oct 15, 2019
+ *      Author: bashNinja
+ */
+
+#ifndef SCREEN_ANIMATIONS_H_
+#define SCREEN_ANIMATIONS_H_
+
+void waterfall();
+RGB pulseLEDcolor(RGB pixelColor, uint8_t step);
+
+
+#endif /* SCREEN_ANIMATIONS_H_ */

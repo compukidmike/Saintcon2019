@@ -1,0 +1,204 @@
+/*
+ * screen_animations.c
+ *
+ *  Created on: Oct 15, 2019
+ *      Author: bashNinja
+ */
+
+#include "keyboard.h"
+#include "lampboard.h"
+#include "matrix.h"
+#include "string.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "minibadge.h"
+#include "main.h"
+#include "screen_animations.h"
+
+extern volatile uint8_t nextFrame;
+#define SCREEN_SIZE_X 64
+#define SCREEN_SIZE_Y 16
+
+typedef struct {
+    RGB color;
+} pixel;
+
+
+void waterfall(){
+	uint8_t loop = 1;
+	RGB pixelColor = {255, 0, 0};
+	uint8_t step = 48;
+	uint32_t seed;
+	seed = HAL_GetTick(); //Time since boot
+	srand(seed);
+
+	pixel screen[SCREEN_SIZE_X][SCREEN_SIZE_Y];
+	  for(int x = 0; x < SCREEN_SIZE_X; x++){
+		  for (int y = 0; y < SCREEN_SIZE_Y; y++){
+			  screen[x][y].color = (RGB){0, 0, 0};
+		  }
+	  }
+
+	for(int x = 0; x < SCREEN_SIZE_X; x++){
+	  int random = rand() % 15;
+	  if(random == 0){
+		  screen[x][0].color = (RGB){255, 0, 0};
+		  matrix_drawPixel(x, 0, screen[x][0].color);
+	  }
+	  else {
+		  screen[x][0].color = (RGB){0, 0, 0};
+	  }
+	}
+
+	while (loop){
+		  //Button Test Code
+		  uint32_t buttons = 0;
+		  buttons = keyboardUpdate();
+
+		  if(buttons > 0)
+			  loop = 0;
+
+
+		  if(nextFrame == 1){ //Set by Timer16 - 30FPS
+			  nextFrame = 0;
+			  UpdateMinibadges();
+
+			  matrix_clear();
+
+			  for(int x = SCREEN_SIZE_X; x >= 0; x--){
+				  for (int y = SCREEN_SIZE_Y; y >= 1; y--){
+					  screen[x][y].color = screen[x][y-1].color;
+					  screen[x][y].color = pulseLEDcolor(screen[x][y].color, step);
+					  matrix_drawPixel(x, y, screen[x][y].color);
+				  }
+			  }
+
+			  for(int x = 0; x < SCREEN_SIZE_X; x++){
+				  int random = rand() % 15;
+				  if(random == 0){
+					  screen[x][0].color = (RGB){255, 0, 0};
+					  matrix_drawPixel(x, 0, screen[x][0].color);
+				  }
+				  else {
+					  screen[x][0].color = (RGB){0, 0, 0};
+				  }
+			  }
+
+			  matrix_update();
+
+		  }
+	}
+
+}
+
+void weirdRainbow(){
+	uint8_t loop = 1;
+	RGB pixelColor = {255, 0, 0};
+
+	while (loop){
+		  //Button Test Code
+		  uint32_t buttons = 0;
+		  buttons = keyboardUpdate();
+		  uint8_t step = 48;
+		  if(buttons > 0)
+			  loop = 0;
+		  uint32_t seed;
+		  seed = HAL_GetTick(); //Time since boot
+		  srand(seed);
+
+		  pixel screen[SCREEN_SIZE_X][SCREEN_SIZE_Y];
+
+		  if(nextFrame == 1){ //Set by Timer16 - 30FPS
+			  nextFrame = 0;
+			  UpdateMinibadges();
+
+			  matrix_clear();
+
+			  for(int x = 0; x < SCREEN_SIZE_X; x++){
+				  for (int y = 1; y < SCREEN_SIZE_Y; y++){
+					  screen[x][y].color = screen[x][y-1].color;
+					  screen[x][y].color = pulseLEDcolor(screen[x][y].color, step);
+					  matrix_drawPixel(x, y, screen[x][y].color);
+				  }
+			  }
+
+			  for(int x = 0; x < SCREEN_SIZE_X; x++){
+				  int random = rand() % 3;
+				  if(random){
+					  screen[x][0].color = (RGB){255, 0, 0};
+					  matrix_drawPixel(x, 0, screen[x][0].color);
+				  }
+				  else {
+					  screen[x][0].color = (RGB){0, 0, 0};
+				  }
+			  }
+
+			  matrix_update();
+
+		  }
+	}
+}
+
+void screen_cycle(){
+	uint8_t loop = 1;
+	RGB pixelColor = {255, 0, 0};
+
+	while (loop){
+		  //Button Test Code
+		  uint32_t buttons = 0;
+		  buttons = keyboardUpdate();
+		  uint8_t step = 4;
+		  if(buttons > 0)
+			  loop = 0;
+
+		  if(nextFrame == 1){ //Set by Timer16 - 30FPS
+			  nextFrame = 0;
+			  UpdateMinibadges();
+
+			  matrix_clear();
+			  pixelColor = pulseLEDcolor(pixelColor, step);
+			  matrix_fillRect(0, 0, 64, 16, pixelColor);
+			  matrix_update();
+
+		  }
+	}
+}
+
+RGB pulseLEDcolor(RGB pixelColor, uint8_t step){
+	  if(pixelColor.B == 0 && pixelColor.R > 0){
+
+		  if(pixelColor.R > step)
+			  pixelColor.R-=step;
+		  else
+			  pixelColor.R=0;
+
+		  if(255 - pixelColor.G > step)
+			  pixelColor.G+=step;
+		  else
+			  pixelColor.G=255;
+
+	  } else if(pixelColor.R == 0 && pixelColor.G > 0){
+
+		  if(pixelColor.G > step)
+			  pixelColor.G-=step;
+		  else
+			  pixelColor.G=0;
+
+		  if(255 - pixelColor.B > step)
+			  pixelColor.B+=step;
+		  else
+			  pixelColor.B=255;
+
+	  } else if(pixelColor.G == 0 && pixelColor.B > 0){
+		  if(pixelColor.B > step)
+			  pixelColor.B-=step;
+		  else
+			  pixelColor.B=0;
+
+		  if(255 - pixelColor.R > step)
+			  pixelColor.R+=step;
+		  else
+			  pixelColor.R=255;
+	  }
+	  return pixelColor;
+}
