@@ -32,4 +32,5 @@ The badge code was written using the STM32CubeIDE. It's cross-platform and works
 The IDE can be downloaded from ST here: https://www.st.com/en/development-tools/stm32cubeide.html
 
 The FPGA code was written using Icestudio https://icestudio.io/ It's a cross-platform IDE for Lattice ICE40 FPGAs
-The code is in SaintconFPGA.ice
+
+The FPGA code is in SaintconFPGA.ice
