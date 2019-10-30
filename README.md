@@ -6,7 +6,7 @@ There is a writeup available at https://mkfactor.com/?p=100
 There is also my badge presentation at Saintcon https://www.youtube.com/watch?v=MAhJ2W_oN14
 
 ## Reprogramming your badge
-You will need the STM32CubeProgrammer software from https://www.st.com/en/development-tools/stm32cubeide.html to reprogram your badge.
+You will need the STM32CubeProgrammer software from https://www.st.com/en/development-tools/stm32cubeprog.html to reprogram your badge.
 It's cross-platform, though I've only tested it on Windows 10. Unfortunately ST requires you to create a login to download software :(
 
 You'll also need the 2 hex files called Saintcon2019.hex and fpga.hex from this repository as well as a micro USB cable and one of the plugboard jumper wires from your badge.
