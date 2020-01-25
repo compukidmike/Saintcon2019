@@ -11,6 +11,11 @@
 
 extern volatile uint8_t nextFrame;
 extern uint8_t badgeLevel;
+extern uint16_t VirtAddVarTab[];
+
+extern const char RING1_MESSAGE[];
+extern const char RING2_MESSAGE[];
+extern const char RING3_MESSAGE[];
 
 const char ENIGMA_STANDARD_TEXT[] = "ENIGMA";
 const char ENIGMA_HELP_TEXT[] = "Start Encoding - Hold ANY key to exit";
@@ -33,6 +38,16 @@ const char ENIGMA_LEVEL_UP_TEXT[] = "LEVELED UP";
 
 const char ENIGMA_EXIT_TEXT[] = "EXIT";
 const char ENIGMA_EXIT2_TEXT[] = "EMULATOR";
+
+const char MSG1CODE[] = "SGUKDV";
+const char MSG2CODE[] = "YGZSLE";
+const char MSG3CODE[] = "AECNZV";
+const char MSG4CODE[] = "LIFVNA";
+const char MSG5CODE[] = "WOVMZS";
+const char MSG6CODE[] = "SYUGFA";
+const char MSG7CODE[] = "WCLWSU";
+const char MSG8CODE[] = "DNVOUW";
+const char MSG9CODE[] = "ZDTZOA";
 
 
 int enigma_menuState = 0;
@@ -67,35 +82,35 @@ void enigma_menu(){
 	uint8_t minibadgeState = 0;
 	uint8_t leveledUp = 0;
 	// get level code
-	EE_ReadVariable8bits(EEP_CHALLENGE_LEVEL, &eeprom_level);
+	EE_ReadVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], &eeprom_level);
 	for(int x=0; x<6; x++){
 		switch(eeprom_level){
 			case 1:
-				EE_ReadVariable8bits(EEP_MESSAGE_CODE_1 + x, &eeprom_code_letter);
+				EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_1 + x], &eeprom_code_letter);
 				break;
 			case 2:
-				EE_ReadVariable8bits(EEP_MESSAGE_CODE_2 + x, &eeprom_code_letter);
+				EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_2 + x], &eeprom_code_letter);
 				break;
 			case 3:
-				EE_ReadVariable8bits(EEP_MESSAGE_CODE_3 + x, &eeprom_code_letter);
+				EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_3 + x], &eeprom_code_letter);
 				break;
 			case 5:
-				EE_ReadVariable8bits(EEP_MESSAGE_CODE_4 + x, &eeprom_code_letter);
+				EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_4 + x], &eeprom_code_letter);
 				break;
 			case 6:
-				EE_ReadVariable8bits(EEP_MESSAGE_CODE_5 + x, &eeprom_code_letter);
+				EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_5 + x], &eeprom_code_letter);
 				break;
 			case 7:
-				EE_ReadVariable8bits(EEP_MESSAGE_CODE_6 + x, &eeprom_code_letter);
+				EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_6 + x], &eeprom_code_letter);
 				break;
 			case 9:
-				EE_ReadVariable8bits(EEP_MESSAGE_CODE_7 + x, &eeprom_code_letter);
+				EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_7 + x], &eeprom_code_letter);
 				break;
 			case 10:
-				EE_ReadVariable8bits(EEP_MESSAGE_CODE_8 + x, &eeprom_code_letter);
+				EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_8 + x], &eeprom_code_letter);
 				break;
 			case 11:
-				EE_ReadVariable8bits(EEP_MESSAGE_CODE_9 + x, &eeprom_code_letter);
+				EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_9 + x], &eeprom_code_letter);
 				break;
 		}
 		eeprom_level_code[x] = eeprom_code_letter;
@@ -122,8 +137,12 @@ void enigma_menu(){
 				  // level up animation
 				  matrix_drawCharCentered(ENIGMA_LEVEL_UP_TEXT,0,0,COLOR_RED);
 				  levelUpPauseCounter--;
-				  if(levelUpPauseCounter<0)
+				  if(levelUpPauseCounter<0){
 					  loop = 0;
+					  if(badgeLevel == 5) scroll_message(RING1_MESSAGE);
+					  if(badgeLevel == 9) scroll_message(RING2_MESSAGE);
+					  if(badgeLevel == 13) scroll_message(RING3_MESSAGE);
+				  }
 			  }
 
 			  // change message if bottom row is different
@@ -172,7 +191,118 @@ void enigma_menu(){
 
 						  leveledUp = 1;
 						  badgeLevel ++;
-						  if(EE_WriteVariable8bits(EEP_CHALLENGE_LEVEL, badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+					  }
+
+					  switch(badgeLevel){
+					  case 1:
+						  if( message[9] == MSG1CODE[5] &&
+								  message[8] == MSG1CODE[4] &&
+								  message[7] == MSG1CODE[3] &&
+								  message[6] == MSG1CODE[2] &&
+								  message[5] == MSG1CODE[1] &&
+								  message[4] == MSG1CODE[0] ){
+							  leveledUp = 1;
+							  badgeLevel ++;
+							  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  }
+						  break;
+					  case 2:
+						  if( message[9] == MSG2CODE[5] &&
+								  message[8] == MSG2CODE[4] &&
+								  message[7] == MSG2CODE[3] &&
+								  message[6] == MSG2CODE[2] &&
+								  message[5] == MSG2CODE[1] &&
+								  message[4] == MSG2CODE[0] ){
+							  leveledUp = 1;
+							  badgeLevel ++;
+							  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  }
+						  break;
+					  case 3:
+						  if( message[9] == MSG3CODE[5] &&
+								  message[8] == MSG3CODE[4] &&
+								  message[7] == MSG3CODE[3] &&
+								  message[6] == MSG3CODE[2] &&
+								  message[5] == MSG3CODE[1] &&
+								  message[4] == MSG3CODE[0] ){
+							  leveledUp = 1;
+							  badgeLevel += 2;//Jump past ring message
+							  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  }
+						  break;
+					  case 5:
+						  if( message[9] == MSG4CODE[5] &&
+								  message[8] == MSG4CODE[4] &&
+								  message[7] == MSG4CODE[3] &&
+								  message[6] == MSG4CODE[2] &&
+								  message[5] == MSG4CODE[1] &&
+								  message[4] == MSG4CODE[0] ){
+							  leveledUp = 1;
+							  badgeLevel ++;
+							  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  }
+						  break;
+					  case 6:
+						  if( message[9] == MSG5CODE[5] &&
+								  message[8] == MSG5CODE[4] &&
+								  message[7] == MSG5CODE[3] &&
+								  message[6] == MSG5CODE[2] &&
+								  message[5] == MSG5CODE[1] &&
+								  message[4] == MSG5CODE[0] ){
+							  leveledUp = 1;
+							  badgeLevel ++;
+							  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  }
+						  break;
+					  case 7:
+						  if( message[9] == MSG6CODE[5] &&
+								  message[8] == MSG6CODE[4] &&
+								  message[7] == MSG6CODE[3] &&
+								  message[6] == MSG6CODE[2] &&
+								  message[5] == MSG6CODE[1] &&
+								  message[4] == MSG6CODE[0] ){
+							  leveledUp = 1;
+							  badgeLevel += 2;//Jump past ring message
+							  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  }
+						  break;
+					  case 9:
+						  if( message[9] == MSG7CODE[5] &&
+								  message[8] == MSG7CODE[4] &&
+								  message[7] == MSG7CODE[3] &&
+								  message[6] == MSG7CODE[2] &&
+								  message[5] == MSG7CODE[1] &&
+								  message[4] == MSG7CODE[0] ){
+							  leveledUp = 1;
+							  badgeLevel ++;
+							  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  }
+						  break;
+					  case 10:
+						  if( message[9] == MSG8CODE[5] &&
+								  message[8] == MSG8CODE[4] &&
+								  message[7] == MSG8CODE[3] &&
+								  message[6] == MSG8CODE[2] &&
+								  message[5] == MSG8CODE[1] &&
+								  message[4] == MSG8CODE[0] ){
+							  leveledUp = 1;
+							  badgeLevel ++;
+							  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  }
+						  break;
+					  case 11:
+						  if( message[9] == MSG9CODE[5] &&
+								  message[8] == MSG9CODE[4] &&
+								  message[7] == MSG9CODE[3] &&
+								  message[6] == MSG9CODE[2] &&
+								  message[5] == MSG9CODE[1] &&
+								  message[4] == MSG9CODE[0] ){
+							  leveledUp = 1;
+							  badgeLevel += 2;//Jump past ring message
+							  if(EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], badgeLevel) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+						  }
+						  break;
 					  }
 
 				  }

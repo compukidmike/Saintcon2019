@@ -14,6 +14,7 @@
 #include "stdlib.h"
 
 extern volatile uint8_t nextFrame;
+extern uint16_t VirtAddVarTab[];
 
 void TestMode(){
 
@@ -44,20 +45,20 @@ void TestMode(){
 			}
 
 			if(buttonStatus == 0){ //All buttons have been pressed
-				EE_WriteVariable8bits(EEP_CHALLENGE_LEVEL, 0);
+				EE_WriteVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], 0);
 				uint32_t seed;
 				seed = HAL_GetTick(); //Time since boot
 				srand(seed);
 				for(int x=0; x<6; x++){
-					EE_WriteVariable8bits(EEP_MESSAGE_CODE_1 + x, rand() % 26);
-					EE_WriteVariable8bits(EEP_MESSAGE_CODE_2 + x, rand() % 26);
-					EE_WriteVariable8bits(EEP_MESSAGE_CODE_3 + x, rand() % 26);
-					EE_WriteVariable8bits(EEP_MESSAGE_CODE_4 + x, rand() % 26);
-					EE_WriteVariable8bits(EEP_MESSAGE_CODE_5 + x, rand() % 26);
-					EE_WriteVariable8bits(EEP_MESSAGE_CODE_6 + x, rand() % 26);
-					EE_WriteVariable8bits(EEP_MESSAGE_CODE_7 + x, rand() % 26);
-					EE_WriteVariable8bits(EEP_MESSAGE_CODE_8 + x, rand() % 26);
-					EE_WriteVariable8bits(EEP_MESSAGE_CODE_9 + x, rand() % 26);
+					EE_WriteVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_1 + x], rand() % 26);
+					EE_WriteVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_2 + x], rand() % 26);
+					EE_WriteVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_3 + x], rand() % 26);
+					EE_WriteVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_4 + x], rand() % 26);
+					EE_WriteVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_5 + x], rand() % 26);
+					EE_WriteVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_6 + x], rand() % 26);
+					EE_WriteVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_7 + x], rand() % 26);
+					EE_WriteVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_8 + x], rand() % 26);
+					EE_WriteVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_9 + x], rand() % 26);
 				}
 				matrix_clear();
 				matrix_drawCharCentered("TEST DONE", 0, 0, COLOR_GREEN);

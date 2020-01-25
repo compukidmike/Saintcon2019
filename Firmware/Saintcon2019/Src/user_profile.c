@@ -27,6 +27,7 @@ const uint8_t envelope[294] = {
 #define NUM_PROFILE_MENU_STATES 2
 
 extern volatile uint8_t nextFrame;
+extern uint8_t badgeLevel;
 const char PROFILE_LVL_TEXT[] = "Lvl:";
 const char PROFILE_EXIT_TEXT[] = "EXIT";
 const char PROFILE_NO_TEXT[] = "No";
@@ -60,7 +61,8 @@ void user_profile(){
 
 	uint8_t availableMessages = 0;
 
-	EE_ReadVariable8bits(EEP_CHALLENGE_LEVEL, &eeprom_level);
+	//EE_ReadVariable8bits(EEP_CHALLENGE_LEVEL, &eeprom_level);
+	eeprom_level = badgeLevel;
 /*
 	if(EE_ReadVariable8bits(EEP_LEVEL_1_MESSAGE_START, &eeprom_message_start) == EE_OK){
 		availableMessages |= 1 << 0;

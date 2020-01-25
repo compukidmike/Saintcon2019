@@ -91,7 +91,7 @@ __IO uint32_t ErasingOnGoing = 0;
 uint32_t VarDataTab[NB_OF_VARIABLES] = {0};
 uint32_t VarValue = 0;
 
-uint8_t badgeLevel = 0;
+uint8_t badgeLevel = 1; //Change to start on level 1 after the conference, when it's not possible to link up badges
 uint8_t badgeNum = 1;
 
 volatile uint8_t rbyte;
@@ -293,11 +293,12 @@ int main(void)
    */
 
   uint8_t data;
-  if(EE_ReadVariable8bits(EEP_MESSAGE_CODE_1, &data) != EE_OK){
+  if(EE_ReadVariable8bits(VirtAddVarTab[EEP_MESSAGE_CODE_1], &data) != EE_OK){
 	  TestMode();
   }
 
-  EE_ReadVariable8bits(EEP_CHALLENGE_LEVEL, &badgeLevel);
+  EE_ReadVariable8bits(VirtAddVarTab[EEP_CHALLENGE_LEVEL], &badgeLevel);
+  if(badgeLevel == 0) badgeLevel = 1; //Fix for after conference - Skip initial ring and start on level 1
 
   //Image Test
   //matrix_drawImage(sc,0,0,38,16);

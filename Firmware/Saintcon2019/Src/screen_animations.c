@@ -18,6 +18,7 @@
 #include "eeprom_emul.h"
 
 extern volatile uint8_t nextFrame;
+extern uint16_t VirtAddVarTab[];
 #define SCREEN_SIZE_X 64
 #define SCREEN_SIZE_Y 16
 
@@ -27,7 +28,7 @@ typedef struct {
 
 void displayAnimations(){
 	uint8_t loop = 1;
-	uint8_t selectedAnimation = 0;
+	int selectedAnimation = 0;
 
 	while (loop){
 		  if(nextFrame == 1){ //Set by Timer16 - 30FPS
@@ -571,7 +572,7 @@ int customMessage(){
 
 	    //Read custom message from EEPROM
 	    uint8_t data = 0;
-	    EE_ReadVariable8bits(EEP_CUSTOM_MESSAGE_LENGTH, &data);
+	    EE_ReadVariable8bits(VirtAddVarTab[EEP_CUSTOM_MESSAGE_LENGTH], &data);
 	    	//EE_ReadVariable8bits(10, &data);
 	    	if(data == 0xFF) data=0;
 	    	if(data == 0){
@@ -584,7 +585,7 @@ int customMessage(){
 	    		//custommessagelengthpixels = (data*6)+6;
 	    	}
 	    	for(int x=0; x<custommessagelength; x++){
-	    		EE_ReadVariable8bits(EEP_CUSTOM_MESSAGE_START + x, &data);
+	    		EE_ReadVariable8bits(VirtAddVarTab[EEP_CUSTOM_MESSAGE_START + x], &data);
 	    		custommessage[x] = data;
 	    	}
 	    	custommessage[custommessagelength+1] = '\0'; //Add null terminator

@@ -94,13 +94,13 @@
 /** @defgroup Exported_Configuration_Constants Exported Configuration Constants
   * @{
   */
-#define NB_OF_VARIABLES         2048U  /*!< Number of variables to handle in eeprom */
+#define NB_OF_VARIABLES         260U  /*!< Number of variables to handle in eeprom */
 
  //eeprom variable map
-#define EEP_CHALLENGE_LEVEL 0 //1 byte
-#define EEP_CUSTOM_MESSAGE_LENGTH 1 //Up to 255
-#define EEP_CUSTOM_MESSAGE_START 2 //1-255
-#define EEP_MINIBADGE_STATE 257 //1 byte
+#define EEP_CHALLENGE_LEVEL 1 //1 byte
+#define EEP_CUSTOM_MESSAGE_LENGTH 2 //Up to 255
+#define EEP_CUSTOM_MESSAGE_START 3 //1-255
+#define EEP_MINIBADGE_STATE 259 //1 byte
 #define EEP_MESSAGE_CODE_1 258 //6 bytes
 #define EEP_MESSAGE_CODE_2 264 //6 bytes
 #define EEP_MESSAGE_CODE_3 270 //6 bytes

@@ -8,10 +8,12 @@
 #include "eeprom_emul.h"
 #include "matrix.h"
 #include "keyboard.h"
+#include "lampboard.h"
 
 #define CURSOR_BLINK_RATE 15
 
 extern volatile uint8_t nextFrame;
+extern uint16_t VirtAddVarTab[];
 
 uint8_t custommessage[255];
 int custommessagelength = 0;
@@ -32,22 +34,25 @@ void EditCustomMessage(){
 	lampboard_setLetter('O', COLOR_RED);
 	lampboard_update();
 	uint8_t data = 0;
-	EE_ReadVariable8bits(EEP_CUSTOM_MESSAGE_LENGTH, &data);
+	EE_Status status = 0;
+	status = EE_ReadVariable8bits(VirtAddVarTab[EEP_CUSTOM_MESSAGE_LENGTH], &data);
+	if(status != EE_OK) data = 0;
 	//EE_ReadVariable8bits(10, &data);
 	if(data == 0xFF) data=0;
 	if(data == 0){
-		custommessagelength = 0;
+		custommessagelength = 1;
 		custommessagelengthpixels = 6;
 		custommessage[0] = newchar;
 	} else {
 		custommessagelength = data;
 		custommessagelengthpixels = (data*6)+6;
+		cursorposition = custommessagelength-1; //start cursor at end of message
+		for(int x=0; x<custommessagelength; x++){
+			EE_ReadVariable8bits(VirtAddVarTab[EEP_CUSTOM_MESSAGE_START + x], &data);
+			custommessage[x] = data;
+		}
 	}
-	for(int x=0; x<custommessagelength; x++){
-		EE_ReadVariable8bits(EEP_CUSTOM_MESSAGE_START + x, &data);
-		custommessage[x] = data;
-	}
-	cursorposition = custommessagelength; //start cursor at end of message
+
 	uint8_t loop = 1;
 	while(loop){
 		if(nextFrame == 1){ //Set by Timer16 - 30FPS
@@ -77,23 +82,40 @@ void EditCustomMessage(){
 				cursorposition ++;
 				if(cursorposition > 254){
 					cursorposition = 254;
-				} else if(cursorposition > custommessagelength) {
+				} else if(cursorposition > custommessagelength-1) {
 					custommessagelength ++;
-					custommessage[custommessagelength] = newchar;
+					custommessage[custommessagelength-1] = newchar;
 					//custommessagelength ++;
 					custommessagelengthpixels += 6;
 				}
 			}
 			if(buttons>>10 & 1) { //K
-				if(EE_WriteVariable8bits(EEP_CUSTOM_MESSAGE_LENGTH, strlen(custommessage)) == EE_CLEANUP_REQUIRED) EE_CleanUp();
+				EE_Status status;
+				status = EE_WriteVariable8bits(VirtAddVarTab[EEP_CUSTOM_MESSAGE_LENGTH], strlen(custommessage));
+				if(status != EE_OK){
+					if(status == EE_CLEANUP_REQUIRED){
+						status = EE_CleanUp();
+						if(status != EE_OK){
+							EE_CleanUp();
+						}
+					}
+				}
 				for(int x=0; x < strlen(custommessage); x++){
-					if(EE_WriteVariable8bits(EEP_CUSTOM_MESSAGE_START + x, custommessage[x]) == EE_CLEANUP_REQUIRED) EE_CleanUp();;
+					status = EE_WriteVariable8bits(VirtAddVarTab[EEP_CUSTOM_MESSAGE_START + x], custommessage[x]);
+							if(status != EE_OK){
+								if(status == EE_CLEANUP_REQUIRED){
+									status = EE_CleanUp();
+									if(status != EE_OK){
+										EE_CleanUp();
+									}
+								}
+							}
 				}
 				loop = 0;
 			}
 			if(buttons>>14 & 1){//O
-				if(custommessagelength > 0){
-				custommessage[custommessagelength] = 0;
+				if(custommessagelength > 1){
+				custommessage[custommessagelength-1] = 0;
 				custommessagelength --;
 				cursorposition --;
 				custommessagelengthpixels -= 6;

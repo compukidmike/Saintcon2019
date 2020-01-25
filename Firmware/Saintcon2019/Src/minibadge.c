@@ -19,6 +19,7 @@
 // 6 - Pattern 5 -
 
 extern volatile uint8_t nextFrame;
+extern uint16_t VirtAddVarTab[];
 
 uint8_t numMinibadgeBoards = 0;
 
@@ -64,7 +65,7 @@ void MinibadgeDisplayMode(){
 				InitMinibadgeMatrix();
 			}
 			if(buttons>>10 & 1) { //K
-				EE_WriteVariable8bits(EEP_MINIBADGE_STATE, minibadgeState);
+				EE_WriteVariable8bits(VirtAddVarTab[EEP_MINIBADGE_STATE], minibadgeState);
 				loop = 0;
 			}
 
@@ -295,7 +296,7 @@ void InitMinibadgeMatrix(){
 }
 
 void InitMinibadges(){
-	EE_ReadVariable8bits(EEP_MINIBADGE_STATE, &minibadgeState);
+	EE_ReadVariable8bits(VirtAddVarTab[EEP_MINIBADGE_STATE], &minibadgeState);
 	if(minibadgeState > MINIBADGE_NUM_STATES) minibadgeState=1;
 
 	uint8_t data[] = {0x03,0x00};
